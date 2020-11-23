@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<jnlp spec="1.0+" codebase="http://localhost:8080/upload/" href="webstart_http.jnlp">
+
+  <information>
+    <title>JFileUpload</title>
+    <vendor>JFileUpload.com</vendor>
+    <homepage href="http://www.jfileupload.com"/>
+    <description>This Java application allows to upload files to a HTTP or FTP server.
+    </description>    
+    <offline-allowed/>
+  </information>
+
+  <security>
+        <all-permissions/>
+  </security>
+
+  <resources>
+    <j2se version="1.4 1.5 1.6"/>
+    <jar href="lib/jfileupload.jar" main="true" download="eager"/>
+    <jar href="lib/chttpclient.jar"/>
+    <jar href="lib/httpimpl.jar"/>
+    <jar href="lib/clogging.jar"/>
+  </resources>
+
+  <application-desc main-class="jfileupload.upload.client.MApplication">  
+    <argument>-url</argument>
+    <argument>http://localhost:8080/upload/process.jsp</argument>
+    <argument>-mode</argument>
+    <argument>http</argument>
+    <argument>-paramfile</argument>
+    <argument>uploadfile</argument>
+    <argument>-param1</argument>
+    <argument>todo</argument>
+    <argument>-value1</argument>
+    <argument>upload</argument>
+  </application-desc>
+
+</jnlp>

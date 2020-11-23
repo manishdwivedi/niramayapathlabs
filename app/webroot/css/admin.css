@@ -1,0 +1,429 @@
+*{
+margin:0;
+padding:0;
+}
+
+body{
+	font-family:arial,sans-serif;
+	text-align:left;
+	color:#000;
+	font-size: 11x;
+	background-color:#e0c9a0;
+}
+
+input.input-text, select, textarea { border:1px solid #b6b6b6; font:11px arial, helvetica, sans-serif; padding:2px; }
+input.input-text { width:300px; height:25px; }
+input.input-button { border:1px solid #B6B6B6; font-weight:bold; padding:3px 8px; background-color:#600; color:#fff; }
+textarea { width:300px; height:150px; }
+
+ul,ol {
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+}
+
+/* General Style Info */
+a{
+color:#3197ca;
+text-decoration:underline;
+}
+a:hover{
+color:#003d4c;
+text-decoration:none;
+}
+
+a img{
+border:none;
+}
+
+h1, h2, h3, h4{
+font-weight:normal;
+}
+
+h1{
+color: #425F33;
+margin:0.3em 0;
+font-size: 0px;
+background:url(tab-theme/images/beni_logo.png) no-repeat left top;
+height:54px;
+}
+
+h2{
+color:#003d4c;
+padding-top: 1em;
+margin:0.3em 0;
+font-size: 180%;
+}
+
+h3{
+color:#fff;
+font-size: 140%;
+padding-left:60px;
+margin:0px;
+padding:0px;
+}
+
+h4{
+color:#fff;
+font-weight:bold;
+text-align:left;
+font-size:1.0em;
+}
+
+em {
+font-size: 12px;
+}
+
+ul, li {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* tables */
+table {
+	font-family:arial,sans-serif;
+	color:#fff;
+	font-size: 12px;
+	text-align:left;
+}
+table tr td {
+/*	padding:4px;*/
+	vertical-align:middle;
+}
+#footer  { float:left;
+clear:both; }
+
+#footer .copyright{ float:left; width: 50%; color:#cca976;}
+#footer .website_copyright{ float:right; text-align:right; width: 50%; }
+
+#cakeSqlLog td {
+text-align: left;
+padding: 4px 8px;
+background: #fff;
+border-bottom: 2px solid #ccc;
+}
+
+/* notices and errors */
+
+#flashMessage, .error, .error_message {
+	color:#fff;
+	/*font-size: 16px;*/
+	/*background-color: #6f2421;*/
+	/*margin: 8px 0px;*/
+	font-weight: bold;
+}
+.error_message {
+	clear: both;
+}
+.error em {
+	font-size: 18px;
+	color: #003d4c;
+}
+.notice {
+	color: #656565;
+	font-size: 14px;
+	background-color: #f4f4f4;
+	padding: 0.5em;
+	margin: 1em 0;
+	display:block;
+}
+.tip {
+	color: #656565;
+	background-color: #ddd;
+}
+
+.borderBottom{
+	border-bottom:1px solid #3366CC;
+}
+.borderTop{
+/*border-Top:1px solid #3366CC;*/
+}
+.bgHeader{
+	/*background-color:#cca976;*/
+}
+.bgDarkHeader{
+/*	background-color:#425f33;*/
+  background: url(../img/bg_header.png) repeat-x scroll center bottom #353535;
+  height:70px;
+}
+.boldText{
+	font-weight:bold;
+}
+.error-message{ color: #ff0000; }
+
+.check-box-container { width:240px; height:110px; overflow:auto; border:1px solid #B6B6B6; padding:5px; }
+
+/*#middle { min-height:400px; }*/
+
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @copyright  Copyright (c) 2008 Irubin Consulting Inc. DBA Varien (http://www.varien.com)
+ * @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+#nav-bar { padding:0px; }
+.nav-bar { float:left; background:#5a903d none repeat scroll 0 0; border-bottom:1px solid #276f00; border-top:1px solid #276f00; width:100%; }
+
+#nav { float:left; }
+
+/************** ALL LEVELS  *************/ /* Style consistent throughout all nav levels */
+#nav li { position:relative; text-align:left; }
+#nav li.over { z-index:99; }
+#nav li.active { z-index:100; } /* to prevent the li separator from showing through on mouseover on li */
+#nav a,
+#nav a:hover { display:block; text-decoration:none; }
+#nav span { display:block; /*cursor:pointer;*/ }
+#nav a { line-height:1.3em; }
+
+
+/************ 1ST LEVEL  ***************/
+#nav li { float:left; background:url(../img/admin/nav1_sep.gif) no-repeat 100% 0; }
+#nav li.active { margin-left:-1px; background-color:#900; /*background:url(../img/admin/nav1_active.gif) no-repeat;*/ color:#fff; font-weight:bold;  }
+#nav li.active em { display:block; position:absolute; top:0; right:-1px; width:3px; height:27px; background:url(../img/admin/nav1_active.gif) no-repeat 100% 0; }
+#nav a { float:left; padding:0 14px; color:#fff; line-height:27px; }
+#nav li.over a { color:#f9fece; }
+
+
+/************ 1ST LEVEL RESET ************/
+#nav ul li,
+#nav ul li.active { float:none; height:auto; background:none; margin:0; }
+#nav ul a,
+#nav ul a:hover { float:none; padding:0; line-height:1.3em; }
+#nav ul li.over a,
+#nav ul li.over a:hover,
+#nav ul a,
+#nav li.active li { font-weight:normal; }
+
+
+/************ 2ND LEVEL ************/
+#nav ul { position:absolute; width:189px; top:27px; left:-10000px; padding-bottom:3px; border-top:1px solid #3366CC; }
+#nav ul ul  { border-top:0; background-color:#990;/* background:url(../img/admin/nav3_bg.png) 0 0 no-repeat;*/ padding-top:2px; left:100px; top:13px; }
+
+/* Show menu */
+#nav li.over ul { left:-1px; }
+#nav li.over ul ul { left:-10000px; }
+#nav li.over ul li.over ul { left:100px; }
+
+#nav ul li {/* background:transparent url(../img/admin/nav2_li_bg.png) repeat-y scroll 0 0; */ padding:0 2px; }
+#nav ul li a { background:#ead5aa; }
+#nav ul li a:hover { background:#933e3a; }
+#nav li.over ul a,
+#nav ul li.active a,
+#nav ul li a,
+#nav ul li a:hover { color:#000; }
+#nav ul span,
+#nav ul li.last li span { padding:6px 15px; background:url(../img/admin/nav2_link_bg.gif) repeat-x 0 100%; }
+#nav ul li.last span,
+#nav ul li.last li.last span { background:none; }
+#nav ul li.last { background:transparent url(../img/admin/nav2_last_li_bg.png) no-repeat scroll 0 100%; padding-bottom:3px; }
+
+#nav ul li.parent a,
+#nav ul li.parent li.parent a { background-image:url(../img/admin/nav2_parent_arrow.gif); background-position:100% 100%; background-repeat:no-repeat; }
+#nav ul li.parent li a,
+#nav ul li.parent li.parent li a { background-image:none; }
+
+/************ 3RD+ LEVEL ************/
+/* Cursors */
+#nav li.parent a,
+#nav li.parent li.parent a,
+#nav li.parent li.parent li.parent a { /*cursor:default;*/ }
+
+#nav li.parent li a,
+#nav li.parent li.parent li a,
+#nav li.parent li.parent li.parent li a { cursor:pointer; }
+
+/* Show menu */
+#nav ul ul ul { left:-10000px; }
+#nav li.over ul li.over ul ul { left:-10000px;}
+#nav li.over ul li.over ul li.over ul { left:100px; }
+
+.nav-bar:after { content:"."; display:block; clear:both; font-size:0; line-height:0; height:0; overflow:hidden;  }
+.restaurants_admin_edit label{ height:25px;margin-left:5px; margin-right:5px;margin-top:0px; padding-top:0px;}
+#loginbox{
+	width:420px; 
+/*	float:left;*/
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	background:url(../img/bg_login_box.png) repeat-x top;
+  /*  border-bottom: 1px solid #fff;*/
+	color:#FFF;
+	margin:0 auto;
+	overflow:hidden;
+}
+#loginheader {
+	width:420px;
+	float:left;
+    background: url(../img/bg_login_header.png) repeat-x scroll center bottom transparent;
+    border-bottom: 1px solid #424242;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 15px 0;
+    text-align: center;
+	height:40px;
+	line-height:40px;
+	color:#FFF;
+	font-size:18px;
+}
+#loginbox .submit .input-button {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url(../img/bg_login_btn.png) repeat-x scroll center top #3197CA;
+    border-color: #BEDFEF -moz-use-text-color -moz-use-text-color;
+    border-radius: 8px 8px 8px 8px;
+    border-right: medium none;
+    border-style: solid none none;
+    border-width: 1px medium medium;
+    color: #1C5571;
+    cursor: pointer;
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: 5px 0 0;
+    padding: 11px 0;
+    text-shadow: 1px 1px 1px #9CCED6;
+    width: 260px;
+}
+#loginbox #UserUsername.input-text ,#loginbox #UserPassword.input-text{
+    background: url(../img/bg_login_input.png) repeat-x scroll center top #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px 8px 8px 8px;
+    font-size: 15px;
+  /*  margin: 10px 0;*/
+    padding: 17px 10px;
+    width: 240px;
+	height:12px;
+}
+#middle
+{
+	margin:0 auto;
+	overflow:hidden;
+	text-align:center;
+}
+#searcharea {
+    float: right;
+    padding: 15px 15px 0 0;
+}
+/*.admintitle
+{
+	font-size:20px;
+	padding-left:28px;
+	color:#FFF;
+	font-weight:bold;
+}
+#adminleftside {
+    background: url(../img/bg_leftside.png) repeat-x scroll center top #525252;
+    border-right: 1px solid #FFFFFF;
+    height: 100%;
+    padding-top: 10px;
+    position: absolute;
+    top: 73px;
+    width: 225px;
+}
+.user, .notifications {
+    background: url(../img/bg_left_spacer.png) repeat-x scroll center bottom transparent;
+    color: #CCCCCC;
+    overflow: auto;
+    padding: 15px;
+    text-shadow: 1px 1px 1px #111111;
+    width: 195px;
+}
+.user img {
+	float: left; margin: 5px 15px 10px 0;
+	}
+.username {
+color: #fff; font-size: 18px; 
+font-weight:700; 
+letter-spacing: -1px;
+padding-bottom: 5px;
+				}
+.userbtn {
+text-shadow: none;
+float: left;
+padding-right: 5px; 
+ text-align: center;
+				  }
+.userbtn a {
+display: block;
+color: #000; 
+text-shadow: 1px 1px 1px #eee; 
+ width: 58px; background: #ccc url(../img/bg_btn_grey_sml.png) repeat-x top; 
+border: 1px solid #000; padding: 2px 0; 
+ text-decoration: none; 
+ border-radius: 5px; -moz-border-radius: 5px;
+					 }
+.userbtn a:hover {
+						color: #fff; background: 
+						#eee url(../img/bg_btn_grey_sml.png) 0 -30px; 
+						text-shadow: none;
+						}
+		
+		/* Side Notifications Link */
+		
+		.notifications a {
+			text-decoration: none; 
+			font-weight: 700; 
+			color: #fff;
+			}
+		.notifycount {float: left; width: 35px; height: 35px; text-align: center; font-size: 18px;  display: block; line-height: 1.6em; margin-right: 10px; letter-spacing: -1px;}
+	
+	/* Navigation Elements */
+	
+ul.navigation {width: 225px; color: #fff;}
+ul.navigation li a {text-shadow: 1px 1px 1px #222; background: url(../img/bg_navigation_link.png) repeat-x top; outline: none; width: 205px; display: block; color: #fff; text-decoration: none; padding: 10px; height: 15px;}
+ul.navigation li a:hover {color: #ccc; background: #333;}
+
+#nav2 ul {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+ul#nav2 li a.heading, a.expanded{
+background: url(../img/bg_navigation.png) repeat scroll 0 -76px transparent;
+}
+
+ul#nav2 li a.heading, a.collapsed, a.expanded, ul.navigation li.selected{line-height: 1.2em; width: 205px; font-size: 16px; font-weight: 700; padding: 9px 10px; display: block; color: #fff; cursor: pointer;}
+ul.navigation li.selected {width: 226px; z-index: 2; position: relative; padding: 10px;}
+
+.notifycount {background: url(../img/bg_notify_count.png) no-repeat top;}
+.hoverimg {
+background: none repeat scroll 0 0 #CCCCCC;
+float: left;
+padding: 3px;
+}
+
+
+ul#nav li a.heading, a.collapsed, a.expanded, ul.navigation li.selected {
+background: url(../img/bg_navigation_selected.png) no-repeat scroll -1px 0 transparent;
+border: medium none;
+}
+
+ul#nav2 li a.heading, a.collapsed{
+    background: url(../img/bg_navigation.png) no-repeat scroll center top transparent;
+    border-bottom: 1px solid #006F93;
+    border-top: 1px solid #2DABD5;
+    text-shadow: 1px 1px 1px #0D2C35;
+	text-decoration:none;
+	
+}
+
+*/

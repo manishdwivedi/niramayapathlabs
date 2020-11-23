@@ -1,0 +1,209 @@
+/*****layout starts*****/
+
+#outerContainer{float:left; width:100%;}
+#layout{width:1000px; margin:0 auto;}
+a{ color:#68B323;}
+a:hover{ color:#f4a100;}
+.marLeftNone{ margin-left:0px  !important;}
+.marLeft5{ margin-left:5px;}
+
+/*****header starts*****/
+
+#header{float:left; width:100%;}
+#header .menuDiv{float:left; width:100%; background:url(..../img/frontend/top-Header-Bg.gif) no-repeat 0 0 #68b323; padding:6px 0px; }
+#header .menuBoxShadow{float:left; width:100%; background:url(../img/frontend/menu-shadow.gif) no-repeat center top; height:17px; margin:1px 0 0 0; }
+#header .menuDiv .menuBox{margin:0 auto; width:1000px; background:url(../img/frontend/menu-bg.gif) repeat-x 0 0 #f8f8f8; height:38px; border-radius:3px;}
+#header .menuDiv .menuBox ul{ float:left; width:auto; list-style:none; margin:7px 0 0 0;}
+#header .menuDiv .menuBox ul li{ float:left; width:auto; background:url(../img/frontend/menu-bullet.gif) no-repeat 0 8px; font: normal 18px Times; padding:0 32px; text-transform:uppercase;}
+#header .menuDiv .menuBox ol{ float:left; width:auto; list-style:none; margin:7px 0 0 0;}
+#header .menuDiv .menuBox ol li{ float:left; width:auto; background:url(../img/frontend/menu-bullet.gif) no-repeat 0 8px; font: normal 18px Times; padding:0 18px; text-transform:uppercase;}
+#header .menuDiv .menuBox .poweredBy{ float:left; border-left:solid 1px #c5c5c5; padding:0 0 0 10px; margin:4px 0 0 0; height:30px;}
+
+
+
+
+#header .menuDiv .menuBox a{ color:#333; text-decoration:none;}
+#header .menuDiv .menuBox a:hover{ color:#f7a900; text-decoration:none;}
+#header .logoSection{float:left; width:100%;}
+#header .logoSection .innerDiv{ margin:0 auto; width:1000px;}
+#header .logoSection .innerDiv .logo{ float:left; width:auto;}
+#header .logoSection .innerDiv .banner{ float:right; width:auto; }
+#header .logoSection .innerDiv .banner img{ border-radius:4px;}
+#header .logoSection .innerDiv .powered{ float:right; width:auto; margin:15px 0 0 0;}
+#header .logoSection .innerDiv .powered span{ float:left; width:auto; margin:7px 0 0 0;}
+#header .logoSection .innerDiv .powered .right{ float:left; width:auto; margin:0 0 0 10px; display:inline;}
+#header .logoSection .innerDiv .powered .right img{ float:left; width:auto;}
+#header .logoSection .innerDiv .powered .right ul{ float:left; width:auto; list-style:none; clear:both;}
+#header .logoSection .innerDiv .powered .right ul li{ float:left; width:auto;  background:url(../img/frontend/orange-tick.gif) no-repeat 0 7px; padding: 0 0 0 15px; margin:4px 0 0 0; clear:both; font:bold 14px Times; color:#4e4e4e;}
+
+/*****header starts*****/
+
+
+/*****Banner Part:Start*****/
+
+#banner { float:left; width:100%; background:url(../img/frontend/banner-bg.gif) repeat-x 0 0; height:293px; margin:10px 0 0 0;}
+#banner .bannerInnerDiv{ margin:0 auto; width:1000px;}
+#banner .bannerInnerDiv .bannerbox{ float:left;  margin:15px 0 0 0; width:1000px; position:relative;}
+#banner .bannerInnerDiv .bannerbox .pageing{ float:left; width:auto; position:absolute; top:155px; left:450px;}
+#banner .bannerInnerDiv .bannerbox .pageing img{ float:left; width:auto; margin:0 0 0 5px;}
+
+/*****Banner Part:End*****/
+
+
+/*****Packages Part:Start*****/
+
+#packages { float:left; width:100%; border-top: solid 3px #68b323; margin:2px 0 0 0;}
+#packages .packagesInnerDiv{ margin:0 auto; width:1000px; position:relative;}
+#packages .packagesInnerDiv .rightPart{ float:right; width:430px; background:url(../img/frontend/boxShadow.gif) no-repeat center bottom; padding-bottom:9px;}
+#packages .packagesInnerDiv .rightPart .box{float:left; width:424px; border:solid 3px #68b323; border-top:none; padding-bottom:10px;}
+#packages .packagesInnerDiv .rightPart .box h1{float:left; width:424px; background:#68b323; text-align:center; font:normal 18px Times; color:#fff; padding:3px 0; text-transform:uppercase;}
+#packages .packagesInnerDiv .rightPart .box .testBox{float:left; width:424px; margin: 5px 0 0 0px; display:inline;}
+#packages .packagesInnerDiv .rightPart .box .testBox .opt{float:left; width:195px; border-right: solid 1px #68b323; margin:0 0 0 15px; display:inline;}
+#packages .packagesInnerDiv .rightPart .box .testBox .opt .heading{float:left; width:190px;}
+#packages .packagesInnerDiv .rightPart .box .testBox .opt .heading .radioBtn{float:left; width:auto; height:auto; padding:0px; margin:2px 0 0 0;}
+#packages .packagesInnerDiv .rightPart .box .testBox .opt .heading h6{float:left; width:auto; margin:0 0 0 5px; display:inline; font:bold 14px times; color:#333;}
+#packages .packagesInnerDiv .rightPart .box .testBox .opt p{float:left; width:auto; clear:both; margin:3px 0 0 0;}
+#packages .packagesInnerDiv .rightPart .box .testBox .selectBox{float:left; width:400px; border: solid 1px #d2d2d2; margin:10px 0 0 15px; display:inline; padding:3px; font:normal 12px arial; color:#666;}
+#packages .packagesInnerDiv .leftBox{ float:left; width:250px; height:205px; background:#fff; position:absolute; top:-105px; left:0px; box-shadow: 0 0 8px #b5b5b5;}
+#packages .packagesInnerDiv .leftBox .innerDiv{ float:left; width:220px; margin:18px 0 0 15px; display:inline;}
+#packages .packagesInnerDiv .leftBox .innerDiv p{ float:left; width:220px; margin:10px 0 0 0; text-align:justify;}
+ h1{ float:left; width:220px; text-transform:uppercase; font:normal 20px times; color:#000;}
+.green{ color:#68b323;}
+#packages .packagesInnerDiv .leftBox .innerDiv form{ float:left; width:auto; }
+#packages .packagesInnerDiv .leftBox .innerDiv form .textBox{ float:left; width:212px; border:solid 1px #c7c7c7; padding:3px; height:18px; margin-top:10px; font:normal 11px arial; }
+.rightBotton{ float:right; margin:10px 0 0 0;}
+.leftPost{ left:280px !important;}
+#packages .packagesInnerDiv .leftBox .innerDiv ul{ float:left; width:220px; list-style:none; margin:5px 0 0 0;}
+#packages .packagesInnerDiv .leftBox .innerDiv ul li{ float:left; width:205px; background:url(../img/frontend/green-bullet.gif) no-repeat 0 12px; padding: 7px 0 7px 15px; border-bottom:dotted 1px #666;}
+#packages .packagesInnerDiv .leftBox .innerDiv ul li a{ color:#ec9901;}
+#packages .packagesInnerDiv .leftBox .innerDiv ul li a:hover{ color:#68b323;}
+
+/*****Packages Part:End*****/
+
+
+/*****Body Part:Start*****/
+
+#bodyPart{ float:left; width:100%; }
+#bodyPart .bodyInnerDiv{width:1000px; margin:0 auto;}
+#bodyPart .bodyInnerDiv .breadcrumbs{ float:left; width:1000px; margin:0 0 20px 0;}
+#bodyPart .bodyInnerDiv .tableDiv{ float:left; width:1000px; margin:20px 0 0 0; background:#dddddd;}
+#bodyPart .bodyInnerDiv .tableDiv table th{ background:#ededed; border-top: solid 1px #fff; border-bottom: solid 1px #fff; padding:15px 0;}
+#bodyPart .bodyInnerDiv .tableDiv table th span{ margin:0 0 0 15px; font:normal 17px arial; color:#000; text-shadow:1px 1px 0px #999; float:left;}
+#bodyPart .bodyInnerDiv .tableDiv table td{ background:#fff; padding:10px 0; text-align:center;}
+#bodyPart .bodyInnerDiv .tableDiv table td h5{ width:auto; margin:0 10px 0 10px; display:inline; clear:both; color:#6cac30; float:left; font:bold 13px arial;}
+#bodyPart .bodyInnerDiv .tableDiv table td p{ width:auto; margin:3px 10px 0 10px; display:inline; clear:both; text-align:justify; float:left;}
+#bodyPart .bodyInnerDiv .tableDiv table td .price{width:auto; margin:0 0 0 10px; color:#6cac30; float:left; font:bold 17px arial;}
+
+#pagination{ float:right; width:auto; margin:15px 0 0 0;}
+#pagination span{ float:left; width:auto; padding:3px 10px; border-left: solid 1px #ddd; font: bold 11px arial;}
+.activePage{ background:url(../img/frontend/activeBg.gif) no-repeat center center;}
+.current{ background:url(../img/frontend/activeBg.gif) no-repeat center center;}
+
+
+#bodyPart .bodyInnerDiv .breadcrumbs .home{ float:left; width:auto;  background:url(../img/frontend/home-icon.gif) no-repeat 0 0; padding:2px 0 0 22px;}
+#bodyPart .bodyInnerDiv .breadcrumbs .bread{ float:left; width:auto;  background:url(../img/frontend/green-arrow.gif) no-repeat 0 0; padding:0px 0 0 15px; margin:5px 0 0 10px; line-height:10px;}
+#bodyPart .bodyInnerDiv .breadcrumbs a{ clear:#71b831;}
+.back{ width:auto;  background:url(../img/frontend/back.gif) no-repeat 0 0; padding:0px 0 0 12px; margin:5px 0 0 10px; line-height:10px;}
+#bodyPart .bodyInnerDiv h1{ float:left; width:1000px; font:normal 22px times;}
+#bodyPart .bodyInnerDiv h2{ float:left; width:1000px; margin:20px 0 0 0; font:normal 21px times;}
+#bodyPart .bodyInnerDiv ul{ float:left; width:auto; list-style:none;}
+#bodyPart .bodyInnerDiv ul li{ float:left; width:auto; text-align:justify; clear:both; margin:15px 0 0 0; padding:0 0 0 15px; background:url(../img/frontend/green-bullet.gif) no-repeat 0 3px;}
+#bodyPart .bodyInnerDiv p{ float:left; width:1000px; margin:10px 0 0 0; padding-bottom:5px; text-align:justify; line-height:18px;}
+#bodyPart .bodyInnerDiv .subheading{ float:left; width:auto; margin:25px 0 0 0; font:normal 17px arial; clear:both; text-decoration:underline;}
+#bodyPart .bodyInnerDiv .detailsDiv{ float:left; width:auto; margin:20px 0 0 0; clear:both;}
+#bodyPart .bodyInnerDiv .detailsDiv .leftDiv{ float:left; width:400px;}
+#bodyPart .bodyInnerDiv .detailsDiv .leftDiv .row{ float:left; margin:10px 0 0 0; width:400px;}
+#bodyPart .bodyInnerDiv .detailsDiv .leftDiv .row .leftLavel{ float:left;  width:120px; font-weight:bold;}
+#bodyPart .bodyInnerDiv .detailsDiv .leftDiv .row .mid{ float:left;  width:30px; font-weight:bold;}
+#bodyPart .bodyInnerDiv .detailsDiv .leftDiv .row .rightDetails{ float:left;  width:auto; width:245px;}
+#bodyPart .bodyInnerDiv .detailsDiv .midDiv{ float:left; width:250px; margin:0 0 0 30px; display:inline;}
+#bodyPart .bodyInnerDiv .detailsDiv .midDiv .row{ float:left; margin:10px 0 0 0; width:250px;}
+#bodyPart .bodyInnerDiv .detailsDiv .midDiv .row .leftLavel{ float:left;  width:90px; font-weight:bold;}
+#bodyPart .bodyInnerDiv .detailsDiv .midDiv .row .mid{ float:left;  width:30px; font-weight:bold;}
+#bodyPart .bodyInnerDiv .detailsDiv .midDiv .row .rightDetails{ float:left;  width:auto;}
+#bodyPart .bodyInnerDiv .detailsDiv .rightDiv { float:left;  width:auto; margin:0 0 0 20px; display:inline;}
+#bodyPart .bodyInnerDiv .detailsDiv .rightDiv  img{ margin:10px 0 0 0; float:left; clear:both;}
+
+#bodyPart .bodyInnerDiv .formDiv{ float:left; margin:10px 0 0 0; width:1000px;}
+#bodyPart .bodyInnerDiv .formDiv .row{ float:left; margin:15px 0 0 0; width:auto; }
+#bodyPart .bodyInnerDiv .formDiv .row .leftrow{ float:left; width:auto; }
+#bodyPart .bodyInnerDiv .formDiv .row .leftrow .inputBox{ float:left; width:390px; border:solid 1px #ddd; background:#fff; height:18px; padding:3px; color:#9d9d9d; }
+#bodyPart .bodyInnerDiv .formDiv .row .leftrow .textBox{ float:left; width:390px; border:solid 1px #ddd; background:#fff; padding:3px; color:#9d9d9d; font:normal 12px arial; resize:none;}
+#bodyPart .bodyInnerDiv .formDiv .row .rightrow{ float:left; width:auto; margin:0 0 0 30px; display:inline; }
+#bodyPart .bodyInnerDiv .formDiv .row .rightrow .inputBox{ float:left; width:390px; border:solid 1px #ddd; background:#fff; height:18px; padding:3px; color:#9d9d9d; }
+
+#bodyPart .bodyInnerDiv .formDiv .row .rightrow .salectBox{ float:left; width:398px; border:solid 1px #ddd; background:#fff; height:26px; padding:3px; color:#9d9d9d; }
+#bodyPart .bodyInnerDiv .formDiv .row .rightrow .calander{ float:left; width:auto; background:url(../img/frontend/calandericon.gif) left top no-repeat; padding:4px 0 4px 30px; margin:0 0 0 10px;}
+#bodyPart .bodyInnerDiv .bottomShadow{ float:left; width:1000px;  background:url(../img/frontend/menu-shadow.gif) no-repeat top center; margin:40px 0 20px 0; height:17px; }
+#bodyPart .bodyInnerDiv .cont{ float:left; width:1000px; margin:20px 0 0 0;}
+#bodyPart .bodyInnerDiv .cont .leftPart{ float:left; width:522px; border:solid 1px #dbdbdb;}
+#bodyPart .bodyInnerDiv .cont .rightPart{ float:right; width:435px; text-align:justify; line-height:22px; color:#272727;}
+#bodyPart .bodyInnerDiv .cont .rightPart img{ float:left; width:215px; height:97px; border-radius:5px; margin:0 10px 10px 0; }
+#bodyPart .bodyInnerDiv .cont .rightPart .readMore{ float:right; width:auto; margin:20px 0 0 0;}
+#bodyPart .bodyInnerDiv .cont .testimonialBox{ float:left; width:524px;}
+#bodyPart .bodyInnerDiv .cont .testimonialBox h1{ float:left; width:auto; font:normal 25px times; color:#000;}
+#bodyPart .bodyInnerDiv .cont .testimonialBox .testimonialDiv{ float:left; width:522px; border:solid 1px #dbdbdb; margin:10px 0 0 0; padding-bottom:17px;}
+#bodyPart .bodyInnerDiv .cont .testimonialBox .testimonialDiv .box{ float:left; width:490px; margin:20px 0 0 17px; display:inline;}
+#bodyPart .bodyInnerDiv .cont .testimonialBox .testimonialDiv .box img{ float:left; width:67px; height:67px; border:solid 2px #68B323;}
+#bodyPart .bodyInnerDiv .cont .testimonialBox .testimonialDiv .box .contDiv{ float:right; width:395px;}
+#bodyPart .bodyInnerDiv .cont .testimonialBox .testimonialDiv .box .contDiv .name{ float:left; width:auto; font:bold 13px arial; clear:both;}
+#bodyPart .bodyInnerDiv .cont .testimonialBox .testimonialDiv .box .contDiv p{ float:left; width:auto; text-align:justify; margin:5px 0 0 0; color:#838383; line-height:16px; clear:both;}
+#bodyPart .bodyInnerDiv .cont .callBack{ float:right; width:435px;}
+#bodyPart .bodyInnerDiv .cont .callBack h1{ float:left; width:auto; font:normal 25px times; color:#000;}
+#bodyPart .bodyInnerDiv .cont .callBack .formDiv{ float:left; width:433px; border:solid 1px #dbdbdb; margin:10px 0 0 0; padding-bottom:13px;}
+#bodyPart .bodyInnerDiv .cont .callBack .formDiv .formArea{ float:left; width:395px; margin:3px 0 0 18px; display:inline;}
+#bodyPart .bodyInnerDiv .cont .callBack .formDiv .formArea .inputBox{ float:left; width:373px; padding:3px 8px; border:solid 1px #dbdbdb; height:18px; font:normal 12px arial; color:#828282; margin:13px 0 0 0; outline:none;}
+ #bodyPart .bodyInnerDiv .cont .callBack .formDiv .formArea .textArea{ float:left; width:373px; padding:3px 8px; border:solid 1px #dbdbdb; font:normal 12px arial; color:#828282; margin:15px 0 0 0; resize:none; outline:none;}
+
+/*****Body Part:End*****/
+
+
+/*****Footer Part:Start*****/
+
+#footer{ float:left; width:100%; margin:20px 0 0 0; background:url(../img/frontend/footerTopShadow.gif) no-repeat top center; padding:17px 0 0 0;}
+#footer .footerTop{ float:left; width:100%; background:url(../img/frontend/footer-top-bg.gif) repeat-x 0 0 #68b323; min-height:177px;}
+#footer .footerTop .topInnerDiv{ width:1000px; margin:0 auto;}
+#footer .footerTop .topInnerDiv a{ color:#fff;}
+#footer .footerTop .topInnerDiv .box{ float:left; border-right:dotted 1px #fff; min-height:177px; margin:0 0 0 50px; display:inline;}
+#footer .footerTop .topInnerDiv .box h1{ float:left; width:auto; color:#eeff32; margin:25px 0 0 0; font:normal 22px times; clear:both;}
+#footer .footerTop .topInnerDiv .box ul{ float:left; list-style:none; width:auto; clear:both;} 
+#footer .footerTop .topInnerDiv .box ul li{ float:left; width:auto; clear:both; margin:12px 0 0 0; color:#FFF;}
+#footer .footerTop .topInnerDiv .box .socicalDiv{ float:left; clear:both; margin:15px 0 0 0;}
+#footer .footerTop .topInnerDiv .box .socicalDiv .socicalIcon{ float:left; width:34px;  background:url(../img/frontend/socical-icon-shadow.gif) no-repeat left bottom; padding-bottom:13px; margin:0 0 0 5px; display:inline;}
+#footer .footerBottom{ float:left; width:100%; padding:11px 0;} 
+#footer .footerBottom .bottomInnerDiv{ width:1000px; margin:0 auto;}
+.wid248{ width:248px;}
+.wid195{ width:195px;}
+.wid210{ width:210px;}
+
+
+
+#visitATest {background: #fff; border: 8px solid #727272; width:auto; position: relative; display:none; min-height:auto; z-index:999; border-radius:13px; padding:0px 25px 25px 0px;}
+#visitATest .boxDiv{ float:left; width:390px; margin:20px 0 0 25px; clear:both;}
+#visitATest .boxDiv  h5{ float:left; width:auto; font:normal 22px times; clear:both;}
+#visitATest .boxDiv  p{ float:left; width:auto; margin:8px 0 0 0; clear:both;}
+
+
+#visitATest .boxDiv .formBox{ float:left; width:390px; border-top:solid 1px #d2d2d2; margin:10px 0 0 0;}
+#visitATest .boxDiv .formBox form{ float:left; width:390px;}
+#visitATest .boxDiv .formBox form .box{width:390px; }
+#visitATest .boxDiv .formBox form .box .row{ float:left; width:390px; margin:20px 0 0 0;}
+#visitATest .boxDiv .formBox form .box .row input[type=text]{ float:left; width:380px; border:solid 1px #c9c9c9; font:normal 11px verdana; color:#666; padding:4px 3px; height:22px; border-radius:3px;}
+#visitATest .boxDiv .formBox form .box .row input[type=radio]{ float:left; width:auto; height:auto; padding:0px; margin:0px;}
+#visitATest .boxDiv .formBox form .box .row span{ float:left; width:auto; margin:0 0 0 10px ;}
+
+#visitATest {background: #fff; border: 8px solid #727272; width:auto; position: relative; display:none; min-height:auto; z-index:999; border-radius:13px; padding:0px 25px 25px 0px;}
+#visitATest .boxDiv{ float:left; width:390px; margin:20px 0 0 25px; clear:both;}
+#visitATest .boxDiv  h5{ float:left; width:auto; font:normal 22px times; clear:both;}
+#visitATest .boxDiv  p{ float:left; width:auto; margin:8px 0 0 0; clear:both;}
+
+
+#visitATest .boxDiv .formBox{ float:left; width:390px; border-top:solid 1px #d2d2d2; margin:10px 0 0 0;}
+#visitATest .boxDiv .formBox form{ float:left; width:390px;}
+#visitATest .boxDiv .formBox form .box{width:390px; }
+#visitATest .boxDiv .formBox form .box .row{ float:left; width:390px; margin:20px 0 0 0;}
+#visitATest .boxDiv .formBox form .box .row input[type=text]{ float:left; width:380px; border:solid 1px #c9c9c9; font:normal 11px verdana; color:#666; padding:4px 3px; height:22px; border-radius:3px;}
+#visitATest .boxDiv .formBox form .box .row input[type=radio]{ float:left; width:auto; height:auto; padding:0px; margin:0px;}
+#visitATest .boxDiv .formBox form .box .row span{ float:left; width:auto; margin:0 0 0 10px ;}
+
+

@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JFileUpload - FTP upload parameters</title>
+<meta name="description" content="Parameters for FTP upload" />
+<meta name="keywords" content="ftp,file transfer protocol,upload,ftps,secure,ssl,remote folder,account,resume,whitelist,size,pasv,java,jre" />
+<link href="styles/template.css" rel="stylesheet" type="text/css" />
+<link href="styles/doc.css" rel="stylesheet" type="text/css" />
+</style>
+</head>
+<body>
+<div id="containerDiv">
+  <div id="topDiv">
+  <div id="navDiv">
+  <div id="tabsDiv"><ul>
+  <li><a href="http://www.jfileupload.com/index.html" title="Home"><span>Home</span></a></li>
+  <li><a href="http://www.jfileupload.com/products/index.html" title="Products"><span>Products</span></a></li>
+  <li><a href="http://www.jfileupload.com/support/index.html" title="Support"><span>Support</span></a></li>
+  <li><a href="http://www.jfileupload.com/purchase/index.html" title="Purchase"><span>Purchase</span></a></li>
+  <li><a href="http://www.jfileupload.com/about/index.html" title="About"><span>About</span></a></li>
+  </ul></div>
+  </div>
+  </div>
+  <div id="mainDiv">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="20%" valign="top"><div id="sidebar">
+      <div id="sidebarSection">
+        <ul>
+          <li><img src="styles/bullet.gif" width="7" height="13" border="0" /><a href="software.html" title="Software"><span>Software</span></a></li>
+          <li><img src="styles/bullet.gif" width="7" height="13" border="0" /><a href="installation.html" title="Installation"><span>Installation</span></a></li>
+          <li><img src="styles/bullet.gif" width="7" height="13" border="0" /><a href="configuration_http.html" title="Parameters for HTTP"><span>HTTP Upload</span></a></li>
+          <li><img src="styles/bullet.gif" width="7" height="13" border="0" /><a href="configuration_ftp.html" title="Parameters for FTP"><span>FTP Upload</span></a></li>
+          <li><img src="styles/bullet.gif" width="7" height="13" border="0" /><a href="faq.html" title="FAQ"><span>FAQ</span></a></li>
+          <li><img src="styles/bullet.gif" width="7" height="13" border="0" /><a href="tutorials.html" title="Tutorials"><span>Tutorials</span></a></li>
+          <li><img src="styles/bullet.gif" width="7" height="13" border="0" /><a href="api.html" title="API &amp; Design"><span>API &amp; Design</span></a></li>
+        </ul>
+      </div>
+      <div id="sidebarNav"><br/><br/><a href="index.html" title="Back">&lt;&lt; Back</a></div>
+      </div>    </td>
+    <td width="80%" valign="top"><table width="98%" border="0" cellspacing="1" cellpadding="0" align="center">
+      <tr>
+        <td valign="top"><p align="center" class="mainTitle"><b>- Parameters for FTP upload -</b></p>
+            <p class="justify"><strong>H</strong>ere is the list and the meaning of all JFileUpload parameters for <strong>FTP upload</strong>. You will also find <a href="#html">HTML/JavaScript</a> sample  for Applet definition. Notice that there are two types of parameter: <a href="#regular">regular</a> and <a href="#extra">extra</a>.
+              &quot;dummy=test&quot; regular parameter is setup through &lt;PARAM NAME=&quot;dummy&quot; VALUE=&quot;test&quot;&gt;.  dummy=test  extra parameter number five is setup through &lt;PARAM NAME&quot;param5&quot; VALUE=&quot;dummy&quot;&gt; and &lt;PARAM NAME&quot;value5&quot; VALUE=&quot;test&quot;&gt;.</p>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td valign="top" class="sectionTitle"><a name="regular" id="regular"></a>JFileUpload regular parameters</td>
+              </tr>
+            </table>
+          <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td bgcolor="#CCCCCC"><table width="100%"  border="0" cellpadding="1" cellspacing="1" class="fnt">
+                  <tr bgcolor="#EEEEFF">
+                    <td align="center"><strong>Parameters</strong></td>
+                    <td align="center"><strong>Description and sample </strong></td>
+                    <td><strong>Mandatory</strong></td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">url</td>
+                    <td>FTP server URL that will process the upload.<br />
+                      For instance, ftp://ftp.mycompany.com</td>
+                    <td align="center"><span class="red">yes</span></td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">mode</td>
+                    <td>This parameter allows to select transport protocol.
+                      For FTP upload it must be &quot;ftp&quot;.</td>
+                    <td align="center"><span class="red">yes</span></td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">maxsize</td>
+                    <td>This parameter allows to limit upload size (in
+                      bytes). For instance, to avoid end-user to send
+                      more than 1MB file, use maxsize=1048576. Default
+                      maxsize is -1. It means unlimited upload size. Note
+                      that 1MB=1024*1024=1048576 bytes.</td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">maxfiles</td>
+                    <td>This parameter allows to limit number of files
+                      to upload. Default maxfiles is -1. It means unlimited
+                      files.<br />                    </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">whitelist</td>
+                    <td>This parameter allows to filter filenames to upload (*.doc, *.exe,*.gif,*.pdf ...). For instance, to allow end-user to upload microsoft excel files only, use whitelist=&quot;*.xls&quot;. For both gif and jpeg use whitelist=&quot;*.gif,*.jpg,*.jpeg&quot;.<br />                    </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">blacklist</td>
+                    <td>This parameter allows to forbid filenames to upload (*.exe, *.zip,*.mp3 ...). For instance, to disallow end-user to upload microsoft executable files, use blacklist=&quot;*.exe&quot;. Note that if you use blacklist then you cannot use whitelist parameter.<br />                    </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">policy</td>
+                    <td>This parameter allows to modify JFileUpload
+                      behavior when a file to upload does not match to
+                      whitelist or maxsize. Default value is &quot;abort&quot;,
+                      it means that upload won't proceed. &quot;ignore&quot;
+                      value means upload will proceed and unmatching files
+                      will be ignored. <br />                    </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">folderdepth</td>
+                    <td>This parameter allows to set a max depth for directories
+                      and subdirectories uploads. Default is 0, it means
+                      to not recurse subdirectories. -1 means unlimited.<br />                    </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">resume</td>
+                    <td>This parameter allows to resume broken uploads. Values could be &quot;true&quot; or &quot;false&quot;.  Default  is false. An upload is considered broken if remote file already exists and size &lt; local file size. <br />
+                      See <a href="faq.html#45">FAQ</a> to learn how it works.<br />                    </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">overwrite</td>
+                    <td>This parameter allows to define overwrite policy for duplicate file on remote server. Values could be :<br />
+                      &quot;true&quot;: Allow overwrite.<br />
+                      &quot;false&quot;: Return an error message for duplicate uploads.<br />
+                      &quot;indexrename&quot;: Rename duplicate upload such as file_1.zip<br />
+                      &quot;timerename&quot;: Rename duplicate upload such as file_mstime.zip<br />
+                      Default value is true. See <a href="faq.html#46">FAQ</a> to learn how it works.<br />                    </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">hiddenfile</td>
+                    <td>This parameter allows to &quot;accept&quot; or
+                      &quot;deny&quot; hidden files for upload. Default
+                      value is &quot;accept&quot;.<br />                    </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">template</td>
+                    <td>This parameter allows to rename files to upload with a given template. Value could be any combination of :<br />
+&nbsp;&nbsp;&quot;:filename:&quot; =&gt; Selected filename.<br />
+&nbsp;&nbsp;&quot;:name:&quot; =&gt; Selected name.<br />
+&nbsp;&nbsp;&quot;:shortname:&quot; =&gt; Selected short name. <br />
+&nbsp;&nbsp;&quot;:extension:&quot; =&gt; Selected extension.<br />
+&nbsp;&nbsp;&quot;:timestamp:&quot; =&gt; Unix-like (epoch) timestamp. <br />
+&nbsp;&nbsp;&quot;:identifier:&quot; =&gt; Auto increment integer starting at zero<br />
+&nbsp;&nbsp;or value defined by identifierinit parameter. <br />
+&nbsp;&nbsp;For instance,&nbsp;<br />
+&nbsp; template=&quot;test_:timestamp:_:name::extension:&quot;<br />
+Value could be a regular expression followed by a string that will replace characters matching to the regular expression:<br />
+&nbsp;&nbsp;&quot;:regex=<a href="http://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html" target="_blank">YourRegExpHere</a>:ReplaceString:&quot;<br />
+&nbsp;&nbsp;For instance, if you want to replace all non ASCII characters &nbsp;&nbsp;and punctuation by &quot;_&quot; then value of template will be:<br />
+&nbsp;&nbsp;&quot;:regex=[^a-zA-Z0-9_\\-\\.]:_:&quot;.;<br />If you need to apply template to folders in addition to files then add templatescope=&quot;path&quot; parameter.</td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">ziponfly</td>
+                    <td>This parameter allows to zip file on-fly before uploading. It reduces bandwidth usage but it could affect client performance because of compression process. <br />
+                      Values could be :<br />
+                      &quot;true&quot; or &quot;zip&quot; =&gt; ZIP compression<br />
+                      &quot;gzip&quot; =&gt; GZIP compression. <br />
+                      &quot;.zip&quot; or &quot;.gz&quot; extension will be appended to uploaded filename. Default value is &quot;false&quot;. Learn more in <a href="faq.html#42">FAQ</a>.<br />
+                      For overall (one ZIP archive) compression, see <a href="tutorials/compression.html">tutorial</a>.                      <br />                    </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">zipignorelist</td>
+                    <td>When ziponfly is enabled, this parameter allows to setup filenames to not zip. For instance, zipgnorelist=&quot;*.zip,*gif&quot;.</td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">zipmaxsize</td>
+                    <td>This parameter allows to limit upload size (in bytes) of compressed file. For instance, to avoid end-user to send more than 1MB file, use zipmaxsize=1048576. Default zipmaxsize is -1. It means unlimited.</td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">startdir</td>
+                    <td>This parameter allows to setup a local directory, instead of user's home, when using file browser (e.g. startdir=&quot;c:/tmp&quot;)<br /></td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">authentication</td>
+                    <td>Setup authentication=&quot;auto&quot; if you want to prompt end-user for FTP login/password instead of passing username and password in applet parameters.
+                      Default value is &quot;disabled&quot;.<br /></td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">forward</td>
+                    <td>This parameter allows to redirect to another URL
+                      once upload is completed. You could select the target
+                      frame through forwardtarget parameter (see below).<br />
+                      For instance, forward=&quot;http://yourserver.com/redirect.php&quot; <br />                    </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">forwardtarget</td>
+                    <td>When forward parameter is enabled, this parameter
+                      allows to redirect URL to a given browser frame.
+                      Use _blank for new window.<br />                    </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">forwardparameters</td>
+                    <td>When this parameter is set to true, JFileUpload
+                      appends uploaded filenames to redirect URL. For
+                      instance, &quot;?filename1=foo1.txt&amp;filename2=foo2.zip
+                      ...&quot;<br /></td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">post</td>
+                    <td>This parameter allows to send HTTP POST request
+                      once upload is completed. See <a href="faq.html#13">FAQ</a> to learn how it works.<br />
+                      For instance, post=&quot;http://yourserver.com/process.php&quot;</td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">postparameters</td>
+                    <td>This parameter allows to pass filenames uploaded
+                      in POST request above. <br />
+                      &quot;true&quot; means &quot;filename1=foo1.txt&amp;filename2=foo2.zip...&quot;<br />
+                      &quot;long&quot; means &quot;filename1=/home/usr1/foo1.txt&amp;filename2=...&quot;<br />
+                      &quot;extra&quot; is same as long with filesize, last modified timestamp and extra parameters. See <a href="tutorials/redirect.html">tutorial</a> to learn more.</td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">retry</td>
+                    <td>This parameter allows to retry current upload when underlying socket  fails (bad networks, connection timeout). For instance, to enable 3 retry attempts =&gt; retry=&quot;3&quot;</td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">retrydelay</td>
+                    <td>This parameter allows to setup delay in seconds between each retry attempts. Default is 2 seconds. </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">preferences</td>
+                    <td>Use preferences=&quot;true&quot; to enable persistent preferences such as last directory opened. </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">timeout</td>
+                    <td>This advanced parameter allows to modify underlying
+                      socket timeout in milliseconds.</td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">socksproxyhost</td>
+                    <td>This advanced parameter allows to setup SOCKS
+                      proxy host. <br /></td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">socksproxyport</td>
+                    <td>This parameter allows to setup SOCKS proxy port.</td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">resources</td>
+                    <td>This advanced parameter allows to select a custom
+                      properties file including all resources (messages,
+                      errors, menu, items, colors) to be displayed. See
+                      internationalization section in <a href="faq.html#19">FAQ</a> to learn more.</td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">localeresources</td>
+                    <td>This advanced parameter allows to load resources based end-user locale/country code. Default is true. </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">verbosemode</td>
+                    <td>This advanced parameter allows enabling applet traces for debugging purposes:<br />
+                      &quot;debug&quot; =&gt; Debug traces are displayed in Java console.<br /></td>
+                    <td align="center">no</td>
+                  </tr>
+              </table></td>
+            </tr>
+          </table>
+          <br />
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td valign="top" class="sectionTitle"><a name="extra" id="extra"></a>JFileUpload extra parameters</td>
+            </tr>
+          </table>
+          <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td bgcolor="#CCCCCC"><table width="100%"  border="0" cellpadding="1" cellspacing="1" class="fnt">
+                  <tr bgcolor="#EEEEFF">
+                    <td align="center"><strong>Extra<br />
+                      parameters</strong></td>
+                    <td align="center"><strong>Description and sample </strong></td>
+                    <td><strong>Mandatory</strong></td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">paramX and valueX
+                      pair</td>
+                    <td>Additional
+                      parameters could be passed to FTP server through
+                      paramX, valueX (with X in [1,16]). For instance
+                      to pass anonymous login then use param1=username,
+                      value1=anonymous. See below for all supported extra
+                      parameters.</td>
+                    <td align="center">no.</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">username</td>
+                    <td>This parameter allows to pass username when connecting
+                      to FTP server. </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">password</td>
+                    <td>This parameter allows to pass password when connecting
+                      to FTP server. </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">account</td>
+                    <td>This parameter allows to pass initial remote directory
+                      name when connecting to FTP server. For instance,
+                      param3=account and value3=dirname/subdir. Folder
+                      must be relative to FTP root folder. </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">accountcreation</td>
+                    <td>Depending on account parameter above, this parameter allows to enable/disable initial remote directory creation on FTP server if it is not available. For instance, param4=accountcreation and value4=true. Default value is false. </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">accountcreationchmod</td>
+                    <td>This parameter allows to run a unix chmod command on the folder created with account and accountcreation parameters. For instance, to set all unix permissions to rwx then param5=accountcreationchmod, value5=777.</td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">accountpwd</td>
+                    <td>This parameter allows to send a PWD command to FTP server before uploading. It uses the returned working directory to prefix CWD commands.</td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">relativefilename</td>
+                    <td>When this parameter is set to true, JFileUpload
+                      will try to create folders and subfolders structure
+                      on FTP server when uploading directories. Default
+                      value is &quot;false&quot;. Learn more in <a href="faq.html#10">FAQ</a>.</td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">pasv</td>
+                    <td>This parameter allows to enable/disable passive
+                      mode for FTP commands. To enable PASV mode then
+                      setup value to true. For instance, param4=pasv,
+                      value4=true. Default value is false. </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">sitecommand</td>
+                    <td>This advanced parameter allows to pass a SITE
+                      ftp command after connection and authentication.</td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">deleteonfail</td>
+                    <td>This parameter allows to delete uncomplete file on FTP server when upload is cancelled or failed. Default value is &quot;false&quot;. </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">chmodafterupload</td>
+                    <td>This parameter allows to run a unix chmod command for each file uploaded. For instance, to set all unix permissions to rwx then param5=chmodafterupload, value5=777.</td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">resumecommand</td>
+                    <td>This parameter allows to send an APPE command when resuming. It helps for FTP servers that don't support REST + STOR commands. Enable it with resumecommand=&quot;append&quot;. </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">remoteverification</td>
+                    <td>This parameter allows to enable/disable remote host connections verification.  It should help when getting &quot;Host attempting data connection ip address is not same as server&quot; issue.
+                      Disable verification with remoteverification=&quot;false&quot;. Default is value is &quot;true&quot;. </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">commandmonitor</td>
+                    <td>This parameter allows to send NOOP command periodically while uploading. It can avoid FTP command channel timeout for long upload. Such feature is not supported by all FTP servers. Period is in seconds, for 5 minutes use commandmonitor=&quot;300&quot;.</td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">ftpsmode</td>
+                    <td>This advanced parameter allows to select FTPS explicit or implicit TLS/SSL connection mode. Value could be :<br />
+                      &nbsp;auth_tls : AUTH TLS command is sent  before SSL handshake. <br />
+                      &nbsp;auth_ssl : AUTH SSL command is sent  before SSL handshake.<br />
+                      &nbsp;ssl_connect : Connection starts with a SSL handshake.<br />
+                      Default value is auth_tls  when FTPS is enabled. </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="even">
+                    <td align="center">ftpsprot</td>
+                    <td>This advanced parameter allows to disable/enable channel protection on FTPS transfer. Values could be :<br />
+                      &nbsp;prot_p : Protection channel enabled.<br />
+                      &nbsp;prot_c : Protection channel not enabled.<br />
+                      Default value is prot_p when FTPS is enabled. </td>
+                    <td align="center">no</td>
+                  </tr>
+                  <tr class="odd">
+                    <td align="center">ftpsession</td>
+                    <td>This advanced parameter allows to not close FTP connection after transfer. Next transfer will reuse the existing FTP session. Enable it with ftpsession=&quot;true&quot; and add the following regular parameter: concurrency=&quot;1&quot;</td>
+                    <td align="center">no</td>
+                  </tr>
+              </table></td>
+            </tr>
+          </table>
+          <br/>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td valign="top" class="sectionTitle"><a name="html" id="html"></a>JFileUpload HTML and JavaScript declaration sample</td>
+              </tr>
+            </table>
+           <strong>B</strong>elow the code you need to copy/paste in your HTML source to use JFileUpload applet: <br />
+           <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+             <tr>
+               <td bgcolor="#EEEEEE" class="sfnt"><span class="darkgreen">&lt;!-- JFileUpload Applet : Begin copy/paste --&gt;</span><br />
+                   <span class="darkblue">&lt;script src=&quot;applet_ftp.js&quot;&gt;&lt;/script&gt;</span><br />
+                   <span class="darkgreen">&lt;!-- JFileUpload Applet : End copy/paste --&gt;</span></td>
+             </tr>
+           </table>
+           <br />
+           <strong>C</strong>opy <strong>applet_ftp.js</strong> javascript file in the same folder as your HTML file. Setup parameters (according to table above) in blue. Notice that all parameters need to be setup twice (it allows cross-browsers support).<br />
+           <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+             <tr>
+               <td bgcolor="#EEEEEE" class="sfnt"><p><span class="darkgreen">&lt;!--</span><br />
+                 var _info = navigator.userAgent;<br />
+                 var _ns = false;<br />
+                 var _ns6 = false;<br />
+                 var _ie = (_info.indexOf(&quot;MSIE&quot;) &gt; 0 &amp;&amp;
+                 _info.indexOf(&quot;Win&quot;) &gt; 0 &amp;&amp; _info.indexOf(&quot;Windows
+                 3.1&quot;) &lt; 0);<br />
+                 if (_info.indexOf(&quot;Opera&quot;) &gt; 0) _ie = false;<br />
+                 var _ns = (navigator.appName.indexOf(&quot;Netscape&quot;)
+                 &gt;= 0 &amp;&amp; ((_info.indexOf(&quot;Win&quot;)
+                 &gt; 0 &amp;&amp; _info.indexOf(&quot;Win16&quot;) &lt;
+                 0) || (_info.indexOf(&quot;Sun&quot;) &gt; 0) || (_info.indexOf(&quot;Linux&quot;)
+                 &gt; 0) || (_info.indexOf(&quot;AIX&quot;) &gt; 0) ||
+                 (_info.indexOf(&quot;OS/2&quot;) &gt; 0) || (_info.indexOf(&quot;IRIX&quot;)
+                 &gt; 0)));<br />
+                 var _ns6 = ((_ns == true) &amp;&amp; (_info.indexOf(&quot;Mozilla/5&quot;)
+                 &gt;= 0));<br />
+                 if (_ie == true) {<br />
+                 document.writeln('&lt;OBJECT classid=&quot;clsid:8AD9C840-044E-11D1-B3E9-00805F499D93&quot; <font color="#000099">WIDTH=&quot;250&quot; HEIGHT=&quot;250&quot;</font> NAME=&quot;fileupload&quot; codebase=&quot;http://java.sun.com/update/1.4.2/jinstall-1_4-windows-i586.cab#Version=1,4,0,0&quot;&gt;');<br />
+                 }<br />
+                 else if (_ns == true &amp;&amp; _ns6 == false) { <br />
+                 <font color="#006600">// BEGIN: Update parameters below
+                   for NETSCAPE 3.x and 4.x support.</font><br />
+                 document.write('&lt;EMBED ');<br />
+                 document.write('type=&quot;application/x-java-applet;version=1.4&quot;
+                 ');<br />
+                 document.write('CODE=&quot;jfileupload.upload.client.MApplet.class&quot;
+                 ');<br />
+                 document.write('JAVA_CODEBASE=&quot;./&quot; ');<br />
+                 document.write('ARCHIVE=&quot;lib/jfileupload.jar,lib/ftpimpl.jar,lib/cnet.jar,lib/clogging.jar&quot;
+                 ');<br />
+                 document.write('NAME=&quot;fileupload&quot; ');<br />
+                 document.write('<font color="#000099">WIDTH=&quot;250&quot;</font> ');<br />
+                 document.write('<font color="#000099">HEIGHT=&quot;250&quot;</font> ');<br />
+                 document.write('<font color="#000099">url=&quot;ftp://localhost&quot;</font> ');<br />
+                 document.write('<font color="#000099">param1=&quot;username&quot;</font> ');<br />
+                 document.write('<font color="#000099">value1=&quot;anonymous&quot;</font> ');<br />
+                 document.write('<font color="#000099">param2=&quot;password&quot;</font> ');<br />
+                 document.write('<font color="#000099">value2=&quot;something@somewhere.com&quot;</font> ');<br />
+                 document.write('<font color="#000099">mode=&quot;ftp&quot;</font> ');<br />
+                 document.write('scriptable=true ');<br />
+                 document.writeln('pluginspage=&quot;http://java.sun.com/products/plugin/index.html#download&quot;&gt;&lt;NOEMBED&gt;');<br />
+                 <font color="#006600">// END</font><br />
+                 }<br />
+                 else {<br />
+                 document.write('&lt;APPLET CODE=&quot;jfileupload.upload.client.MApplet.class&quot;
+                 JAVA_CODEBASE=&quot;./&quot; ARCHIVE=&quot;lib/jfileupload.jar,lib/ftpimpl.jar,lib/cnet.jar,lib/clogging.jar&quot; <font color="#000099">WIDTH=&quot;250&quot; HEIGHT=&quot;250&quot;</font> NAME=&quot;fileupload&quot;&gt;');<br />
+                 }<br />
+                 <font color="#006600">// BEGIN: Update parameters below
+                   for INTERNET EXPLORER, FIREFOX, SAFARI, OPERA, MOZILLA,
+                   NETSCAPE 6+ support.</font><br />
+                 document.writeln('&lt;PARAM NAME=CODE VALUE=&quot;jfileupload.upload.client.MApplet.class&quot;&gt;');<br />
+                 document.writeln('&lt;PARAM NAME=CODEBASE VALUE=&quot;./&quot;&gt;');<br />
+                 document.writeln('&lt;PARAM NAME=ARCHIVE VALUE=&quot;lib/jfileupload.jar,lib/ftpimpl.jar,lib/cnet.jar,lib/clogging.jar&quot;&gt;');<br />
+                 document.writeln('&lt;PARAM NAME=NAME VALUE=&quot;fileupload&quot;&gt;');<br />
+                 document.writeln('&lt;PARAM NAME=&quot;type&quot; VALUE=&quot;application/x-java-applet;version=1.4&quot;&gt;');<br />
+                 document.writeln('&lt;PARAM NAME=&quot;scriptable&quot;
+                 VALUE=&quot;true&quot;&gt;');<br />
+                 document.writeln('<font color="#000099">&lt;PARAM NAME=&quot;url&quot;
+                   VALUE=&quot;ftp://localhost&quot;&gt;</font>');<br />
+                 document.writeln('<font color="#000099">&lt;PARAM NAME=&quot;param1&quot;
+                   VALUE=&quot;username&quot;&gt;</font>');<br />
+                 document.writeln('<font color="#000099">&lt;PARAM NAME=&quot;value1&quot;
+                   VALUE=&quot;anonymous&quot;&gt;</font>');<br />
+                 document.writeln('<font color="#000099">&lt;PARAM NAME=&quot;param2&quot;
+                   VALUE=&quot;password&quot;&gt;</font>');<br />
+                 document.writeln('<font color="#000099">&lt;PARAM NAME=&quot;value2&quot;
+                   VALUE=&quot;something@somewhere.com&quot;&gt;</font>');<br />
+                 document.writeln('<font color="#000099">&lt;PARAM NAME=&quot;mode&quot;
+                   VALUE=&quot;ftp&quot;&gt;</font>');<br />
+                                  <font color="#006600">// END</font><br />
+                 if (_ie == true) {<br />
+                 document.write('&lt;/OBJECT&gt;');<br />
+                 }<br />
+                 else if (_ns == true &amp;&amp; _ns6 == false) {<br />
+                 document.write('&lt;/NOEMBED&gt;&lt;/EMBED&gt;');<br />
+                 }<br />
+                 else {<br />
+                 document.write('&lt;/APPLET&gt;');<br />
+                 }<br />
+                 <span class="darkgreen">//--&gt;</span></p></td>
+             </tr>
+           </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  </table>
+  </div>
+  <div id="bottomDiv">
+    <p><a href="http://java.sun.com" target="_blank">Java</a> and all Java-based marks are trademarks or registered trademarks of Sun Microsystems, Inc. in the U.S. and other countries. <br />
+    All other company and/or product names are the property of their respective owners.</p>
+  </div>
+</div>
+</body>
+</html>

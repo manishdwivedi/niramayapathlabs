@@ -1,0 +1,1350 @@
+/*****layout starts*****/
+.fl{float:left;}
+.fr{float:right;}
+.disNone{ display:none;}
+.disBlock{ display:block;}
+#outerContainer{float:left; width:100%;}
+#layout{width:1000px; margin:0 auto;}
+a{ color:#68B323;}
+a:hover{ color:#f4a100;}
+.marLeftNone{ margin-left:0px  !important;}
+.marLeft5{ margin-left:5px;}
+.marTopNone{ margin-top:0px !important;}
+.visitALabBox{ left:290px !important; top:0px !important;}
+.clrboth{clear:both;}
+.actionBtnDiv{ float:left; width:1000px; margin:15px 0 0 0;}
+
+/*****header starts*****/
+
+#header{float:left; width:100%;}
+#header .menuDiv{float:left; width:100%; background:url(../img/frontend/top-Header-Bg.gif) no-repeat 0 0 #68b323; padding:6px 0px; position:fixed; z-index:9999; }
+#header .menuBoxShadow{float:left; width:100%; background:url(../img/frontend/menu-shadow.gif) no-repeat center top; height:17px; margin:51px 0 0 0; }
+#header .menuDiv .menuBox{margin:0 auto; width:1000px; background:url(../img/frontend/menu-bg.gif) repeat-x 0 0 #f8f8f8; height:38px; border-radius:3px;}
+#header .menuDiv .menuBox ul{ float:left; width:auto; list-style:none; margin:7px 0 0 0;}
+#header .menuDiv .menuBox ul li{ float:left; width:auto; background:url(../img/frontend/menu-bullet.gif) no-repeat 0 8px; font: normal 18px Times; padding:0 32px;}
+#header .menuDiv .menuBox ol{ float:left; width:auto; list-style:none;}
+#header .menuDiv .menuBox ol li{ float:left; width:auto; background:url(../img/frontend/menu-bullet.gif) no-repeat 0 17px; font: normal 18px Times; padding:8px 15px 9px 15px; position:relative; margin:0 0 0 30px; }
+#header .menuDiv .menuBox ol .subMenu{ width:180px!important; float:left; background:#ffffff; top:31px; left:-1px; display:none; position:absolute;}
+#header .menuDiv .menuBox ol .subMenu li{ width:179px!important; float:left; border:solid 1px #d7d6d6; padding:0px; border-top:none !important; background:none; font:normal 12px times; padding:0px !important; margin:0px;}
+
+
+#header .menuDiv .menuBox ol li ul.subMenu li a{width:141px!important; float:left; text-decoration:none; color:#000; padding:5px 19px !important; }
+#header .menuDiv .menuBox ol li ul.subMenu li a:hover{width:141px!important; float:left; text-decoration:none; color:#000; text-shadow:1px 1px 0px #fff; background:#ececec;}
+#header .menuDiv .menuBox ol li:hover ul.subMenu{display:block;}
+#header .menuDiv .menuBox ol li:hover{ float:left; background:#fff; border-left:solid 1px #d7d6d6; border-right:solid 1px #d7d6d6; padding:8px 14px 9px 14px;}
+
+
+/*#header{float:left; width:100%;}
+#header .menuDiv{float:left; width:100%; background:url(../img/frontend/top-Header-Bg.gif) no-repeat 0 0 #68b323; padding:6px 0px; position:fixed; z-index:9999; }
+#header .menuBoxShadow{float:left; width:100%; background:url(../img/frontend/menu-shadow.gif) no-repeat center top; height:17px; margin:52px 0 0 0; }
+#header .menuDiv .menuBox{margin:0 auto; width:1000px; background:url(../img/frontend/menu-bg.gif) repeat-x 0 0 #f8f8f8; height:38px; border-radius:3px;}
+#header .menuDiv .menuBox ul{ float:left; width:auto; list-style:none; }
+#header .menuDiv .menuBox ul li{ float:left; width:auto; background:url(../img/frontend/menu-bullet.gif) no-repeat 0 16px; font: normal 18px Times; padding:8px 32px 9px 32px; text-transform:uppercase; position:relative;}
+
+
+#header .menuDiv .menuBox ul .subMenu{ width:237px!important; float:left; background:#ffffff; top:38px; left:-1px; display:none; position:absolute;}
+#header .menuDiv .menuBox ul .subMenu li{ width:236px!important; float:left; border:solid 1px #d7d6d6; padding:0px; border-top:none !important; background:none; font:normal 12px times; padding:0px !important; margin:0px;}
+#header .menuDiv .menuBox ul li ul.subMenu li a{width:198px!important; float:left; text-decoration:none; color:#000; padding:5px 19px !important; }
+#header .menuDiv .menuBox ul li ul.subMenu li a:hover{width:198px!important; float:left; text-decoration:none; color:#000; text-shadow:1px 1px 0px #fff; background:#ececec;}
+#header .menuDiv .menuBox ul li:hover ul.subMenu{display:block;}
+#header .menuDiv .menuBox ul li:hover{ float:left;   background:#fff;  border-left:solid 1px #d7d6d6; border-right:solid 1px #d7d6d6; padding:8px 31px 9px 31px;}
+
+#header .menuDiv .menuBox ol{ float:left; width:auto; list-style:none;}
+#header .menuDiv .menuBox ol li{ float:left; width:auto; background:url(../img/frontend/menu-bullet.gif) no-repeat 0 17px; font: normal 18px Times; padding:8px 12px 9px 12px; text-transform:uppercase;  position:relative; margin:0 0 0 23px; }
+.active{float:left;   background:#fff;  border-left:solid 1px #d7d6d6; border-right:solid 1px #d7d6d6; padding:8px 14px 9px 14px;}
+
+
+#header .menuDiv .menuBox ol .subMenu{ width:237px!important; float:left; background:#ffffff; top:38px; left:-1px; display:none; position:absolute;}
+#header .menuDiv .menuBox ol .subMenu li{ width:236px!important; float:left; border:solid 1px #d7d6d6; padding:0px; border-top:none !important; background:none; font:normal 12px times; padding:0px !important; margin:0px;}
+#header .menuDiv .menuBox ol li ul.subMenu li a{width:198px!important; float:left; text-decoration:none; color:#000; padding:5px 19px !important; }
+#header .menuDiv .menuBox ol li ul.subMenu li a:hover{width:198px!important; float:left; text-decoration:none; color:#000; text-shadow:1px 1px 0px #fff; background:#ececec;}
+#header .menuDiv .menuBox ol li:hover ul.subMenu{display:block;}
+#header .menuDiv .menuBox ol li:hover{ float:left;   background:#fff;  border-left:solid 1px #d7d6d6; border-right:solid 1px #d7d6d6; padding:8px 14px 9px 14px;}*/
+
+
+
+
+#header .menuDiv .menuBox .poweredBy{ float:left; border-left:solid 1px #c5c5c5; padding:0 0 0 4px; margin:4px 0 0 25px; height:30px;}
+
+
+
+
+#header .menuDiv .menuBox a{ color:#333; text-decoration:none;}
+#header .menuDiv .menuBox a:hover{ color:#f7a900; text-decoration:none;}
+
+#header .logoSection{float:left; width:100%;}
+#header .logoSection .innerDiv{ margin:0 auto; width:1000px;}
+#header .logoSection .innerDiv .logo{ float:left; width:auto;}
+#header .logoSection .innerDiv .banner{ float:right; width:auto; }
+#header .logoSection .innerDiv .banner img{ border-radius:4px;}
+#header .logoSection .innerDiv .powered{ float:right; width:auto; margin:21px 0 0 0;}
+#header .logoSection .innerDiv .powered span{ float:left; width:auto; margin:7px 0 0 0;}
+#header .logoSection .innerDiv .powered .right{ float:left; width:auto; margin:0 0 0 10px; display:inline;}
+#header .logoSection .innerDiv .powered .right img{ float:left; width:auto;}
+#header .logoSection .innerDiv .powered .right ul{ float:left; width:auto; list-style:none; clear:both;}
+#header .logoSection .innerDiv .powered .right ul li{ float:left; width:auto;  background:url(../img/frontend/orange-tick.gif) no-repeat 6px 5px; padding: 0 0 0 19px; margin:4px 0 0 0; clear:both; font:bold 14px Times; color:#4e4e4e;}
+
+/*****header starts*****/
+
+
+/*****Banner Part:Start*****/
+
+#banner { float:left; width:100%; background:url(../img/frontend/banner-bg.gif) repeat-x 0 0; height:293px; margin:10px 0 0 0;}
+#banner .bannerInnerDiv{ margin:0 auto; width:1000px;}
+#banner .bannerInnerDiv .bannerbox{ float:left;  margin:0px 0 0 0; width:1000px; position:relative;}
+#banner .bannerInnerDiv .bannerbox .pageing{ float:left; width:auto; position:absolute; top:155px; left:450px;}
+#banner .bannerInnerDiv .bannerbox .pageing img{ float:left; width:auto; margin:0 0 0 5px;}
+
+/*****Banner Part:End*****/
+
+
+/*****Packages Part:Start*****/
+
+#packages { float:left; width:100%; border-top: solid 3px #68b323; margin:2px 0 0 0;}
+#packages .packagesInnerDiv{ margin:0 auto; width:1000px; position:relative;}
+#packages .packagesInnerDiv .rightPart{ float:right; width:430px; background:url(../img/frontend/boxShadow.gif) no-repeat center bottom; padding-bottom:9px;}
+#packages .packagesInnerDiv .rightPart .h11{margin-top: -6px; margin-bottom: 14px; width: 400px;}
+#packages .packagesInnerDiv .rightPart .box{float:left; width:424px; border:solid 3px #68b323; border-top:none; padding-bottom:10px;}
+#packages .packagesInnerDiv .rightPart .box h1{float:left; width:424px; background:#68b323; text-align:center; font:normal 18px Times; color:#fff; padding:3px 0;}
+#packages .packagesInnerDiv .rightPart .box .testBox{float:left; width:424px; margin: 5px 0 0 0px; display:inline;}
+#packages .packagesInnerDiv .rightPart .box .testBox .opt{float:left; width:195px; border-right: solid 1px #68b323; margin:0 0 0 15px; display:inline;}
+#packages .packagesInnerDiv .rightPart .box .testBox .opt .heading{float:left; width:190px;}
+#packages .packagesInnerDiv .rightPart .box .testBox .opt .heading .radioBtn{float:left; width:auto; height:auto; padding:0px; margin:2px 0 0 0;}
+#packages .packagesInnerDiv .rightPart .box .testBox .opt .heading h6{float:left; width:auto; margin:0 0 0 5px; display:inline; font:bold 14px times; color:#333;}
+#packages .packagesInnerDiv .rightPart .box .testBox .opt p{float:left; width:auto; clear:both; margin:3px 0 0 0;}
+#packages .packagesInnerDiv .rightPart .box .testBox .selectBox{float:left; width:400px; border: solid 1px #d2d2d2; margin:10px 0 0 15px; display:inline; padding:3px; font:normal 12px arial; color:#666;}
+#packages .packagesInnerDiv .leftBox{ float:left; width:250px; height:212px; background:#fff; position:absolute; top:-89px; left:0px; box-shadow: 0 0 8px #b5b5b5; z-index: 999;}
+#packages .packagesInnerDiv .leftBox .innerDiv{ float:left; width:220px; margin:18px 0 0 15px; display:inline;}
+#packages .packagesInnerDiv .leftBox .innerDiv p{ float:left; width:220px; margin:10px 0 0 0; text-align:justify;}
+ h1{ float:left; width:220px;  font:normal 20px times; color:#000;}
+.green{ color:#68b323;}
+#packages .packagesInnerDiv .leftBox .innerDiv form{ float:left; width:auto; }
+#packages .packagesInnerDiv .leftBox .innerDiv form span{color: #FF0000; font-size: 11px; float: left;}
+#packages .packagesInnerDiv .leftBox .innerDiv form .textBox{ float:left; width:212px; border:solid 1px #c7c7c7; padding:3px 8px; height:18px; margin-top:10px; font:normal 11px arial; }
+.rightBotton{ float:right; margin:10px 0 0 0; display:inline; background:url(../img/frontend/submit-button.gif) repeat-x 0 0 #68b323;height: 30px; width: 88px; border: none;}
+.leftPost{ left:280px !important;}
+#packages .packagesInnerDiv .leftBox .innerDiv ul{ float:left; width:220px; list-style:none; margin:5px 0 0 0;}
+#packages .packagesInnerDiv .leftBox .innerDiv ul li{ float:left; width:205px; background:url(../img/frontend/green-bullet.gif) no-repeat 0 12px; padding: 7px 0 7px 15px; border-bottom:dotted 1px #666;}
+#packages .packagesInnerDiv .leftBox .innerDiv ul li a{ color:#ec9901;}
+#packages .packagesInnerDiv .leftBox .innerDiv ul li a:hover{ color:#68b323;}
+
+/*****Packages Part:End*****/
+
+
+/*****Body Part:Start*****/
+
+#bodyPart{ float:left; width:100%; }
+#bodyPart .bodyInnerDiv{width:1000px; margin:0 auto;}
+#bodyPart .bodyInnerDiv .breadcrumbs{ float:left; width:1000px; margin:0 0 20px 0;}
+#bodyPart .bodyInnerDiv .tableDiv{ float:left; width:1000px; margin:36px 0 0 0; background:#dddddd;}
+#bodyPart .bodyInnerDiv .tableDiv table th{ background:#fff; font:bold 13px arial;}
+#bodyPart .bodyInnerDiv .tableDiv table .thDiv{ background:#ededed; border-top: solid 1px #fff; border-bottom: solid 1px #fff; padding:15px 15px;}
+#bodyPart .bodyInnerDiv .tableDiv table .thDiv span{ margin:0 0 0 15px; font:normal 17px arial; color:#000; text-shadow:1px 1px 0px #999; float:left;}
+#bodyPart .bodyInnerDiv .tableDiv table .thDiv span a{ color: #000;}
+#bodyPart .bodyInnerDiv .tableDiv table td{ background:#fcfcfc; padding:10px 0; text-align:center;}
+#bodyPart .bodyInnerDiv .tableDiv table td .text{ width:100%; text-align:center; margin:5px 0 0 0; line-height:13px;}
+
+#bodyPart .bodyInnerDiv .tableDiv table td .contDiv{ float:left; width:235px; margin:8px 0 0 10px; text-align:justify; font:normal 12px arial; color:#666; display:none;}
+
+
+
+#bodyPart .bodyInnerDiv .tableDiv table td h5{ width:auto; margin:0 10px 0 10px; display:inline; clear:both; color:#6cac30; float:left; font:normal 22px times;}
+#bodyPart .bodyInnerDiv .tableDiv table td p{ width:auto; margin:3px 10px 0 10px; display:inline; clear:both; text-align:justify; float:left;}
+#bodyPart .bodyInnerDiv .tableDiv table td .price{width:auto; margin:0 0 0 10px; color:#6cac30; float:left; font:bold 17px arial;}
+
+
+#bodyPart .bodyInnerDiv .tableDiv .priceDivBox{ float:left; width:998px; margin:0 0 1px 1px; background:url(../img/frontend/bg_1.gif) repeat-x  0 0; height:143px;}
+#bodyPart .bodyInnerDiv .tableDiv .priceDivBox .blankOne{ float:left; width:40px; height:144px; border-right: solid 1px #dddddd;}
+#bodyPart .bodyInnerDiv .tableDiv .priceDivBox .blankOne .greenDiv{ float:right; width:auto; background:url(../img/frontend/green-arrow-1.jpg) right 8px no-repeat; font:normal 20px arial; color: #60AA1D; padding: 0 15px 0 0; margin:20px 10px 0 0; clear:both;}
+#bodyPart .bodyInnerDiv .tableDiv .priceDivBox .blankOne .grayDiv{ float:right; width:auto; background:url(../img/frontend/bull-Point.png) right 8px no-repeat; font:normal 20px arial; color: #999999; padding: 0 15px 0 0; margin:15px 10px 0 0; clear:both;}
+#bodyPart .bodyInnerDiv .tableDiv .priceDivBox .blankOne .blackDiv{ float:right; width:auto; background:url(../img/frontend/black-Arrow.jpg) right 8px no-repeat; font:normal 20px arial; color: #000; padding: 0 15px 0 0; margin:15px 10px 0 0; clear:both;}
+
+
+
+#bodyPart .bodyInnerDiv .tableDiv .priceDivBox .actionDiv{ float:left; width:195px; height:143px; border-right: solid 1px #dddddd; }
+#bodyPart .bodyInnerDiv .tableDiv .priceDivBox .actionDiv .top{ float:left; width:162px; height:135px; }
+#bodyPart .bodyInnerDiv .tableDiv .priceDivBox .actionDiv:hover{box-shadow: 0 0 5px #888888;}
+#bodyPart .bodyInnerDiv .tableDiv .priceDivBox .actButt{ float:left; margin:-34px 0 0 38px; display:inline;}
+.inr{ text-align:center; float:left; width:100%; margin:10px 0 0 17px; font:normal 18px arial; color:#60aa1d; clear:both;}
+.inr font{ font:normal 33px arial;}
+.inr1{ text-align:center; float:left; width:100%; font:normal 15px arial; color:#999; clear:both; padding:0 0 5px 17px; margin:5px 0 0 0;}
+.inr1 font{ font:normal 22px arial;}
+.inr2{ text-align:center; float:left; width:100%; font:normal 15px arial; color:#000; clear:both;  margin:5px 0 0 0;}
+.inr2 font{ font:normal 22px arial;}
+
+
+
+
+
+.width56{ width:56px !important;}
+.width255{ width:310px !important;}
+.width160{ width:196px !important;}
+.width159{ width:159px !important;}
+
+#pagination1{ float:right; width:auto; margin:15px 0 0 0;}
+#pagination1 span{ float:left; width:auto; padding:3px 10px; border-left: solid 1px #ddd; font: bold 11px arial;}
+#pagination1 span a{display:block;}
+.activePage{ background:url(../img/frontend/activeBg.gif) no-repeat center center;}
+.current{ background:url(../img/frontend/activeBg.gif) no-repeat center center;}
+
+
+
+#bodyPart .bodyInnerDiv .breadcrumbs .home{ float:left; width:auto;  background:url(../img/frontend/home-icon.gif) no-repeat 0 0; padding:2px 0 0 22px;}
+#bodyPart .bodyInnerDiv .breadcrumbs .bread{ float:left; width:auto;  background:url(../img/frontend/green-arrow.gif) no-repeat 0 0; padding:0px 0 0 15px; margin:5px 0 0 10px; line-height:10px;}
+#bodyPart .bodyInnerDiv .breadcrumbs a{ clear:#71b831;}
+.back{ width:auto;  background:url(../img/frontend/back.gif) no-repeat 0 0; padding:0px 0 0 12px; margin:5px 0 0 10px; line-height:10px;}
+#bodyPart .bodyInnerDiv h1{ float:left; width:auto; font:normal 22px times;}
+#bodyPart .bodyInnerDiv h2{ float:left; width:1000px; margin:20px 0 0 0; font:normal 21px times;}
+#bodyPart .bodyInnerDiv h5{ float:left; width:1000px; margin:15px 0 0 0; font:bold 13px arial; color:#68b323; }
+
+#bodyPart .bodyInnerDiv .tabDivHeader{ float:left; width:770px; margin:10px 0 0 0; padding-bottom:5px;}
+#bodyPart .bodyInnerDiv .tabDivHeader .leftHeading{ float:left; width:auto; font:bold 17px times; border-right: dotted 1px #ddd; padding:0 15px 0 0;}
+#bodyPart .bodyInnerDiv .tabDivHeader .rightHeading{ float:right; width:auto; font:normal 17px times; border-right: dotted 1px #ddd;  border-left: dotted 1px #ddd; padding:0 15px;}
+
+
+
+
+
+#bodyPart .bodyInnerDiv ul{ float:left; width:auto; list-style:none;}
+#bodyPart .bodyInnerDiv ul li{ float:left; width:auto; text-align:justify; clear:both; margin:15px 0 0 0; padding:0 0 0 15px; background:url(../img/frontend/green-bullet.gif) no-repeat 0 3px;}
+#bodyPart .bodyInnerDiv p{ float:left; width:1000px; margin:10px 0 0 0; padding-bottom:5px; text-align:justify; line-height:18px;}
+#bodyPart .bodyInnerDiv .subheading{ float:left; width:auto; margin:25px 0 0 0; font:normal 17px arial; clear:both; text-decoration:underline;}
+#bodyPart .bodyInnerDiv .detailsDiv{ float:left; width:auto; margin:20px 0 0 0; clear:both;}
+#bodyPart .bodyInnerDiv .detailsDiv .leftDiv{ float:left; width:400px;}
+#bodyPart .bodyInnerDiv .detailsDiv .leftDiv .row{ float:left; margin:10px 0 0 0; width:400px;}
+#bodyPart .bodyInnerDiv .detailsDiv .leftDiv .row .leftLavel{ float:left;  width:120px; font-weight:bold;}
+#bodyPart .bodyInnerDiv .detailsDiv .leftDiv .row .mid{ float:left;  width:30px; font-weight:bold;}
+#bodyPart .bodyInnerDiv .detailsDiv .leftDiv .row .rightDetails{ float:left;  width:auto; width:245px;}
+#bodyPart .bodyInnerDiv .detailsDiv .midDiv{ float:left; width:250px; margin:0 0 0 30px; display:inline;}
+#bodyPart .bodyInnerDiv .detailsDiv .midDiv .row{ float:left; margin:10px 0 0 0; width:250px;}
+#bodyPart .bodyInnerDiv .detailsDiv .midDiv .row .leftLavel{ float:left;  width:90px; font-weight:bold;}
+#bodyPart .bodyInnerDiv .detailsDiv .midDiv .row .mid{ float:left;  width:30px; font-weight:bold;}
+#bodyPart .bodyInnerDiv .detailsDiv .midDiv .row .rightDetails{ float:left;  width:auto;}
+#bodyPart .bodyInnerDiv .detailsDiv .rightDiv { float:left;  width:auto; margin:0 0 0 20px; display:inline;}
+#bodyPart .bodyInnerDiv .detailsDiv .rightDiv  img{ margin:10px 0 0 0; float:left; clear:both;}
+
+#bodyPart .bodyInnerDiv .formDiv{ float:left; margin:10px 0 0 0; width:1000px;}
+#bodyPart .bodyInnerDiv .formDiv .row{ float:left; margin:15px 0 0 0; width:auto; }
+#bodyPart .bodyInnerDiv .formDiv .row .leftrow{ float:left; width:auto; }
+#bodyPart .bodyInnerDiv .formDiv .row .leftrow .inputBox{ float:left; width:390px; border:solid 1px #ddd; background:#fff; height:18px; padding:3px; color:#9d9d9d; }
+#bodyPart .bodyInnerDiv .formDiv .row .leftrow .textBox{ float:left; width:390px; border:solid 1px #ddd; background:#fff; padding:3px; color:#9d9d9d; font:normal 12px arial; resize:none;}
+#bodyPart .bodyInnerDiv .formDiv .row .rightrow{ float:left; width:auto; margin:0 0 0 30px; display:inline; }
+#bodyPart .bodyInnerDiv .formDiv .row .rightrow .inputBox{ float:left; width:390px; border:solid 1px #ddd; background:#fff; height:18px; padding:3px; color:#9d9d9d; }
+
+#bodyPart .bodyInnerDiv .formDiv .row .rightrow .salectBox{ float:left; width:398px; border:solid 1px #ddd; background:#fff; height:26px; padding:3px; color:#9d9d9d; }
+#bodyPart .bodyInnerDiv .formDiv .row .rightrow .calander{ float:left; width:auto; background:url(../img/frontend/calandericon.gif) left top no-repeat; padding:4px 0 4px 30px; margin:0 0 0 10px;}
+#bodyPart .bodyInnerDiv .bottomShadow{ float:left; width:1000px;  background:url(../img/frontend/menu-shadow.gif) no-repeat top center; margin:40px 0 20px 0; height:17px; }
+#bodyPart .bodyInnerDiv .cont{ float:left; width:1000px; margin:0;}
+#bodyPart .bodyInnerDiv .cont .leftPart{ float:left; width:522px; border:solid 1px #dbdbdb;}
+#bodyPart .bodyInnerDiv .cont .rightPart{ float:right; width:435px; text-align:justify; line-height:22px; color:#272727;}
+#bodyPart .bodyInnerDiv .cont .rightPart h11{margin-top: -6px; margin-bottom: 14px; width: 400px;}
+#bodyPart .bodyInnerDiv .cont .rightPart img{ float:left; width:215px; height:97px; border-radius:5px; margin:0 10px 10px 0; }
+#bodyPart .bodyInnerDiv .cont .rightPart .readMore{ float:right; width:auto; margin:20px 0 0 0;}
+#bodyPart .bodyInnerDiv .cont .testimonialBox{ float:left; width:524px;}
+#bodyPart .bodyInnerDiv .cont .testimonialBox h1{ float:left; width:auto; font:normal 25px times; color:#000;}
+#bodyPart .bodyInnerDiv .cont .testimonialBox .testimonialDiv{ float:left; width:522px; border:solid 1px #dbdbdb; margin:10px 0 0 0;/* padding-bottom:17px;*/}
+#bodyPart .bodyInnerDiv .cont .testimonialBox .testimonialDiv .box{ float:left; width:490px; margin:20px 0 0 17px; display:inline;}
+#bodyPart .bodyInnerDiv .cont .testimonialBox .testimonialDiv .box img{ float:left; width:67px; height:67px; border:solid 2px #68B323;}
+#bodyPart .bodyInnerDiv .cont .testimonialBox .testimonialDiv .box .contDiv{ float:right; width:395px;}
+#bodyPart .bodyInnerDiv .cont .testimonialBox .testimonialDiv .box .contDiv .name{ float:left; width:auto; font:bold 13px arial; clear:both;}
+#bodyPart .bodyInnerDiv .cont .testimonialBox .testimonialDiv .box .contDiv p{ float:left; width:auto; text-align:justify; margin:5px 0 0 0; color:#838383; line-height:16px; clear:both;}
+#bodyPart .bodyInnerDiv .cont .callBack{ float:right; width:435px;}
+#bodyPart .bodyInnerDiv .cont .callBack h1{ float:left; width:auto; font:normal 25px times; color:#000; padding:0; margin:0;}
+#bodyPart .bodyInnerDiv .cont .callBack .formDiv{ float:left; width:433px; border:solid 1px #dbdbdb; margin:10px 0 0 0; padding-bottom:13px;}
+#bodyPart .bodyInnerDiv .cont .callBack .formDiv .formArea{ float:left; width:395px; margin:3px 0 0 18px; display:inline;}
+#bodyPart .bodyInnerDiv .cont .callBack .formDiv .formArea span{color: #FF0000; font-size: 11px; float: left;}
+#bodyPart .bodyInnerDiv .cont .callBack .formDiv .formArea .inputBox{ float:left; width:172px; padding:3px 8px; border:solid 1px #dbdbdb; height:18px; font:normal 12px arial; color:#828282; margin:13px 0 0 0; outline:none;}
+ #bodyPart .bodyInnerDiv .cont .callBack .formDiv .formArea .textArea{ float:left; width:377px; padding:3px 8px; border:solid 1px #dbdbdb; font:normal 12px arial; color:#828282; margin:15px 0 0 0; resize:none; outline:none;}
+#bodyPart .bodyInnerDiv .cont .rightPart h3{ float:left; width:435px; font:normal 25px times; color:#000; margin:0 0 15px 0;}
+/*****Body Part:End*****/
+
+
+/*****Footer Part:Start*****/
+
+#footer{ float:left; width:100%; margin:20px 0 0 0; background:url(../img/frontend/footerTopShadow.gif) no-repeat top center; padding:17px 0 0 0;}
+#footer .footerMid{ float:left; width:100%; background:#57a114; padding:5px 0;}
+.innerDiv{ width:1000px; margin:0 auto;}
+.socIcon{ float:right; width:auto; height:33px;}
+.socIcon img{ float:left; margin:0 0 0 7px;}
+
+
+#footer .footerMid ul{ float:left; width:auto; list-style:none; margin:10px 0 0 0;}
+#footer .footerMid ul li{ float:left; width:auto; border-right: solid 1px #ceffa0; line-height:13px; padding:0px 10px;}
+#footer .footerMid ul li a{ color:#fff;}
+#footer .footerMid ul li a:hover{ color:#b9e68f;}
+.leftPadNone{ padding-left:0px !important;}
+
+
+#footer .footerTop .topInnerDiv .box{ float:left;  min-height:177px; width:auto; margin:0 0 0 12px; padding:0 15px 0 0;}
+#footer .footerTop .topInnerDiv .box .know{ margin:5px 0 0 0;}
+
+
+
+
+
+
+
+
+#footer .footerTop .topInnerDiv h1{ float:left; width:auto; color:#eeff32;  font:normal 22px times; clear:both;}
+#footer .footerTop .topInnerDiv .box p{ float:left; width:auto; color:#edffdd; clear:both; line-height:18px; margin:8px 0 0 0; background:url(../img/frontend/map-icon.png) no-repeat 0 3px; padding:0 0 0 20px;}
+#footer .footerTop .topInnerDiv .box .helpNo{ float:left; width:auto; color:#edffdd; clear:both;  margin:14px 0 0 0; background:url(../img/frontend/phone-icon.png) no-repeat 0 1px; padding:0 0 0 20px;}
+#footer .footerTop .topInnerDiv .box .emailID{ float:left; width:auto; color:#edffdd; clear:both;  margin:14px 0 0 0; background:url(../img/frontend/mail-icon.png) no-repeat 0 3px; padding:0 0 0 20px;}
+
+#footer .footerTop .topInnerDiv .rightBox{ float:right; width:203px;}
+#footer .footerTop .topInnerDiv .rightBox .textbox{ text-align:justify; margin:5px 0 0 0; color:#edffdd; clear:both; width:100%; float:left;}
+#footer .footerTop .topInnerDiv .rightBox  form .textBox {
+    border: 1px solid #87d341;
+    float: left;
+    font: 11px arial;
+    height: 13px;
+    margin-top: 10px;
+    padding: 3px 8px;
+    width:185px;
+	clear:both;
+	background:#a7ec67;
+	border-radius:2px;
+}
+
+#footer .footerTop .topInnerDiv .actiondiv{ float:left; width:203px; padding:10px 0;}
+#footer .footerTop .topInnerDiv .actiondiv .leftText{ float:left; width:auto; margin:5px 0 0 0;}
+#footer .footerTop .topInnerDiv .actiondiv .clog{ float:left; width:auto; background:url(../img/frontend/social/e-reporting-icon.jpg) no-repeat 0 0; padding:6px 0 7px 35px;}
+
+#footer .footerTop{ float:left; padding:15px 0 0 0; width:100%; background:url(../img/frontend/footer-top-bg.gif) repeat-x 0 0 #68b323; min-height:177px;}
+#footer .footerTop .topInnerDiv{ width:1000px; margin:0 auto;}
+#footer .footerTop .topInnerDiv a{ color:#fff;}
+#footer .footerTop .topInnerDiv .box ul{ float:left; list-style:none; width:auto; clear:both;} 
+#footer .footerTop .topInnerDiv .box ul li{ float:left; width:auto; clear:both; margin:12px 0 0 0; color:#FFF;}
+#footer .footerTop .topInnerDiv .box .socicalDiv{ float:left; clear:both; margin:15px 0 0 0;}
+#footer .footerTop .topInnerDiv .box .socicalDiv .socicalIcon{ float:left; width:34px; margin:0 0 0 5px; display:inline;}
+#footer .footerBottom{ float:left; width:100%; padding:11px 0;} 
+#footer .footerBottom .bottomInnerDiv{ width:1000px; margin:0 auto;}
+.wid248{ width:248px;}
+.wid195{ width:195px;}
+.wid210{ width:210px;}
+
+
+/*----------------------------------------------------------*/
+/*                       Lightbox CSS                       */
+/*----------------------------------------------------------*/
+
+#headset-Div {background: #fff; width:auto; position: absolute; display:none; min-height:auto; z-index:999; border-radius:13px; padding:0px 25px 25px 0px; float:left; box-shadow: 0 0 3px 3px #999; left:-655px; top:-200px;}
+#headset-Div .boxDiv{ float:left; width:770px; margin:20px 0 0 25px; clear:both;}
+#headset-Div .boxDiv  h5{ float:left; width:auto; font:normal 22px times; clear:both;}
+#headset-Div .boxDiv  p{ float:left; width:auto; margin:8px 0 0 0; clear:both;}
+.formBox{ float:left; width:770px; border-top:solid 1px #d2d2d2; margin:10px 0 0 0;}
+.formBox form{ float:left; width:770px; margin:8px 0 0 0;}
+.formBox form .box{width:360px; padding:15px 0 0 0;}
+.formBox form .box .row{ float:left; width:360px; margin:20px 0 0 0;}
+.formBox form .box .row input[type=text]{ float:left; width:352px; border:solid 1px #c9c9c9; font:normal 11px verdana; color:#666; padding:4px 3px; height:22px; border-radius:3px;}
+.formBox form .box .row select{ float:left; width:360px; border:solid 1px #c9c9c9; font:normal 11px verdana; color:#666; padding:5px 3px 5px 0; height:32px; border-radius:3px;}
+.formBox form textarea{ float:left; width:762px; margin:25px 0 0 0; border:solid 1px #c9c9c9; font:normal 11px verdana; color:#666; padding:4px 3px 4px 3px; border-radius:3px; font:normal 11px Verdana, Geneva, sans-serif; resize:none;}
+.halfWidth{ width:177px !important;}
+.formBox form .continue{ float:left; width:auto; margin:20px 0 0 320px; display:inline; background:url(../img/frontend/submit-button.gif) repeat-x 0 0 #68b323;height: 30px; width: 88px; border: none;}
+
+#packages .packagesInnerDiv .rightPart .box .testBox form .right1{background: url(../img/frontend/go_button.jpg) repeat-x 0 0 #68b323; height: 25px; width: 31px; border: none; margin-left: 12px; margin-top: 9px;}
+#packages .packagesInnerDiv .rightPart .box .testBox .disNone .right1{background: url(../img/frontend/go_button.jpg) repeat-x 0 0 #68b323; height: 25px; width: 31px; border: none; margin-left: 12px; margin-top: 9px;}
+.formBox form .box .row .right1{ float:left; width:auto; margin:20px 0 0 320px; display:inline; background:url(../img/frontend/submit-button.gif) repeat-x 0 0 #68b323;height: 30px; width: 88px; border: none;}
+
+
+.wid165{ width:165px !important}
+.marTopNone{ margin-top:0px !important;}
+.formBox form p{ float:left; width:770px !important;}
+.formBox form .checkBoxDiv{ float:left; width:auto;}
+.formBox form .checkBoxDiv .checkDiv{ float:left; width:auto; margin:0 0 0 25px; display:inline;}
+.formBox form .checkBoxDiv .checkDiv input[type=radio]{ float:left; width:auto; height:auto; padding:0px; }
+.formBox form .checkBoxDiv .checkDiv label{ float:left; width:auto; font:bold 12px arial; margin:0 0 0 10px; }
+.formBox form .textP{ float:left; width:770px !important; margin:10px 0 0 0px !important;}
+
+
+
+#headset-Div .boxDiv .formBox{ float:left; width:770px; border-top:solid 1px #d2d2d2; margin:10px 0 0 0;}
+#headset-Div .boxDiv .formBox form{ float:left; width:770px; margin:8px 0 0 0;}
+#headset-Div .boxDiv .formBox form .box{width:360px; padding:15px 0 0 0;}
+#headset-Div .boxDiv .formBox form .box .row{ float:left; width:360px; margin:20px 0 0 0;}
+#headset-Div .boxDiv .formBox form .box .row input[type=text]{ float:left; width:352px; border:solid 1px #c9c9c9; font:normal 11px verdana; color:#666; padding:4px 3px; height:22px; border-radius:3px;}
+#headset-Div .boxDiv .formBox form .box .row select{ float:left; width:360px; border:solid 1px #c9c9c9; font:normal 11px verdana; color:#666; padding:4px 3px 4px 0; height:30px; border-radius:3px;}
+#headset-Div .boxDiv .formBox form .box .row textarea{ float:left; width:352px; border:solid 1px #c9c9c9; font:normal 11px verdana; color:#666; padding:4px 3px 4px 3px; border-radius:3px; font:normal 11px Verdana, Geneva, sans-serif; resize:none;}
+.halfWidth{ width:177px !important;}
+#headset-Div .boxDiv .formBox form .continue{ float:left; margin:20px 0 0 320px; display:inline;}
+.closeOne {width: 24px; height: 23px; overflow: hidden; display: block; position: absolute; top: 8px; right: 3px; }
+.actionButtonDiv{ float:left; width:auto; position:relative; margin: 0 0 0 17px;}
+.offerBanner{ float:left; width:auto; position:relative;}
+.offerBanner{ float:left; width:auto; position:relative;}
+
+
+.visitATest {background: #fff; width:auto; position:absolute; display:none; top:-150px; left:-500px; min-height:auto; z-index:999; border-radius:13px; padding:0px 25px 25px 0px;  box-shadow: 0 0 3px 3px #999;} 
+.visitATest .boxDiv{ float:left; width:390px; margin:20px 0 0 25px; clear:both;}
+.visitATest .boxDiv h4{ float:left; width:auto; font:normal 22px times; clear:both;}
+.visitATest .boxDiv  p{ float:left; width:auto; margin:8px 0 0 0 !important; clear:both;}
+.visitATest .boxDiv .formBox{ float:left; width:390px; border-top:solid 1px #d2d2d2; margin:10px 0 0 0;}
+.visitATest .boxDiv .formBox form{ float:left; width:390px;}
+.visitATest .boxDiv .formBox form .box{width:390px; }
+.visitATest .boxDiv .formBox form .box .row{ float:left; width:390px; margin:20px 0 0 0;}
+.visitATest .boxDiv .formBox form .box .row span{color: #FF0000; font-size: 11px; float: left;}
+.visitATest .boxDiv .formBox form .box .row input[type=text]{ float:left; width:380px; border:solid 1px #c9c9c9; font:normal 11px verdana; color:#666; padding:4px 3px; height:22px; border-radius:3px;}
+.visitATest .boxDiv .formBox form .box .row input[type=radio]{ float:left; width:auto; height:auto; padding:0px; margin-left: 18px; margin-top: 0px;}
+.visitATest .boxDiv .formBox form .box .row span{ float:left; width:auto; margin:0 0 0 10px ;}
+.visitATest .boxDiv .formBox form .box .row label{ float:left; width:auto; margin:0 0 0 10px ;}
+
+
+.bg0{ background:#f9f9f9 !important;}
+.bg1{ background:#fcfcfc !important;}
+.bg2{ background:#ffeff9 !important;}
+.bg3{ background:#f6fdea !important;}
+.bg4{ background:#ecfecc !important;}
+.bg5{ background:#fff9e9 !important;}
+.bg6{ background:#fff4d3 !important;}
+.bg7{ background:#f6fcfd !important;}
+.bg8{ background:#e8f9fe !important;}
+.bg9{ background:#fef8fc !important;}
+.borLeft1{ border-left:solid 3px #ffcbec;}
+.borLeft2{ border-left:solid 3px #ceea9b;}
+.borLeft3{ border-left:solid 3px #e2da60;}
+.borLeft4{ border-left:solid 3px #ffe69c;}
+.borLeft5{ border-left:solid 3px #b4eafb;}
+.bullPoint{ float:left; width:auto; clear:both; font:bold 12px arial; background:url(../img/frontend/bull-Point.png) no-repeat 0 3px; padding:0 0 0 10px; margin:5px 0 0 10px; cursor:pointer;}
+#intro { position:relative; height:293px; width: 100%;}
+#intro ul { float:left; width:1000px; height:293px; list-style:none;}
+#intro ul li { width: 100%; height: 293px; }
+#intro .pagination {position: absolute; bottom:130px; z-index: 999; width: auto; left:45%;}
+#intro .pagination a {width: 8px; height: 8px; background: #68B323; border-radius: 8px; box-shadow: inset 2px 2px 4px -2px #000; display: inline-block; *display: inline; zoom: 1; text-indent: -99999em; text-align: center; margin-left: 5px; }
+#intro .pagination a.activeSlide { background: #f89b2a }
+
+
+#bodyPart .bodyInnerDiv .managementDiv{ float:left; width:1000px; margin:25px 0 0 0;}
+#bodyPart .bodyInnerDiv .managementDiv .imgDiv{ float:left; width:137px; height:132px; border:solid 1px #e1e1e1;}
+#bodyPart .bodyInnerDiv .managementDiv .imgDiv img{ float:left; width:131px; height:126px; margin:3px 0 0 3px;}
+#bodyPart .bodyInnerDiv .managementDiv .textBox{ float:right; width:840px;}
+#bodyPart .bodyInnerDiv .managementDiv .textBox h5{ float:left; width:auto; font:bold 13px arial; color:#68B323; clear:both; margin:0px;}
+#bodyPart .bodyInnerDiv .managementDiv .textBox p{ float:left; width:auto; margin:7px 0 0 0; clear:both;}
+
+
+#bodyPart .bodyInnerDiv .testimonialDiv {width:475px;}
+#bodyPart .bodyInnerDiv .testimonialDiv .testimonialBox{ float:left; width:475px; margin:25px 0 0 0;}
+#bodyPart .bodyInnerDiv .testimonialDiv .testimonialBox .imgDiv{ float:left; width:67px; height:57px; border:solid 1px #e1e1e1;}
+#bodyPart .bodyInnerDiv .testimonialDiv .testimonialBox .imgDiv img{ float:left; width:64px; height:57px; }
+#bodyPart .bodyInnerDiv .testimonialDiv .testimonialBox .textBox{ float:right; width:385px;}
+#bodyPart .bodyInnerDiv .testimonialDiv .testimonialBox .textBox h5{ float:left; width:auto; font:bold 13px arial; color:#68B323; clear:both; margin:0px;}
+#bodyPart .bodyInnerDiv .testimonialDiv .testimonialBox .textBox p{ float:left; width:auto; margin:7px 0 0 0; clear:both;}
+
+.contactRowDiv { float:left; width:1000px; border-bottom: dashed 1px #ddd; padding-bottom:20px; margin-top: 20px;}
+#bodyPart .bodyInnerDiv .contactLeftDiv {width:395px;}
+#bodyPart .bodyInnerDiv .contactLeftDiv p{ float:left; width:395px; clear:both; margin:0px;}
+#bodyPart .bodyInnerDiv .contactLeftDiv .addressBox{ float:left; width:395px; background:url(../img/frontend/bottom-shadow.gif) left bottom repeat-x; padding-bottom:15px; margin:15px 0 0 0;}
+#bodyPart .bodyInnerDiv .contactLeftDiv .addressBox .row{ float:left; width:395px; }
+#bodyPart .bodyInnerDiv .contactLeftDiv .addressBox .row .iconDiv{ float:left; width:16px;}
+#bodyPart .bodyInnerDiv .contactLeftDiv .addressBox .row .boldTextDiv{ float:left; width:auto; font:bold 12px arial; color:#000; margin:0 0 0 10px;}
+#bodyPart .bodyInnerDiv .contactLeftDiv .addressBox .textDiv{ float:left; width:auto; margin:0 0 0 25px; display:inline; line-height:19px;}
+#bodyPart .bodyInnerDiv .contactRightDiv {width:auto; border:solid 1px #ddd;}
+
+
+#siteMap{ float:left; width:auto; margin:5px 0 0 0;}
+#siteMap h5{ float:left; width:auto; margin:10px 0 0 0; font:normal 16px times !important;}
+#siteMap ul{ float:left; width:auto; list-style:none; margin:0 0 0 25px;}
+#siteMap ul li{ float:left; width:auto; clear:both; background:url(../img/frontend/siteMapBg.gif) no-repeat 0 0 !important; padding:17px 0 0 45px !important; margin:0px !important; }
+
+
+
+#siteMap a{ color:#000;}
+#siteMap a:hover{ color:#68B323;}
+#bodyPart .bodyInnerDiv .greenText{ float:left; width:640px; padding:5px; font-size:13px; color:#fff; background:#68b323; border-radius:3px; margin:15px 0 0 0;}
+#bodyPart .bodyInnerDiv .greenText01{ float:left; width:640px; font: bold 15px arial; color:#68b323; border-radius:3px; margin:20px 0 0 0;}
+#bodyPart .bodyInnerDiv .chooseDiv{ float:left; width:640px; margin:15px 0 0 0;}
+#bodyPart .bodyInnerDiv .chooseDiv .optDiv{ float:left; width:auto; border-right: solid 1px #666; padding:0 30px 0 0; margin:0 0 0 20px; }
+#bodyPart .bodyInnerDiv .chooseDiv .optDiv input[ type=radio]{ float:left; width:auto; height:auto; margin:0px; padding:0px;}
+#bodyPart .bodyInnerDiv .chooseDiv .optDiv span{ float:left; width:auto; margin:0 0 0 10px; font:bold 12px arial;}
+#bodyPart .bodyInnerDiv .chooseDiv span1{color: #FF0000; float: left; font-size: 11px; margin-left: 134px;}
+
+#bodyPart .bodyInnerDiv .bookForm{ float:left; width:650px;}
+#bodyPart .bodyInnerDiv .bookForm img{ float:left; margin:20px 0 0 0;}
+
+#bodyPart .bodyInnerDiv .bookForm .boxRow{ float:left; width:650px; margin:15px 0 0 0;}
+#bodyPart .bodyInnerDiv .bookForm .boxRow span{color: #FF0000; font-size: 11px; float: left; margin-left: 134px;}
+#bodyPart .bodyInnerDiv .bookForm .boxRow label{ float:left; width:135px; margin:8px 0 0 0; font:normal 14px times;}
+#bodyPart .bodyInnerDiv .bookForm .boxRow .smalllabel{ float:left; width:70px; margin:8px 0 0 20px; font:normal 14px times;}
+#bodyPart .bodyInnerDiv .bookForm  p{ float:left; width:auto; margin:15px 0 0 0; text-align:justify; border-bottom:dotted 1px #ddd; padding:0 0 10px 0; }
+
+#bodyPart .bodyInnerDiv .bookForm .boxRow input[type=text]{ float:left; width:507px; height:22px; border-radius:3px; border:solid 1px #d7d7d7; padding:3px; color:#666; font-style:italic; outline:none;}
+#bodyPart .bodyInnerDiv .bookForm .boxRow .right{background:url(../img/frontend/submit-button.gif) repeat-x 0 0 #68b323;height: 30px; width: 88px; border: none;}
+#bodyPart .bodyInnerDiv .bookForm .boxRow textarea{ float:left; width:507px; border-radius:3px; border:solid 1px #d7d7d7; padding:3px; color:#666; font-style:italic; resize:none; outline:none; color:#acacac; font-family:arial; font-size:12px;}
+#bodyPart .bodyInnerDiv .bookForm .boxRow select{ float:left; width:515px; border-radius:3px; border:solid 1px #d7d7d7; padding:3px; color:#666; font-style:italic; resize:none; outline:none; font-family:arial; font-size:12px; height:29px;}
+.smallTextBox{ width:204px !important;}
+.smallSelectBox{ width:212px !important;}
+.addBoxIn{ width:175px !important; margin:5px 0 0 23px !important; display:inline; clear:both; float:left; padding:0px !important; border:none !important;} 
+
+
+#bodyPart .bodyInnerDiv .result { float:left; width:1000px; margin:15px 0 0 0;}
+
+#bodyPart .bodyInnerDiv .topSearch { float:left; width:1000px;  border-bottom: solid 1px #d9d9d9; padding-bottom:20px; margin:20px 0 10px 0;}
+#bodyPart .bodyInnerDiv .topSearch .searchBy { float:left; width:100%; margin:10px 0 0 0;}
+#bodyPart .bodyInnerDiv .topSearch .searchBy .box { float:left; width:255px;}
+#bodyPart .bodyInnerDiv .topSearch .searchBy .box label{ float:left; width:255px; font:bold 12px arial;}
+#bodyPart .bodyInnerDiv .topSearch .searchBy .box input[type=text]{ float:left; width:248px; padding:3px; font:normal 11px arial; color:#666; border:solid 1px #d9d9d9; border-radius:3px; margin:10px 0 0 0; height:28px;}
+#bodyPart .bodyInnerDiv .topSearch .or{ width:auto; float:left; font:bold 12px arial; margin:55px 0 0 35px;}
+#bodyPart .bodyInnerDiv .topSearch .searchBy .tableFormBox { float:right; width:auto;}
+#bodyPart .bodyInnerDiv .topSearch .searchBy .tableFormBox label{ float:left; width:auto; font:bold 12px arial; clear:both;}
+#bodyPart .bodyInnerDiv .topSearch .searchBy .tableFormBox .tableDiv { float:right; width:auto; background:#d7d7d7; clear:both; margin:10px 0 0 0;}
+#bodyPart .bodyInnerDiv .topSearch .searchBy .tableFormBox .tableDiv table td{ width:50px; height:34px; font:bold 12px arial; color:#ed9f10;}
+#bodyPart .bodyInnerDiv .searchByBox { float:left; width:1000px; margin:20px 0 0 0; border-top: solid 1px #d9d9d9; padding:10px 0 0 0;}
+#bodyPart .bodyInnerDiv .searchByBox .searchBy { float:left; width:auto; margin:10px 0 0 0;}
+#bodyPart .bodyInnerDiv .searchByBox .searchBy .box { float:left; width:255px; margin:0 0 0 117px;}
+#bodyPart .bodyInnerDiv .searchByBox .searchBy .box label{ float:left; width:255px; font:bold 12px arial;}
+#bodyPart .bodyInnerDiv .searchByBox .searchBy .box select{ float:left; width:254px; padding:3px; font:normal 11px arial; color:#666; border:solid 1px #d9d9d9; border-radius:3px; margin:10px 0 0 0; height:28px;}
+
+
+
+#bodyPart .bodyInnerDiv .subHeading{ float:left; width:1000px; border-bottom: solid 1px #d7d7d7; padding-bottom:10px; margin:15px 0 0 0;}
+#bodyPart .bodyInnerDiv .subHeading h2{ float:left; width:auto; font: bold 17px arial;}
+#bodyPart .bodyInnerDiv .subHeading ul{ float:right; width:auto; list-style:none;}
+#bodyPart .bodyInnerDiv .subHeading ul li{ float:left; width:auto; border-right: dotted 1px #666; padding:0 15px; font:bold 12px arial; background:none; clear:none;}
+#bodyPart .bodyInnerDiv .subHeading ul li a { color:#666;}
+#bodyPart .bodyInnerDiv .subHeading ul li a:hover { color:#68b323;}
+.act{ color:#68b323 !important; }
+
+#bodyPart .bodyInnerDiv .formDiv{ float:left; width:400px;}
+#bodyPart .bodyInnerDiv .formDiv .row{ float:left; wdth:400px; margin:20px 0 0 0; clear:both;}
+#bodyPart .bodyInnerDiv .formDiv .row label{ float:left; width:110px; font-weight:bold; margin:9px 0 0 0;}
+#bodyPart .bodyInnerDiv .formDiv .row .dot{ float:left; width:25px; font-weight:bold; margin:9px 0 0 0;}
+#bodyPart .bodyInnerDiv .formDiv .row .detail{ float:left; width:auto; margin:9px 0 0 0;}
+
+#bodyPart .bodyInnerDiv .formDiv .row input[type=text]{ float:left; width:257px; padding:3px; font:normal 11px arial; color:#666; border:solid 1px #d9d9d9; border-radius:3px; height:25px;}
+#bodyPart .bodyInnerDiv .formDiv .row input[type=password]{ float:left; width:257px; padding:3px; font:normal 11px arial; color:#666; border:solid 1px #d9d9d9; border-radius:3px; height:25px;}
+#bodyPart .bodyInnerDiv .formDiv .row input[type=checkbox]{ float:left; width:auto; height:auto; padding:0px; margin:0 10px 0 0;}
+#bodyPart .bodyInnerDiv .formDiv .row .changePass{ float:left; width:auto; font:bold 12px arial; color:#0a469f;}
+
+#bodyPart .bodyInnerDiv .tableDiv table td h6{ width:auto; margin:5px 0 0 10px; display:inline; clear:both; text-align:justify; float:left; font:bold 13px arial; color:#6CAC30;}
+
+#bodyPart .bodyInnerDiv .tableDiv table td .row{ float:left; margin:8px 0 8px 8px; clear:both;}
+#bodyPart .bodyInnerDiv .tableDiv table td .row span{ float:left; font-weight:bold; width:200px;}
+#bodyPart .bodyInnerDiv .tableDiv table td .row .dot{ float:left; font-weight:bold; width:20px;}
+#bodyPart .bodyInnerDiv .tableDiv table td .row .text{ float:left; width:auto; margin:0px;}
+
+.info {
+    float: right;
+    height: 18px;
+    margin: -22px 6px 0 0;
+    position: relative;
+    width: 18px;
+}
+.tooltip
+{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    display: none;
+    float: left;
+    position: absolute;
+    right: -4px;
+    top: 32px;
+    width: 219px;
+    z-index: 99999;
+	font-size:11px;
+	color:#999;
+	padding:5px;
+}
+.arrow
+{
+	background: url("../img/frontend/arrow.jpg") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 7px;
+    position: absolute;
+    right: 6px;
+    top: -7px;
+    width: 14px;
+}
+
+#bodyPart .bodyInnerDiv .magTeam{ float:left; width:1000px; margin:25px 0 0 0;}
+#bodyPart .bodyInnerDiv .magTeam .imgBox{ float:left; width:auto; border:solid 1px #e1e1e1; padding:3px;}
+#bodyPart .bodyInnerDiv .magTeam .imgBox img{ float:left; width:131px; height:126px;}
+#bodyPart .bodyInnerDiv .magTeam .textbox{ float:right; width:850px; }
+#bodyPart .bodyInnerDiv .magTeam .textbox h3{ float:left; width:auto; clear:both; font:bold 14px arial; color:#5ea31e;}
+#bodyPart .bodyInnerDiv .magTeam .textbox p{ float:left; width:auto; clear:both; margin:10px 0 0 0; }.
+
+#bodyPart .bodyInnerDiv .position{ float:left; width:1000px; margin:20px 0 0 0; border-bottom:solid 1px #d8d8d8; padding-bottom:15px;}
+#bodyPart .bodyInnerDiv .position h3{ float:left; width:1000px; font:bold 15px arial;}
+#bodyPart .bodyInnerDiv .position .boldText{ float:left; width:1000px; margin:10px 0 0 0; font:bold 12px arial; color:#000;}
+#bodyPart .bodyInnerDiv .position p{ float:left; width:1000px; margin:10px 0 0 0;}
+
+/*Search Form Inner Page CSS Starts*/
+#advanceSearch{ float:right; width:569px; border:solid 2px #5ea819;}
+#advanceSearch h4{ float:left; font:normal 18px times; color:#fff; padding:4px 10px; background:#5ea819;}
+#advanceSearch form{ float:left; width:auto; margin:3px 0 0 10px;}
+#advanceSearch form input[type=text]{ float:left; width:200px; border:solid 1px #d5d5d5; padding:3px; height:15px; font-size:11px;}
+#advanceSearch form .go{ float:left; margin:0 0 0 10px;}
+#advanceSearch form .or{ float:left; margin:4px 2px 0 2px; font:bold 12px arial; color:#000;}
+#advanceSearch form .advanceSearch{ float: left;
+    margin: 4px 0 0 9px;
+    width: 100px;}
+#advanceSearch form .advanceSearch a{ color:#bc6d08;}
+#advanceSearch form .go{ float:left; margin:0 0 0 10px; background:url(../img/frontend/go.jpg) no-repeat 0 0; border:none; width:40px; height:22px;}
+/*Search Form Inner Page CSS Ends*/
+
+/* Container DIV - automatically generated */
+.simply-scroll-container {
+position: relative;
+}
+
+/* Clip DIV - automatically generated */
+.simply-scroll-clip {
+position: relative;
+overflow: hidden;
+}
+
+/* UL/OL/DIV - the element that simplyScroll is inited on
+Class name automatically added to element */
+.simply-scroll-list {
+overflow: hidden;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.simply-scroll-list li {
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
+.simply-scroll-list li img {
+border: none;
+display: block;
+}
+
+/* Custom class modifications - adds to / overrides above
+
+.simply-scroll is default base class */
+
+/* Container DIV */
+.simply-scroll {
+width: 500px;
+height: 55px;
+float:left; clear:both;
+}
+
+/* Clip DIV */
+.simply-scroll .simply-scroll-clip {
+width: 500px;
+height: 55px;
+}
+
+/* Explicitly set height/width of each list item */
+.simply-scroll .simply-scroll-list li {
+float: left; /* Horizontal scroll only */
+clear:none !important;
+width: 118px;
+padding:0px !important;
+background:none !important;
+margin:0 0 0 15px !important ;
+
+}
+
+
+.logoright{ float:left; width:605px !important; margin:0 0 0 98px;}
+.logoright .rightText{ float:left; width:auto; margin:10px 0 0 90px;}
+.logoright .marqDiv{ float:left; width:605px; z-index:9999;}
+.logoright .marqDiv p{ position: relative; overflow: hidden; height:18px; float:left;}
+
+.demo1 {
+	border: 1px solid #ccc;
+	float:left;
+	width:100%;
+}
+.demo1 div div {
+	padding: 10px;
+	border-bottom: 1px solid #ccc; float:left; width:504px;
+}
+.demo1 div div p{
+float:left; width:418px !important; margin:5px 0 0 0;  clear:both;
+}
+
+
+/*Logo Scroll Home Page Starts*/
+
+.logoParade{width:415px; height: 51px; position: relative; margin: 0 auto; padding:10px;}
+#logoParade a img {width: auto; height: 51px;}
+#logoParade div.scrollableArea a{display: block; float: left; padding-left: 10px;}
+.logoParade h3 { color:#0672CD; font-size: 1em; font-family: Arial, Helvetica, sans-serif; margin-bottom: 1em; padding-bottom: 0.5em; border-bottom: 1px solid #e8e8e8}
+.logoParade.outer {margin-top: 192px; opacity: 0;}
+
+div.scrollingHotSpotLeft
+{
+	min-width: 75px;
+	width: 10%;
+	height: 100%;
+	/* There is a big background image and it's used to solve some problems I experienced
+    in Internet Explorer 6. */
+	background-image: url(/opencms/opencms/.content/images/scrollerImages/big_transparent.gif);
+	background-repeat: repeat;
+	background-position: center center;
+	position: absolute;
+	z-index: 200;
+	left: 0;
+	/*  The first url is for Firefox and other browsers, the second is for Internet Explorer */
+	/*cursor: url(/opencms/opencms/.content/images/scrollerImages/cursors/cursor_arrow_left.png), url(/opencms/opencms/.content/images/scrollerImages/cursors/cursor_arrow_left.cur),w-resize;*/
+}
+
+/* Visible left hotspot */
+div.scrollingHotSpotLeftVisible
+{
+	background-image: url(/opencms/opencms/.content/images/scrollerImages/arrow_left.gif);				
+	background-color: #fff;
+	background-repeat: no-repeat;
+	opacity: 0.35; /* Standard CSS3 opacity setting */
+	-moz-opacity: 0.35; /* Opacity for really old versions of Mozilla Firefox (0.9 or older) */
+	filter: alpha(opacity = 35); /* Opacity for Internet Explorer. */
+	zoom: 1; /* Trigger "hasLayout" in Internet Explorer 6 or older versions */
+}
+
+/* Invisible right hotspot */
+div.scrollingHotSpotRight
+{
+	min-width: 75px;
+	width: 10%;
+	height: 100%;
+	background-image: url(/opencms/opencms/.content/images/scrollerImages/big_transparent.gif);
+	background-repeat: repeat;
+	background-position: center center;
+	position: absolute;
+	z-index: 200;
+	right: 0;
+	/*cursor: url(/opencms/opencms/.content/images/scrollerImages/cursors/cursor_arrow_right.png), url(/opencms/opencms/.content/images/scrollerImages/cursors/cursor_arrow_right.cur),e-resize;*/
+}
+
+/* Visible right hotspot */
+div.scrollingHotSpotRightVisible
+{
+	background-image: url(/opencms/opencms/.content/images/scrollerImages/arrow_right.gif);
+	background-color: #fff;
+	background-repeat: no-repeat;
+	opacity: 0.35;
+	filter: alpha(opacity = 35);
+	-moz-opacity: 0.35;
+	zoom: 1;
+}
+
+/* The scroll wrapper is always the same width and height as the containing element (div).
+   Overflow is hidden because you don't want to show all of the scrollable area.
+*/
+div.scrollWrapper
+{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+div.scrollableArea
+{
+	position: relative;
+	width: auto;
+	height: 100%;
+}
+/*Logo Scroll Image Home Page Ends*/
+
+/*BMI Calculator Starts*/
+#bodyPart .bodyInnerDiv .bmiCalc{ float:left; width:1000px;  margin:20px 0 0 0;}
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart{ float:left; width:635px;}
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .text{ float:left; width:auto; font:bold 13px arial; text-align:justify;}
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box{ float:left; width:635px; margin:20px 0 0 0; background:url(../img/bmi_calc/shadow.jpg) no-repeat center bottom; padding-bottom:15px;} 
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder{ float:left; width:631px; border: solid 2px #5fa61f; background:#fff; padding:20px 0px;} 
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder .boxinner{ float:left; width:570px; margin:0 0 0 30px;} 
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder .boxinner h4{ float:left; width:auto; font:bold 14px arial; color:4e4e4e; margin:0 0 20px 0; clear:both;} 
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder .boxinner .rowDivb{ float:left; width:570px; height:50px;} 
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder .boxinner .rowDivbNext{ float:left; width:570px;} 
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder .boxinner .rowDivbNext .leftPartDiv{ float:left; width:285px; border-right:solid 1px #c7c7c7; padding:5px 0px; line-height:30px;} 
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder .boxinner .rowDivbNext .rigfhtPartDiv{ float:left; width:170px; margin:0 0 0 20px;} 
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder .boxinner .rowDivbNext .rigfhtPartDiv p{ float:left; width:170px; margin:5px 0 0 0; padding:0px; font:bold 13px arial;}
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder .boxinner .rowDivbNext .rigfhtPartDiv .bmiTab{ float:left; width:170px; margin:10px 0 0 0; padding:3px 0px; font:bold 18px arial; color:#fff; text-align:center; background:#68b323;}
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder .boxinner .rowDivb label{ float:left; width:115px; margin:5px 0 0 0; font-weight:bold;} 
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder .boxinner .rowDivb input[type=text]{ float:left; width:200px; height:18px; background:#fff; border:solid 1px #c7c7c7; padding:3px; clear:both;} 
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder .boxinner .rowDivb span{ float:left; width:auto; font:normal 11px arial; color:#840808; margin:2px 0 0 0; clear:both;}
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .bpDiv{ float:left; width:635px; margin:20px 0 0 0;}
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .bpDiv .divText{ float:left; width:auto; font-size:14px; margin:3px 0 0 0; padding:0px;} 
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .bpDiv  input[type=text]{ float:left; width:150px; height:18px; background:#fff; border:solid 1px #c7c7c7; padding:3px; margin:0 10px 0 10px;} 
+.select_bmi{width:209px; height:30px; background:#fff; border:solid 1px #c7c7c7; padding:5px; float:left; clear:both;}
+/*BMI Calculator Ends*/
+
+/*10-12-2013*/
+
+#bodyPart .bodyInnerDiv form{ float: left;
+    width: 68%;}
+#bodyPart .bodyInnerDiv form h1{ float:left; width:100%; /*border-bottom: solid 1px #d7d7d7;*/ padding-bottom:10px; font:bold 17px arial; margin:15px 0 20px 0; clear:both;}
+#bodyPart .bodyInnerDiv form .row{ float:left; width:503px; min-height:50px; clear:both;}
+#bodyPart .bodyInnerDiv form .row label{ float:left; width:180px; font:bold 12px arial;; margin:7px 0 0 0;}
+#bodyPart .bodyInnerDiv form .row .mid{ float:left; width:30px; font-weight:bold; margin:7px 0 0 0;}
+.leftDivOne{ float:left; width:100%; margin:20px 0 0 0;} 
+.btnNext{ float:left; margin:20px 0 0 200px;}
+#bodyPart .bodyInnerDiv form .rowNext{ float:left; width:465px;}
+#bodyPart .bodyInnerDiv form .rowNext label{ float:left; width:145px; font:bold 12px arial; margin:7px 0 0 0;}
+#bodyPart .bodyInnerDiv form .rowNext .mid{ float:left; width:25px; font-weight:bold; margin:7px 0 0 0;}
+#bodyPart .bodyInnerDiv form .rowNext .rightDivForm{ float:left; width:auto;}
+#bodyPart .bodyInnerDiv form .rowNext .rightDivForm input[type=text]{ float:left; width:285px; border:solid 1px #d7d7d7; padding:4px 3px; height:22px; background:#fff; border-radius:2px; font:normal 11px arial; outline:none; clear:both; margin:5px 0 0  0;}
+#bodyPart .bodyInnerDiv form .rowNext .rightDivForm select{ float:left; width:294px; border:solid 1px #d7d7d7; padding:3px; background:#fff; border-radius:2px; font:normal 11px arial; outline:none; height:180px;}
+#bodyPart .bodyInnerDiv form .rowNext .rightDivForm textarea{ float:left; width:285px; border:solid 1px #d7d7d7; padding:7px 3px; background:#fff; border-radius:2px; font:normal 11px arial; outline:none; resize:none; height:166px;}
+#bodyPart .bodyInnerDiv form .row input[type=text]{ float:left; width:285px; border:solid 1px #d7d7d7; padding:4px 3px; height:22px; background:#fff; border-radius:2px; font:normal 11px arial; outline:none;}
+#bodyPart .bodyInnerDiv form .row input[type=password]{ float:left; width:285px; border:solid 1px #d7d7d7; padding:4px 3px; height:22px; background:#fff; border-radius:2px; font:normal 11px arial; outline:none;}
+.marbot{ margin-bottom:18px !important;}
+.widdob{ width:91px !important; margin:0 0 0 10px;}
+.btn{ float:right; margin:20px 0 0 0;}
+#bodyPart .bodyInnerDiv form .row select{ float:left; width:293px; border:solid 1px #d7d7d7; padding:7px 3px; background:#fff; border-radius:2px; font:normal 11px arial; outline:none;}
+#bodyPart .bodyInnerDiv form .row textarea{ float:left; width:285px; border:solid 1px #d7d7d7; padding:7px 3px; background:#fff; border-radius:2px; font:normal 11px arial; outline:none; resize:none;}
+
+#bodyPart .bodyInnerDiv form .row .rightBoxDiv{ float:right; width:790px;}
+#bodyPart .bodyInnerDiv form .row .rightBoxDiv .sepDiv{ float:left; width:788px; border:solid 1px #d7d7d7; margin:5px 0 0 0;}
+.borBott{ border-bottom:solid 1px #d7d7d7; padding:0px; margin:0px;}
+
+
+#bodyPart .bodyInnerDiv form .row .rightBoxDiv .sepDiv .timeDiv .sepOne table{ float:left; width:100%; border:0px;}
+.dateTable{width:70px; font:normal 19px verdana; color:#fff; background:#efa113; text-align:center;}
+.timeTable{width:100px; border-right: solid 1px #d7d7d7; font:normal 17px arial; background:#f3f2f2; color:#555; text-align:center;}
+
+.selectTime{ float:left; width:auto; list-style:none; padding-bottom:12px;}
+.selectTime li{ float:left; width:100%; margin:12px 0 0 0 !important; background:none !important; clear:none; padding:0px !important;}
+.selectTime li .boxDiv{ float:left; width:80px; margin:0 0 0 36px;}
+.selectTime li .boxDiv input[type=checkbox]{ float:left; width:auto; height:auto; margin:0px; padding:0px;}
+.selectTime li .boxDiv span{ float:left; width:auto; font-size:12px; margin:0 0 0 10px;}
+
+#bodyPart .bodyInnerDiv h5{ float:left; width:100%; font:normal 60px times; text-align:center; margin:20px 0 0 0; color:#000;}
+#bodyPart .bodyInnerDiv p{ float:left; width:100%; color:#000; margin:10px 0 0 0; text-align:left; line-height:22px;}
+#bodyPart .bodyInnerDiv p img{ margin:10px 0 0 0;}
+
+#bodyPart .bodyInnerDiv form .row .rightBoxDiv .dateStr{ float:left; width:745px; background: url(../img/plus.png) no-repeat 15px 12px #efa113; font:normal 18px verdana; color:#fff; padding:10px 0 10px 45px; margin:5px 0 0 0;}
+#bodyPart .bodyInnerDiv form .row .rightBoxDiv .dateStrM{ float:left; width:745px; background: url(../img/minus.png) no-repeat 15px 12px #efa113; font:normal 18px verdana; color:#fff; padding:10px 0 10px 45px; margin:5px 0 0 0;}
+
+
+/*10-12-2013*/
+
+
+/* Container DIV - automatically generated */
+.simply-scroll-container {
+position: relative;
+}
+
+/* Clip DIV - automatically generated */
+.simply-scroll-clip {
+position: relative;
+overflow: hidden;
+}
+
+/* UL/OL/DIV - the element that simplyScroll is inited on
+Class name automatically added to element */
+.simply-scroll-list {
+overflow: hidden;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.simply-scroll-list li {
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
+.simply-scroll-list li img {
+border: none;
+display: block;
+}
+
+/* Custom class modifications - adds to / overrides above
+
+.simply-scroll is default base class */
+
+/* Container DIV */
+.simply-scroll {
+width: 500px;
+height: 55px;
+float:left; clear:both;
+}
+
+/* Clip DIV */
+.simply-scroll .simply-scroll-clip {
+width: 500px;
+height: 55px;
+}
+
+/* Explicitly set height/width of each list item */
+.simply-scroll .simply-scroll-list li {
+float: left; /* Horizontal scroll only */
+clear:none !important;
+width: 118px;
+padding:0px !important;
+background:none !important;
+margin:0 0 0 15px !important ;
+
+}
+
+
+.logoright{ float:left; width:639px !important; margin:0 0 0 66px;}
+.logoright .rightText{ float:left; width:auto; margin:0px 0 0 90px;}
+.logoright .marqDiv{ float:left; width:605px; z-index:9999;}
+.logoright .marqDiv p{ position: relative; overflow: hidden; height:18px; float:left;}
+
+
+.demo1 {
+	border: 1px solid #ccc;
+	float:left;
+	width:100%;
+}
+.demo1 div div {
+	padding: 10px;
+	border-bottom: 1px solid #ccc; float:left; width:504px;
+}
+.demo1 div div p{
+float:left; width:418px !important; margin:5px 0 0 0;  clear:both;
+}
+
+
+/*Logo Scroll Home Page Starts*/
+
+.logoParade{width:415px; height: 58px; position: relative; margin: 0 0 0 2px;}
+#logoParade a img {width: auto; height: 51px;}
+#logoParade div.scrollableArea a{display: block; float: left; padding-left: 10px;}
+.logoParade h3 { color:#0672CD; font-size: 1em; font-family: Arial, Helvetica, sans-serif; margin-bottom: 1em; padding-bottom: 0.5em; border-bottom: 1px solid #e8e8e8}
+.logoParade.outer {margin-top: 192px; opacity: 0;}
+
+div.scrollingHotSpotLeft
+{
+	min-width: 75px;
+	width: 10%;
+	height: 100%;
+	/* There is a big background image and it's used to solve some problems I experienced
+    in Internet Explorer 6. */
+	background-image: url(/opencms/opencms/.content/images/scrollerImages/big_transparent.gif);
+	background-repeat: repeat;
+	background-position: center center;
+	position: absolute;
+	z-index: 200;
+	left: 0;
+	/*  The first url is for Firefox and other browsers, the second is for Internet Explorer */
+	/*cursor: url(/opencms/opencms/.content/images/scrollerImages/cursors/cursor_arrow_left.png), url(/opencms/opencms/.content/images/scrollerImages/cursors/cursor_arrow_left.cur),w-resize;*/
+}
+
+/* Visible left hotspot */
+div.scrollingHotSpotLeftVisible
+{
+	background-image: url(/opencms/opencms/.content/images/scrollerImages/arrow_left.gif);				
+	background-color: #fff;
+	background-repeat: no-repeat;
+	opacity: 0.35; /* Standard CSS3 opacity setting */
+	-moz-opacity: 0.35; /* Opacity for really old versions of Mozilla Firefox (0.9 or older) */
+	filter: alpha(opacity = 35); /* Opacity for Internet Explorer. */
+	zoom: 1; /* Trigger "hasLayout" in Internet Explorer 6 or older versions */
+}
+
+/* Invisible right hotspot */
+div.scrollingHotSpotRight
+{
+	min-width: 75px;
+	width: 10%;
+	height: 100%;
+	background-image: url(/opencms/opencms/.content/images/scrollerImages/big_transparent.gif);
+	background-repeat: repeat;
+	background-position: center center;
+	position: absolute;
+	z-index: 200;
+	right: 0;
+	/*cursor: url(/opencms/opencms/.content/images/scrollerImages/cursors/cursor_arrow_right.png), url(/opencms/opencms/.content/images/scrollerImages/cursors/cursor_arrow_right.cur),e-resize;*/
+}
+
+/* Visible right hotspot */
+div.scrollingHotSpotRightVisible
+{
+	background-image: url(/opencms/opencms/.content/images/scrollerImages/arrow_right.gif);
+	background-color: #fff;
+	background-repeat: no-repeat;
+	opacity: 0.35;
+	filter: alpha(opacity = 35);
+	-moz-opacity: 0.35;
+	zoom: 1;
+}
+
+/* The scroll wrapper is always the same width and height as the containing element (div).
+   Overflow is hidden because you don't want to show all of the scrollable area.
+*/
+div.scrollWrapper
+{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 105%;
+    margin: 10px 0 0;
+}
+
+div.scrollableArea
+{
+	position: relative;
+	width: auto;
+	height: 100%;
+	overflow:hidden;
+}
+/*Logo Scroll Image Home Page Ends*/
+
+
+
+/*Change Index Page Starts*/
+
+#packages .packagesInnerDiv .rightPart .box .testBox form{float:left; width:auto; margin: 5px 0 0 15px; display:inline;}
+#packages .packagesInnerDiv .rightPart .box .testBox form label{float:left; width:100px; margin: 5px 0 0 0px; font-weight:bold;}
+#packages .packagesInnerDiv .rightPart .box .testBox form input[type=text]{float:left; width:225px; border:solid 1px #c7c7c7; padding:4px 5px; font-size:11px; }
+#packages .packagesInnerDiv .rightPart .box .testBox .advanceSearch{float:left; width:auto; margin: 5px 0 0 190px; display:inline;}
+#packages .packagesInnerDiv .rightPart .box .testBox .advanceSearch .or{ float:left; width:auto; margin:0 0 0 32px; display:inline; font:bold 12px arial; color:#333;}
+#packages .packagesInnerDiv .rightPart .box .testBox .advanceSearch a{ color:#ee8c2c;}
+#packages .packagesInnerDiv .rightPart .box .testBox .advanceSearch a:hover{ color:#549b12;}
+
+#bodyPart .bodyInnerDiv .cont .leftPanelBox{ float:left; width:522px;}
+#bodyPart .bodyInnerDiv .cont .leftPanelBox .leftPart{ float:left; width:522px; border:solid 1px #dbdbdb; margin:40px 0 0;}
+#bodyPart .bodyInnerDiv .cont .leftPanelBox .abtNir{ float:left; width:522px; text-align:justify; line-height:22px; color:#272727; margin:15px 0 0 0;}
+#bodyPart .bodyInnerDiv .cont .leftPanelBox .abtNir h3{ float:left; width:522px; font:normal 25px times; color:#000; margin:0 0 10px 0;}
+#bodyPart .bodyInnerDiv .cont .leftPanelBox .abtNir img{ float:left; width:215px; height:97px; border-radius:5px; margin:0 10px 10px 0; }
+
+#bodyPart .bodyInnerDiv .cont .testimonialBox{ float:left; width:522px; margin:15px 0 0 0;}
+#bodyPart .bodyInnerDiv .cont .testimonialBox h1{ float:left; width:auto; font:normal 25px times; color:#000;}
+#bodyPart .bodyInnerDiv .cont .testimonialBox .testimonialDiv { float:left; width:522px; border:solid 1px #dbdbdb; margin:10px 0 0 0;}
+#bodyPart .bodyInnerDiv .cont .testimonialBox .testimonialDiv .contDiv{ float:left; width:500px; padding:11px;} 
+#bodyPart .bodyInnerDiv .cont .testimonialBox .testimonialDiv .contDiv .name{ float:left; width:auto; font:bold 13px arial; clear:both;}
+#bodyPart .bodyInnerDiv .cont .testimonialBox .testimonialDiv .contDiv p{ float:left; width:auto; text-align:justify; margin:5px 0 0 0; color:#838383; line-height:16px; clear:both;}
+
+
+#bodyPart .bodyInnerDiv .cont .callBack{ float:left; width:435px;}
+#bodyPart .bodyInnerDiv .cont .callBack .formDiv{ float:left; width:433px; border:solid 2px #5da619; padding-bottom:10px; margin:10px 0 0 0;}
+#bodyPart .bodyInnerDiv .cont .callBack .formDiv .formArea .textArea{ float:left; width:373px; padding:3px 8px; border:solid 1px #dbdbdb; font:normal 12px arial; color:#828282; margin:15px 0 0 0; resize:none; outline:none;}
+
+#bodyPart .bodyInnerDiv .cont .callBack .formDiv .formArea{ float:left; width:395px; margin:15px 0 0 18px; display:inline;}
+#bodyPart .bodyInnerDiv .cont .callBack .formDiv .formArea .row{ float:left; width:395px; height:40px; margin:0px;}
+#bodyPart .bodyInnerDiv .cont .callBack .formDiv .formArea .row input[type=text]{ float:left; width:256px; padding:3px 8px; border:solid 1px #dbdbdb; height:17px; font:normal 12px arial; color:#828282; outline:none;}
+#bodyPart .bodyInnerDiv .cont .callBack .formDiv .formArea .row select{ float:left; width:274px; padding:3px; border:solid 1px #dbdbdb; height:26px; font:normal 12px arial; color:#828282; outline:none;}
+.widSmallTextBox{ width:175px !important; }
+
+#bodyPart .bodyInnerDiv .cont .docDiv  { float:left; width:435px; margin:15px 0 0 0; clear:both;}
+#bodyPart .bodyInnerDiv .cont .docDiv h3{ float:left; width:auto; font:normal 25px times; color:#000; margin:0 0 10px 0; clear:both;}
+#bodyPart .bodyInnerDiv .cont .docDiv ul{ float:left; width:100%; list-style:none;}
+#bodyPart .bodyInnerDiv .cont .docDiv ul li{ float:left; width:100%; border-bottom: solid 1px #dbdbdb; padding:0 0 15px 0; margin:15px 0 0 0; list-style:none; background:none;}
+#bodyPart .bodyInnerDiv .cont .docDiv ul li .imgBoxSmall { float:left; border: solid 2px #68b323; width:auto; height:auto;}
+#bodyPart .bodyInnerDiv .cont .docDiv ul li .imgBoxSmall img{ float:left; width:67px; height:67px;}
+#bodyPart .bodyInnerDiv .cont .docDiv ul li .box{ float:right; width:345px;}
+#bodyPart .bodyInnerDiv .cont .docDiv ul li .box .name{ float:left; width:auto; font:bold 13px arial; clear:both; color:#000;}
+#bodyPart .bodyInnerDiv .cont .docDiv ul li .box .pog{ float:left; width:auto; font:bold 12px arial; clear:both; color:#555;}
+#bodyPart .bodyInnerDiv .cont .docDiv ul li .box p{ float:left; width:auto; text-align:justify; margin:3px 0 0 0; color:#838383; line-height:16px; clear:both;}
+
+#header .newLogoSection{float:left; width:100%;}
+#header .newLogoSection .innerDiv{ margin:0 auto; width:1000px;}
+.topBanner{ float:left; margin:20px 0 0 0; position:relative;}
+.topBanner .try{ float:left; top:181px; left:25px; position:absolute;}
+#doctorPanel{ float:left; margin:15px 0 0 0; width:1000px;}
+#doctorPanel .actDiv{ float:left; width:1000px; background:url(../img/change_index/bottom-shadow-doctor.jpg) no-repeat bottom center; padding:0 0 5px 0; margin-bottom:15px;}
+#doctorPanel .actDiv .boxDiv{ float:left; width:996px; border:solid 2px #61ad1b; padding:7px 0px;}
+#doctorPanel .actDiv .boxDiv .docPanel{ float:left; width:auto; margin:0 0 0 18px;}
+#doctorPanel .actDiv .boxDiv .docPanel .loginBtn{ float:left; width:auto; margin:3px 0 0 15px;}
+#doctorPanel .actDiv .boxDiv .docPanelRight{ float:right; width:auto; border-left: solid 1px #dbdbdb; padding:0 45px 0 20px;}
+.loginBtn{ float:left; width:auto; margin:3px 0 0 15px;}
+#doctorPanel dl{ float:left; width:auto; margin:15px 0 0 0;}
+#doctorPanel dl dt{ float:left; width:auto; background:url(../img/change_index/bottom-shadow-box.jpg) no-repeat center bottom; padding:0 0 7px 0 !important; margin:0 0 0 42px;  clear:none !important;}
+#doctorPanel dl dt .box{ float:left; width:216px; height:234px; border:solid 1px #dbdbdb;}
+#doctorPanel dl dt .box img{ float:left; width:auto; margin:20px 0 0 65px;}
+#doctorPanel dl dt .box h1{ float:left; width:100%; margin:20px 0 0 0; font:bold 18px times; color:#5aa217; text-align:center;}
+#doctorPanel dl dt .box p{ float:left; width:100%; margin:10px 0 0 0; font:bold 13px/18px arial; color:#222222; text-align:center;}
+#doctorPanel h4 {  float: left;  font: bold 17px times; width: auto; clear:both; margin:15px 0 0 0;}
+#doctorPanel .specialities {  float: left;border:solid 1px #dbdbdb; clear:both; margin:15px 0 0 0; padding:5px; width:988px;}
+#doctorPanel ol {  float: right; width:685px; list-style:none; margin:15px 0 0 0;}
+#doctorPanel ol li{  float: left; width:135px; background:none; text-align:center; border-right: solid 1px #757575; color:#757575;}
+/*Change Index Page Ends*/
+
+
+/*Listing Page CSS Starts*/
+#bodyPart .bodyInnerDiv .findDoctorDiv{ float:left; width:100%; margin:30px 0 0 0;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .leftPanel{ float:left; width:235px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .leftPanel .blockDiv{ float:left; width:235px; margin:15px 0 0 0;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .leftPanel .blockDiv .heading{ float:left; width:233px; background: url(../img/change_index/downArrow.png) no-repeat 7px 10px #f8f8f8; border:solid 1px #dedede; padding:5px 0px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .leftPanel .blockDiv .dateDiv{ float:left; width:auto; border:solid 1px #dedede; margin:7px 0 0 8px; clear:both;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .leftPanel .blockDiv .dateDiv ul{ float:left; width:auto; list-style:none; margin:0px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .leftPanel .blockDiv .dateDiv ul li{ float:left; width:25px; text-align:center; clear:none; margin:0px; padding:4px 0;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .leftPanel .blockDiv .dateDiv ul li:hover{ color:#fff; background:#68B323; cursor:pointer;} 
+#bodyPart .bodyInnerDiv .findDoctorDiv .leftPanel .blockDiv .dateDiv .any{ color:#fff; background:#68B323; float:left; width:40px; text-align:center; padding:4px 0px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .leftPanel .blockDiv .time{ float:left; width:auto; margin:8px 0 0 8px; clear:both;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .leftPanel .blockDiv .heading h2{ float:left; width:auto; font:bold 13px arial; color:#000; margin:0 0 0 25px; text-transform:none;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .leftPanel .blockDiv ul{ float:left; width:auto; margin:0 0 0 7px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .leftPanel .blockDiv ul li{ float:left; width:auto; margin:13px 0 0 0; background:none; padding:0px; clear:both;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .leftPanel .blockDiv ul li input[type=checkbox]{ float:left; width:auto; height:auto; margin:0px; padding:0px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .leftPanel .blockDiv ul li span{ float:left; width:auto; margin:0 0 0 7px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel{ float:right; width:735px;}
+
+
+
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .timeHeading{ float:left; width:735px; height:60px; background:#efa113; }
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .timeHeading ul{ float:right; width:auto; list-style:none; margin:7px 0 0 0;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .timeHeading ul li{ float:left; width:91px; text-align:center; background:none; margin:0px; padding:0px; clear:none;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .timeHeading ul li span{ float:left; width:91px; font:bold 17px arial; color:#000; text-shadow:0px 0px 2px #fff;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .timeHeading ul li p{ float:left; width:91px; text-align:center; font:normal 13px arial; color:#fff; text-shadow:1px 1px 0px #7c5103; margin:2px 0 0 0; padding:0px;}
+
+
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .timeTableDiv{ float:left; width:735px; background:#dedede; margin:3px 0 0 0; border-bottom:solid 3px #efa113;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .timeTableDiv table{ float:left; width:100%;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .timeTableDiv table td{ background:#fff; padding:2px 5px 5px 5px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .timeTableDiv table td .noav{ float:left; width:auto; background:url(../img/change_index/not-av-sign.jpg) no-repeat 0 3px; padding:0 0 0 14px; color:#a2a2a2; clear:both; margin:3px 0 0 0;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .timeTableDiv table td .av{ float:left; width:auto; background:url(../img/change_index/av-sign.jpg) no-repeat 0 3px; padding:0 0 0 14px; color:#e99a09; clear:both; margin:3px 0 0 0;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .timeTableDiv table td .av{ float:left; width:auto; background:url(../img/change_index/av-sign.jpg) no-repeat 0 3px; padding:0 0 0 14px; color:#e99a09; clear:both; margin:3px 0 0 0;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .timeTableDiv table td h3{ float:left; width:100%; text-align:center; font:bold 16px arial; color:#4f4f4f;}
+
+
+
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .sepBox{ float:left; width:735px; margin:15px 0 0 0;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .sepBox .imgbox{ float:left; width:auto; background:#fff;border:solid 1px #e7e7e7; padding:3px; position:relative;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .sepBox .imgbox .fericon{ float:left; width:auto; height:auto; position:absolute; top:-15px; left:-15px;}
+
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .sepBox .imgbox img{ float:left; width:131px; height:126px; }
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .sepBox .docDetails{ float:left; width:578px; background:#fff; border:solid 1px #e7e7e7; margin:0 0 0 15px; padding-bottom:8px; min-height:124px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .sepBox .docDetails .heading{ float:left; width:562px; background:#f8f8f8; border-bottom:solid 1px #e7e7e7; padding:8px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .sepBox .docDetails .heading .leftText{ float:left; width:auto;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .sepBox .docDetails .heading .leftText p{ float:left; width:auto; font:bold 15px arial; color:#5ca619; clear:both; margin:0px; padding:0px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .sepBox .docDetails .heading .leftText span{ float:left; width:auto; font:bold 13px arial; color:#4e4e4e; clear:both; margin:0px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .sepBox .docDetails .docdiv{ float:left; width:auto; margin:8px 0 0 8px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .sepBox .docDetails .docdiv .leftDivDoc{ float:left; width:400px; border-right:solid 1px #d8d8d8;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .sepBox .docDetails .docdiv .leftDivDoc .docName{ float:left; width:auto; clear:both;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .sepBox .docDetails .docdiv .leftDivDoc ul{ float:left; width:auto; list-style:none;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .sepBox .docDetails .docdiv .leftDivDoc ul li{ float:left; width:auto; text-align:justify; clear:both; margin:8px 0 0 0; background:url(../img/change_index/green-bullet.gif) no-repeat 0 6px; padding:0 0 0 13px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .sepBox .docDetails .docdiv .rightDivDoc{ float:left; width:auto; margin:0 0 0 12px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .sepBox .docDetails .docdiv .rightDivDoc .inrTop{ float:left; width:auto; background:url(../img/change_index/inr-icn.jpg) no-repeat 0 0; padding:0 0 0 24px; clear:both;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .sepBox .docDetails .docdiv .rightDivDoc .day{ float:left; width:auto; background:url(../img/change_index/day-icon.jpg) no-repeat 0 0; padding:0 0 0 24px; font-weight:bold; clear:both;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .sepBox .docDetails .docdiv .rightDivDoc .home-care{ float:left; width:auto; background:url(../img/change_index/day-icon.jpg) no-repeat 0 0; padding:0 0 0 24px; font-weight:bold; margin:10px 0 0 0; clear:both;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .sepBox .docDetails .docdiv .rightDivDoc .time{ float:left; width:auto; margin:2px 0 0 25px; clear:both;}
+.output {float:right;}
+/*Listing Page CSS Ends*/
+
+/*Doctor Profile Page Starts*/
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc{ float:left; width:100%; margin:20px 0 0 0; padding:0 0 20px 0; border-bottom:solid 1px #d8d8d8;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docDetails{ float:left; width:565px; text-align:justify; font-size:13px; line-height:17px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docDetailsLeft{ float:left; width:583px; text-align:justify; font-size:14px; line-height:17px; border-right:solid 1px #d8d8d8;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docDetailsLeft .speDiv{ float:left; width:auto; clear:both; margin:15px 0 0 0; padding:0 10px 0 0;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docDetailsLeft .speDiv h3{ float:left; width:auto; padding:0 0 0 20px; margin:0px;  font:bold 14px arial; color:#4e4e4e; clear:both; text-transform:none;}
+.speicon{ background:url(../img/change_index/spe-icon.jpg) no-repeat 0 5px;}
+.expicon{ background:url(../img/change_index/exp-icon.jpg) no-repeat 0 0;}
+.awdicon{ background:url(../img/change_index/awa-icon.jpg) no-repeat 0 0;}
+.memicon{ background:url(../img/change_index/mem-icon.jpg) no-repeat 0 0;}
+.regicon{ background:url(../img/change_index/reg-icon.jpg) no-repeat 0 0;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .speDivright{ float:left; width:390px;  margin:0 0 0 25px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .speDivright .speDiv{ float:left; width:auto; clear:both; margin:15px 0 0 0;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .speDivright .speDiv h3{ float:left; width:auto; padding:0 0 0 27px; margin:0px;  font:bold 14px arial; color:#4e4e4e; clear:both; text-transform:none;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .speDivright .speDiv dl{ float:left; width:auto; clear:both; list-style:none; padding:0px; margin:0 0 0 20px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .speDivright .speDiv dl dt{ float:left; font-size:14px; width:auto; background:url(../img/change_index/deActiveGreen.gif) no-repeat 0 3px; padding:0 0 0 15px; margin:8px 0 0 0; clear:both;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docDetailsLeft .speDiv dl{ float:left; width:auto; clear:both; list-style:none; padding:0px; margin:0 0 0 20px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docDetailsLeft .speDiv dl dt{ float:left; font-size:14px; width:auto; background:url(../img/change_index/deActiveGreen.gif) no-repeat 0 3px; padding:0 0 0 15px; margin:8px 0 0 0; clear:both;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docDetails .imgbox{ float:left; width:auto; background:#fff;border:solid 1px #e7e7e7; padding:3px; margin:0 15px 0 0; }
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docDetails .imgbox img{ float:left; width:131px; height:126px; }
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docDetails .headerDiv{ float:left; /*width:580px;*/width:411px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docDetails .headerDiv h2{ float:left; width:auto; margin:0px;  font:bold 17px arial; color:#68b323; clear:both; text-transform:none;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docDetails h4{ float:left; width:auto; margin:0px;  font:bold 17px arial; color:#4e4e4e; clear:both;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docDetails .detDiv{ float:left; width:auto; margin:15px 0 0 0;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docDetails .detDiv .add{ float:left; width:185px; clear:both;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docDetails .detDiv .add h3{ float:left; width:auto; background:url(../img/change_index/location-icon.jpg) no-repeat 0 3px; padding:0 0 0 15px; color:#68b323; font:bold 13px arial;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docDetails .detDiv .add p{ float:left; width:auto; text-align:left; margin:5px 0 0 15px; line-height:20px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docDetails .detDiv .time{ float:left; width:200px; }
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docDetails .detDiv .time .timeDiv{ float:left; width:auto; margin:0 0 0 20px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docDetails .detDiv .time .timeDiv h4{ float:left; width:auto; padding:0 0 0 20px; background:url(../img/change_index/day-icon.jpg) no-repeat 0 0; font:bold 14px arial; color:#4e4e4e;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docDetails .detDiv .time .timeDiv p{ float:left; width:auto; margin:3px 0 0 20px; padding:0px; clear:both;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docDetails .detDiv .inrRs{ float:left; width:auto; padding:0 0 0 25px; background:url(../img/change_index/inr-icn.jpg) no-repeat 0 0;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docDetails .headerDiv h3{ float:left; width:auto; margin:3px 0 10px 0; font:bold 14px arial; color:#4e4e4e; clear:both;}
+.readmore{ float:right; width:auto; margin:20px 0 0 0;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docDetails .detDiv .add .more{ float:right; width:auto; font:normal 12px arial;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docServices{ float:right; width:385px; border:solid 1px #d8d8d8; padding:5px 15px; height:120px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docServices h1{ float:left; width:auto; clear:both;  padding:0 0 0 27px; color:#4e4e4e; font:bold 16px arial;}
+.serIcon{background:url(../img/change_index/services-icon.jpg) no-repeat 0 4px;}
+.eduIcon{ background:url(../img/change_index/education-icon.jpg) no-repeat 0 0;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docServices dl{ float:left; width:auto; clear:both; list-style:none; padding:0px; margin:0px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .docServices dl dt{ float:left; font-size:14px; width:177px; background:url(../img/change_index/deActiveGreen.gif) no-repeat 0 3px; padding:1px 0 0 15px; margin:5px 0 0 0;}
+.appbtn{ float:left; clear:both; margin:15px 0 0 0;}
+.appbtn2{ float:left; clear:both; margin:15px 0 0 0;}
+.edu{ width:auto !important; clear:both !important;}
+.doc-desc {clear:both; padding:15px; font-size:13px; line-height:20px;}
+.doc-name {font-weight:bold; text-align:center; text-decoration:underline; padding:25px 0 0 0; font-size:15px;}
+.doc-inner-div {border:2px solid #DCDCDC; padding:10px; border-radius:5px;}
+
+.widthBoxOne{ width:215px !important }
+.widthBoxTwo{ width:735px !important }
+.priceDiv{ float:left; width:auto; margin:0 0 0 15px;}
+
+
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .docDetailBox{ float:left; width:703px;  background:#f6f5f5; border:solid 1px #dedede; margin:3px 0; padding:15px; }
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .docDetailBox .cliName{ float:left; width:auto; margin:15px 0 0 0; clear:both;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .docDetailBox .cliName .leftDiv{ float:left; font-weight:bold; width:115px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .docDetailBox .cliName .midDiv{ float:left; font-weight:bold; width:15px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .rightPanel .docDetailBox .cliName .rightDiv{ float:left;  width:auto;}
+
+
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .timeHeading1{ float:left; width:1000px; height:60px; background:#efa113; }
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .timeHeading1 ul{ float:right; width:auto; list-style:none; margin:7px 0 0 0;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .timeHeading1 ul li{ float:left; width:115px; text-align:center; background:none; margin:0px; padding:0px; clear:none;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .timeHeading1 ul li span{ float:left; width:115px; font:bold 17px arial; color:#000; text-shadow:0px 0px 2px #fff;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .timeHeading1 ul li p{ float:left; width:115px; text-align:center; font:normal 13px arial; color:#fff; text-shadow:1px 1px 0px #7c5103; margin:2px 0 0 0; padding:0px;}
+
+
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .timeTableDiv1{ float:left; width:1000px; background:#dedede; border-bottom:solid 3px #efa113;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .timeTableDiv1 table{ float:left; width:100%;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .timeTableDiv1 table td{ background:#fff; padding:2px 5px 5px 5px;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .timeTableDiv1 table td .noav{ float:left; width:auto; background:url(../img/change_index/not-av-sign.jpg) no-repeat 0 3px; padding:0 0 0 14px; color:#a2a2a2; clear:both; margin:3px 0 0 0;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .timeTableDiv1 table td .av{ float:left; width:auto; background:url(../img/change_index/av-sign.jpg) no-repeat 0 3px; padding:0 0 0 14px; color:#e99a09; clear:both; margin:3px 0 0 0;}
+#bodyPart .bodyInnerDiv .findDoctorDiv .topPanelDoc .timeTableDiv1 table td h3{ float:left; width:100%; text-align:center; font:bold 16px arial; color:#4f4f4f;}
+
+
+
+.slideboxDiv{ float:left; width:735px;}
+.slides_container {	width:735px; display:none;}
+.slides_container .slideDiv {width:735px; height:630px; display:block;}
+
+.slideboxDiv1{ float:left; width:1000px; margin:36px 0 0 0;}
+.slides_container1 {	width:1000px; display:none;}
+.slides_container1 .slideDiv {width:1000px; height:630px; display:block;}
+.pagination { display:none;}
+.inptext {border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    color: #666666;
+    float: left;
+    font: 11px arial;
+    height: 25px;
+    padding: 3px;
+    width: 257px;}
+.left-head {width:190px; font-weight:bold;}
+.boxset{ margin:20px 0 0 0 !important; padding:15px 0 !important;}
+
+.clinic-info{float:left; width:330px; vertical-align:top; padding:10px;}
+.clinic-info-inner{border:5px solid #D8D8D8; float:left; border-radius:5px;}
+.clinic-info-head{font-weight:bold; width:85px; float:left; padding:5px;}
+.clinic-info-head-second{float:left; width:215px; padding:5px;}
+.mar-top{margin:10px 0 0 0;}
+
+
+.book-home-visit-head{float:left; width:150px; font-weight:bold;}
+.appoint-conf{float:left; clear:both; margin:10px 0 0 8px; color:#ff0000;}
+
+#signup-Div {background: #fff; border: 6px solid #727272; width:600px; height:auto; position: relative; display:none; z-index:999; border-radius:13px; }
+#close-one 
+{
+    display: block;
+    height: 23px;
+    overflow: hidden;
+    position: absolute;
+    right: 3px;
+    top: 8px;
+    width: 24px;
+}
+
+#signup-Div-Book {background: #fff; border: 6px solid #727272; width:600px; height:600px; position: relative; display:none; z-index:999; border-radius:13px; }
+#close-one-Book 
+{
+    display: block;
+    height: 23px;
+    overflow: hidden;
+    position: absolute;
+    right: 3px;
+    top: 8px;
+    width: 24px;
+}
+
+.land-page{float:right; width:auto; margin:8px 0 0 0; font-size:15px;}
+
+.more-clinic {clear:both; float:right; margin:10px 0 0 0;}
+.home-mess{clear:both; color:#FF0000;}
+.prof-div{padding:7px 0 0 0;}
+
+
+
+.timeHeading-doctor{ float:left; width:735px; height:60px; background:#efa113; }
+.timeHeading-doctor ul{ float:right; width:auto; list-style:none; margin:7px 0 0 0;}
+.timeHeading-doctor ul li{ float:left; width:88px; text-align:center; background:none; margin:0px; padding:0px; clear:none;}
+.timeHeading-doctor ul li span{ float:left; width:91px; font:bold 17px arial; color:#000; text-shadow:0px 0px 2px #fff;}
+.timeHeading-doctor ul li p{ float:left; width:91px; text-align:center; font:normal 13px arial; color:#fff; text-shadow:1px 1px 0px #7c5103; margin:2px 0 0 0; padding:0px;}
+
+
+.timeTableDiv-doctor{ float:left; width:735px; background:#dedede; margin:3px 0 0 0; border-bottom:solid 3px #efa113;}
+.timeTableDiv-doctor table{ float:left; width:100%;}
+.timeTableDiv-doctor table td{ background:#fff; padding:2px 5px 5px 5px;}
+.timeTableDiv-doctor table td .noav{ float:left; width:auto; background:url(../img/change_index/not-av-sign.jpg) no-repeat 0 3px; padding:0 0 0 14px; color:#a2a2a2; clear:both; margin:3px 0 0 0;}
+.timeTableDiv-doctor table td .av{ float:left; width:auto; background:url(../img/change_index/av-sign.jpg) no-repeat 0 3px; padding:0 0 0 14px; color:#e99a09; clear:both; margin:3px 0 0 0;}
+.timeTableDiv-doctor table td .av{ float:left; width:auto; background:url(../img/change_index/av-sign.jpg) no-repeat 0 3px; padding:0 0 0 14px; color:#e99a09; clear:both; margin:3px 0 0 0;}
+.timeTableDiv-doctor table td h3{ float:left; width:100%; text-align:center; font:bold 16px arial; color:#4f4f4f;}
+.clinic-info-mess{font-weight:bold; color:#FF0000; width:800px;}
+.add-more-clinic{float:right; font-weight:bold;}
+			
+.timeHeading1{ float:left; width:1000px; height:60px; background:#efa113; }
+.timeHeading1 ul{ float:right; width:auto; list-style:none; margin:7px 0 0 0;}
+.timeHeading1 ul li{ float:left; width:115px; text-align:center; background:none; margin:0px; padding:0px; clear:none;}
+.timeHeading1 ul li span{ float:left; width:115px; font:bold 17px arial; color:#000; text-shadow:0px 0px 2px #fff;}
+.timeHeading1 ul li p{ float:left; width:115px; text-align:center; font:normal 13px arial; color:#fff; text-shadow:1px 1px 0px #7c5103; margin:2px 0 0 0; padding:0px;}
+
+
+.timeTableDiv1{ float:left; width:1000px; background:#dedede; border-bottom:solid 3px #efa113;}
+.timeTableDiv1 table{ float:left; width:100%;}
+.timeTableDiv1 table td{ background:#fff; padding:2px 5px 5px 5px;}
+.timeTableDiv1 table td .noav{ float:left; width:auto; background:url(../img/change_index/not-av-sign.jpg) no-repeat 0 3px; padding:0 0 0 14px; color:#a2a2a2; clear:both; margin:3px 0 0 0;}
+.timeTableDiv1 table td .av{ float:left; width:auto; background:url(../img/change_index/av-sign.jpg) no-repeat 0 3px; padding:0 0 0 14px; color:#e99a09; clear:both; margin:3px 0 0 0;}
+.timeTableDiv1 table td h3{ float:left; width:100%; text-align:center; font:bold 16px arial; color:#4f4f4f;}	
+
+
+
+.actBtn { float:left; text-align:center; width:100%;}
+.actBtn img{ margin:0 0 0 15px;}
+.appoint{ float:left; width:100%; border-bottom:solid 1px #d7d7d7; padding-bottom:10px; margin:15px 0 0 0;}
+.appoint h3{ float:left; width:auto; font:bold 17px arial; color:#6d6d6d}
+.appoint dl{ float:right; width:auto; list-style:none; margin:0px; padding:0px;}
+.appoint dl dt{ float:left; width:auto; padding:0 15px; border-right:dotted 1px #686868;  font:bold 12px arial;}
+.appoint dl dt a:hover{ color:#66ba5c;}
+.appoint dl dt a{ color:#757575;}
+.lastAct{ border:none !important; padding-right:0px !important;}
+.searchOpt{ float:left; width:100%; margin:20px 0 0 0;}
+.searchOpt .box{ float:left; width:auto; margin: 0 0 0 6px;}
+.searchOpt .box label{ float:left; width:60px; font-weight:600; font-size:11px; margin:5px 0 0 0;}
+.searchOpt .box .midDiv{ float:left; width:15px; font-weight:600; font-size:11px; margin:5px 0 0 0;}
+.searchOpt .box select{ float:left; width:135px; background:#fff; border:solid 1px #d7d7d7; border-radius:3px; padding:3px; height:25px; font-size:11px;}
+.searchOpt .box .dateDiv{ float:left; width:182px; height:23px; background:#fff; border:solid 1px #d7d7d7; border-radius:3px;}
+.searchOpt .box .dateDiv input[type=text]{ float:left; width:157px; padding:5px 3px 4px 3px; border:none; background:#fff;  font:normal 11px arial; color:#666; } 
+.searchOpt .box .dateDiv .clrIcon{ float:left; margin:3px 0 0 0;}
+#ui-datepicker-div{ font:normal 11px arial!important;}
+
+.select-box-appoint{background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #D7D7D7; border-radius: 3px; float: left; font-size: 11px; height: 25px; padding: 3px; width: 100px;}		
+
+.cancel-appoint-index {float: left; padding: 20px;}
+.cancel-appoint-inner {float: left; padding: 10px; width:100%;}
+.cancel-appoint-head {float: left; font-size: 14px; font-weight: bold; margin: 10px; width: 145px;}
+.cancel-input {height:25px; width:210px; border-radius:3px; border:1px solid #D8D8D8;}
+#signup-Div-cancel {background: #fff; border: 6px solid #727272; width:445px; height:auto; position: relative; display:none; z-index:999; border-radius:13px; }
+.appoint-not {text-align:center; color:#FF0000; font-weight:bold; display:none;}
+.rightSelectBox {position:relative; float:left;}
+.suggest-box{width:271px;background-color: #FFFFFF; border: 1px solid #D8D8D8; border-radius:5px; height:205px; overflow-y:scroll; z-index:9; position:relative; clear:both;}
+.suggest-box-div{ width:240px; padding:5px;}
+.suggest-box2{width:271px;background-color: #FFFFFF; border: 1px solid #D8D8D8; border-radius:5px; height:auto;}
+
+.right-search-div{float:left; height:30px; padding:0 0 20px;}
+.search-doctor-input {border:1px solid #D8D8D8; height:20px; border-radius:5px; height:20px; padding:5px; color:#A0A0A0;}
+.search-div{float:left; width:160px; position:relative;}
+.filter-btn{float:left; padding:1px;}
+
+
+.nextPrevBlog{ float:left; width:100%; background:#ededed; padding:10px 0; border: dashed 1px #e1e2e3; clear:both; margin:5px 0 0 0; text-align:center; font:normal 20px arial; color:#666;}
+.prev { position: absolute; z-index:999; width:auto; top:-30px; left:10px; background: url(../img/change_index/back.gif) no-repeat scroll 0 3px rgba(0, 0, 0, 0); padding:0 0 0 12px;}
+.next { position: absolute; z-index:999; width:auto;  background: url(../img/change_index/green-arrow.gif) no-repeat scroll right 3px rgba(0, 0, 0, 0); padding:0 12px 0 0; top:-30px; right:10px;}
+
+
+
+#bodyPart .bodyInnerDiv .bmiCalc{ float:left; width:1000px;  margin:20px 0 0 0;}
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart{ float:left; width:635px;}
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .text{ float:left; width:auto; font:bold 13px arial; text-align:justify;}
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box{ float:left; width:635px; margin:20px 0 0 0; background:url(../img/bmi_calc/shadow.jpg) no-repeat center bottom; padding-bottom:15px;} 
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder{ float:left; width:631px; border: solid 2px #5fa61f; background:#fff; padding:20px 0px;} 
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder .boxinner{ float:left; width:570px; margin:0 0 0 30px;} 
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder .boxinner h4{ float:left; width:auto; font:bold 14px arial; color:4e4e4e; margin:0 0 20px 0; clear:both;} 
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder .boxinner .rowDivb{ float:left; width:570px; height:50px;} 
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder .boxinner .rowDivbNext{ float:left; width:570px;} 
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder .boxinner .rowDivbNext .leftPartDiv{ float:left; width:285px; border-right:solid 1px #c7c7c7; padding:5px 0px; line-height:30px;} 
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder .boxinner .rowDivbNext .rigfhtPartDiv{ float:left; width:170px; margin:0 0 0 20px;} 
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder .boxinner .rowDivbNext .rigfhtPartDiv p{ float:left; width:170px; margin:5px 0 0 0; padding:0px; font:bold 13px arial;}
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder .boxinner .rowDivbNext .rigfhtPartDiv .bmiTab{ float:left; width:170px; margin:10px 0 0 0; padding:3px 0px; font:bold 18px arial; color:#fff; text-align:center; background:#68b323;}
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder .boxinner .rowDivb label{ float:left; width:115px; margin:5px 0 0 0; font-weight:bold;} 
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder .boxinner .rowDivb input[type=text]{ float:left; width:200px; height:18px; background:#fff; border:solid 1px #c7c7c7; padding:3px; clear:both;} 
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .box .greenBorder .boxinner .rowDivb span{ float:left; width:auto; font:normal 11px arial; color:#840808; margin:2px 0 0 0; clear:both;}
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .bpDiv{ float:left; width:635px; margin:20px 0 0 0;}
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .bpDiv .divText{ float:left; width:auto; font-size:14px; margin:3px 0 0 0; padding:0px;} 
+#bodyPart .bodyInnerDiv .bmiCalc .leftPart .bpDiv  input[type=text]{ float:left; width:150px; height:18px; background:#fff; border:solid 1px #c7c7c7; padding:3px; margin:0 10px 0 10px;} 
+.select_bmi{width:209px; height:30px; background:#fff; border:solid 1px #c7c7c7; padding:5px; float:left; clear:both;}
+.alert-box-mess{background:none repeat scroll 0 0 #FFFFFF; border:4px solid #D8D8D8; border-radius:5px; display:none; height:90px; left:100px;  padding:10px; position:absolute;top:67px; width:604px; font-size:15px;}
+.alert-box-mess-detail {background:none repeat scroll 0 0 #FFFFFF; border:4px solid #D8D8D8; border-radius:5px; display:none; font-size:15px; height:94px; left:183px; padding:10px; position:absolute; top:62px; width:785px;}
+
+/*Doctor Profile Page Ends*/

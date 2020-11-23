@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JFileUpload Documentation - Tutorial: Customization</title>
+<meta name="description" content="Internationalization and customization of upload applet" />
+<meta name="keywords" content="customization, i18n, applet, properties, text, error, java" />
+<link href="../styles/template.css" rel="stylesheet" type="text/css" />
+<link href="../styles/doc.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="containerDiv">
+  <div id="topDiv">
+  <div id="navDiv">
+  <div id="tabsDiv"><ul>
+  <li><a href="http://www.jfileupload.com/index.html" title="Home"><span>Home</span></a></li>
+  <li><a href="http://www.jfileupload.com/products/index.html" title="Products"><span>Products</span></a></li>
+  <li><a href="http://www.jfileupload.com/support/index.html" title="Support"><span>Support</span></a></li>
+  <li><a href="http://www.jfileupload.com/purchase/index.html" title="Purchase"><span>Purchase</span></a></li>
+  <li><a href="http://www.jfileupload.com/about/index.html" title="About"><span>About</span></a></li>
+  </ul></div>
+  <div id="searchDiv"></div>
+  </div>
+  </div>
+  <div id="mainDiv">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="20%" valign="top"><div id="sidebar">
+      <div id="sidebarSection">
+        <ul>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../software.html" title="Software"><span>Software</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../installation.html" title="Installation"><span>Installation</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../configuration_http.html" title="Parameters for HTTP"><span>HTTP Upload</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../configuration_ftp.html" title="Parameters for FTP"><span>FTP Upload</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../faq.html" title="FAQ"><span>FAQ</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../tutorials.html" title="Tutorials"><span>Tutorials</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../api.html" title="API &amp; Design"><span>API &amp; Design</span></a></li>
+        </ul>
+      </div>
+      <div id="sidebarNav"><br/><br/><a href="../tutorials.html" title="Back">&lt;&lt; Back</a></div>
+      </div>    </td>
+    <td width="80%" valign="top"><table width="98%" border="0" cellspacing="1" cellpadding="0" align="center">
+      <tr>
+        <td valign="top" class="justify"><p align="center" class="mainTitle"><b>- Resources, Internationalization, Customization-</b></p>
+          <br />
+          JFileUpload &quot;resources&quot; parameter allows to modify and translate most UI properties. You can enable it through: &lt;PARAM NAME=&quot;resources&quot; VALUE=&quot;i18n&quot;&gt;. It works with a <a href="i18n.properties" target="_blank">i18n.properties</a> file - detailed below - available in documentation/tutorials folder. This file must be installed in the same directory as HTML/JavaScript of JFileUpload.<br />
+        <br />
+        <table width="100%" border="0" cellspacing="1" cellpadding="1">
+              <tr>
+                <td class="sectionTitle"><a name="customization" id="customization"></a>i18n.properties detailed</b></td>
+              </tr>
+              <tr>
+                <td class="justify"> <p>This text file includes more than 100 properties. A property is defined by a <strong>key=value</strong> pair. Each property value can be modified. To comment a property, you have to prepend a <strong>#</strong> at the begining of the line. For instance, to comment &quot;taskoutput.usage=Select or drag and drop file to upload&quot;, you just need to add the # char such as &quot;#taskoutput.usage=Select or drag and drop file to upload&quot;. Commenting this property will remove the display of the usage line:</p>
+                  <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                    <tr>
+                      <td width="50%" align="center"><img src="images/intro1.png" alt="Usage displayed" width="250" height="62" /></td>
+                      <td width="50%" align="center"><img src="images/intro2.png" alt="Usage not displayed" width="250" height="58" /></td>
+                    </tr>
+                  </table>                  
+                  <br />
+                  <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                    <tr>
+                      <td width="50%">Some values could include some <strong>{0}</strong>  string. <br />
+                        It means that such string will be replaced dynamically by JFileUpload. For instance, &quot;progress.bar.upload.done.label=Upload completed ({0} files)&quot; will display the amount of uploaded files.</td>
+                      <td width="50%" align="center"><img src="images/dynvalue.png" alt="Dynamic value" width="248" height="95" /></td>
+                    </tr>
+                  </table>
+                  <p>i18n.properties is divided in 7 main sections:</p>
+                  <ol>
+                    <li><strong>Info panel</strong><br />
+                    All properties of info panel start with <span class="italic">&quot;taskoutput.*&quot;</span>. It includes all messages displayed in the info panel (textarea in the in middle of the UI) such as Upload started, Upload completed. It includes messages and errors about chunking, compressing, filtering and uploading.<br />
+                    <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                      <tr>
+                        <td width="50%" align="center"><img src="images/taskoutputerr.png" alt="Error" width="250" height="72" /></td>
+                        <td width="50%" align="center"><img src="images/taskoutput.png" alt="Task output" width="250" height="85" /></td>
+                      </tr>
+                    </table>
+                    Info panel background and foreground colors could be modified thanks to <span class="italic">&quot;taskoutput.color.*&quot;</span> properties. A background image could be added through &quot;taskoutput.image.background=dnd.jpg&quot; property. The image (dnd.jpg) must be in the same directory as the HTML/JavaScript code.<br />
+                    <br />
+                    </li>
+                    <li><strong>Progress bar panel</strong><br />
+                      All progress bar panel properties start with <span class="italic">&quot;progress.*&quot;</span>. It includes messages in progress bar, buttons and panel layout. Default upload messages are simple and short. They could be enhanced by uncommenting from &quot;progress.bar.upload.starting&quot; to &quot;progress.bar.upload.cancelled&quot; properties. For instance, upload ratio will become &quot;Uploading {0}% ({1}) [{2} files left]&quot;:<br />
+                      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                        <tr>
+                          <td width="50%" align="center"><img src="images/uploading1.png" alt="Uploading simple ratio" width="250" height="24" /></td>
+                          <td width="50%" align="center"><img src="images/uploading2.png" alt="Uploading with more details" width="250" height="26" /></td>
+                        </tr>
+                      </table>
+                      A &quot;Select file(s)&quot; button could be added close to &quot;Cancel&quot; button. Colors, font size and spacing between buttons could be modified too. Even &quot;Cancel&quot; button could be removed. Additional overall progress bar or info such as upload speed, time remaining or elapsed could add added too through <span class="italic">&quot;progress.info.*&quot;</span> properties:<br />
+                      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                        <tr>
+                          <td width="50%" align="center"><img src="images/buttons.png" alt="Buttons and colors" width="250" height="59" /></td>
+                          <td width="50%" align="center"><img src="images/speed.png" alt="Transfer speed" width="250" height="72" /></td>
+                        </tr>
+                      </table>
+                      <br />
+                    </li>
+                    <li><strong>Menus</strong><br />
+                    File, Help and About menus properties start with <span class="italic">&quot;menu.*&quot;</span>. You can modify File item text through &quot;menu.file.open&quot; property:<br />
+                        <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                          <tr>
+                            <td width="50%" align="center"><img src="images/file1.png" alt="File open" width="250" height="61" /></td>
+                            <td width="50%" align="center"><img src="images/file2.png" alt="Images to upload menu" width="251" height="60" /></td>
+                          </tr>
+                        </table>
+                          You can also hide the menu bar with JFileUpload parameter:<br />
+                          &lt;PARAM NAME=&quot;hidebar&quot; VALUE=&quot;true&quot;&gt;<br />
+                          It only works if you have a registered version of JFileUpload.<br />
+                          <br />
+                    </li>
+                    <li><strong>File chooser</strong><br />
+                      File chooser properties start with <span class="italic">&quot;filechooser.dialog.*&quot;</span>. You can modify file chooser title, buttons, size and tooltips. You can enable/disable multiple file selection. You can also use a generic message when setting up many file extension in whitelist or blacklist parameter.<br />
+                        An optional image preview could be enabled in the file chooser. All file preview properties start with <span class="italic">&quot;filechooser.preview.*&quot;</span>.<br />
+                        <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                          <tr>
+                            <td width="50%" align="center"><img src="images/filechooser.png" alt="File chooser" width="509" height="338" /></td>
+                          </tr>
+                        </table>
+                        <strong><br />
+                            </strong></li>
+                    <li><strong>Authentication pop-up</strong><br />
+                    All authentication pop-up properties start with <span class="italic">&quot;authentication.*&quot;</span>. It only applies when authentication parameter is enabled as following and authentication is required:<br />
+                      &lt;PARAM NAME=&quot;authentication&quot; VALUE=&quot;auto&quot;&gt;<br />
+                      <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                        <tr>
+                          <td width="50%" align="center" valign="top"><img src="images/authentication.png" alt="FTP authentication" width="268" height="171" /></td>
+                          <td width="50%" align="center"><img src="images/authenticationhttp.png" alt="HTTP authentication" width="268" height="211" /></td>
+                        </tr>
+                      </table>
+                      If username and password are passed as applet parameter then this pop-up should not appear.<br />
+                      <br />
+                    </li>
+                    <li><strong>Look and feel</strong><br />
+                    You can apply either a custom or native look and feel to JFileUpload UI through <span class="italic">&quot;lookandfeel&quot;</span> property. Default look and feel is the Java one. To switch to native look and feel then uncomment &quot;lookandfeel=auto&quot;:<br />
+                        <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                          <tr>
+                            <td width="50%" align="center" valign="top"><img src="images/authenticationnative.png" alt="Windows XP look and feel" width="268" height="168" /></td>
+                            <td width="50%" align="center"><img src="images/lookandfeel.png" alt="Windows XP" width="250" height="185" /></td>
+                          </tr>
+                        </table>
+                          If you want to apply a custom look and feel then setup &quot;lookandfeel&quot; property with fully qualified classname for the look and feel implementation. Also, make sure to declare the look and feel JARs in ARCHIVE HTML/JavaScript parameters of JFileUpload.<br />
+                          <br />
+                    </li>
+                    <li><strong>Misc</strong><br />
+                    You can setup your own font (face and size) through <span class="italic">&quot;font.*&quot;</span> properties. It could be useful to improve accessiblity. You can disable drag &amp; drop support by uncommenting &quot;#dnd=disabled&quot;.<br />                
+                  </li>
+                  </ol>                  </td>
+              </tr>
+              <tr>
+                <td class="sectionTitle"><a name="translation" id="translation"></a>i18n.properties translation </b></td>
+              </tr>
+              <tr>
+                <td class="justify">You can translate all values in i18n.properties. For instance, to translate cancel button from english to spanish then search for &quot;progress.button.cancel&quot; key and replace the value:<br />
+                  &quot;progress.button.cancel=Cancel&quot; by &quot;progress.button.cancel=Cancelar&quot;.<br />
+                      <br />
+                      If you need to support many languages such as english, spanish, chinese, swedish and more then you have to create one i18n_xy.properties per translation. xy must match to <a href="http://www.unicode.org/onlinedat/languages.html" target="_blank">ISO
+                        639 language code</a> (en, es, de, zh ...).
+                      For instance, to add german support :<br />
+&nbsp;&nbsp;&nbsp;&nbsp;1 - Copy i18n.properties into
+                      i18n_de.properties.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;2 - Translate all resources
+                      in german in i18n_de.properties.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;3 - Optionally, use JRE/bin/native2ascii.exe
+                      tool to convert extra characters.<br />
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(This step is required for non latin charset such as BIG5 for chinese).<br />
+JFileUpload will automatically load i18n_de.properties
+                      if end-user settings are in german. If not then it
+                      will load i18n.properties.<br />
+                  <br /></td>
+              </tr>
+              <tr>
+                <td class="sectionTitle"><a name="hidechunks" id="hidechunks"></a>Hide chunks uploading </b></td>
+              </tr>
+              <tr>
+                <td class="justify">JFileUpload allows to split file in chunks before upload. It's useful in HTTP transfer with server-side script that doesnt allow large upload. For instance, default PHP server  only allows 2MB upload. Such limit could be increased by updating php.ini but some hosting services doesn't grant access to php.ini. To workaround such limitation, you can setup JFileUpload to cut file in small chunks and upload them one by one through:<br />
+                  &nbsp;&nbsp;&lt;PARAM NAME=&quot;chunksize&quot; value=&quot;2097152&quot;&gt;<br />
+                  &nbsp;&nbsp;&lt;PARAM NAME=&quot;chunkmode&quot; value=&quot;onfly&quot;&gt;<br />
+                  The server-side script will recompose file from chunks once all have been uploaded. However, JFileUpload will display info about each chunk upload in both info panel and progress bar:
+                  <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                    <tr>
+                      <td width="50%" align="center"><img src="images/chunks1.png" alt="Chunks details" width="248" height="171" /></td>
+                      <td width="50%" align="center"><img src="images/chunks2.png" alt="Chunks" width="250" height="155" /></td>
+                    </tr>
+                  </table>
+                  <br />
+                  You can configure i18n.properties to hide the chunking behavior. First, uncomment &quot;progress.bar.upload.option=chunkratio&quot; property to have the progress bar rely on full size instead of chunk size. Second, comment all the following properties:<br />
+                  &nbsp;&nbsp;taskoutput.split.size=in {0} chunk(s) up to {1} bytes<br />
+                    &nbsp;&nbsp;taskoutput.split.chunk.started=Creating chunk {0} ...<br />
+                    &nbsp;&nbsp;taskoutput.split.chunk.completed=chunk {0} created<br />
+                    &nbsp;&nbsp;taskoutput.split.chunk.failed=Split failed : {0}<br />
+                    &nbsp;&nbsp;taskoutput.upload.info=Uploading : {0}<br />
+                    &nbsp;&nbsp;taskoutput.upload.size=({0} bytes)<br />
+                    &nbsp;&nbsp;taskoutput.upload.started=Upload started ...<br />
+                    &nbsp;&nbsp;taskoutput.upload.completed=Upload completed<br />
+                    &nbsp;&nbsp;taskoutput.upload.cancelled=Upload cancelled<br />
+                  Third, uncomment and modify &quot;taskoutput.upload.done&quot; property such as:<br />
+                  &nbsp;&nbsp;taskoutput.upload.done=Upload completed.<br />
+                  Finally, modify &quot;taskoutput.split.info&quot; property such as:<br />
+                  &nbsp;&nbsp;taskoutput.split.info=Uploading: {0}<br />
+                  
+                  <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                    <tr>
+                      <td width="50%" align="center"><img src="images/chunks3.png" alt="Hide chunks" width="249" height="164" /></td>
+                      <td width="50%" align="center"><img src="images/chunks4.png" alt="No chunks" width="249" height="163" /></td>
+                    </tr>
+                  </table>
+                  <br />
+                  You can also remove the &quot;------------------&quot; separator by commenting &quot;taskoutput.separator&quot; property.</td>
+              </tr>
+              <tr>
+                <td class="justify">&nbsp;</td>
+              </tr>
+            </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  </table>
+  </div>
+  <div id="bottomDiv">
+    <p><a href="http://java.sun.com" target="_blank">Java</a> and all Java-based marks are trademarks or registered trademarks of Sun Microsystems, Inc. in the U.S. and other countries. <br />
+    All other company and/or product names are the property of their respective owners.</p>
+  </div>
+</div>
+</body>
+</html>

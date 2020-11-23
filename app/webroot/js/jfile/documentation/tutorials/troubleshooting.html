@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JFileUpload Documentation - Tutorial: Troubleshooting</title>
+<link href="../styles/template.css" rel="stylesheet" type="text/css" />
+<link href="../styles/doc.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="containerDiv">
+  <div id="topDiv">
+  <div id="navDiv">
+  <div id="tabsDiv"><ul>
+  <li><a href="http://www.jfileupload.com/index.html" title="Home"><span>Home</span></a></li>
+  <li><a href="http://www.jfileupload.com/products/index.html" title="Products"><span>Products</span></a></li>
+  <li><a href="http://www.jfileupload.com/support/index.html" title="Support"><span>Support</span></a></li>
+  <li><a href="http://www.jfileupload.com/purchase/index.html" title="Purchase"><span>Purchase</span></a></li>
+  <li><a href="http://www.jfileupload.com/about/index.html" title="About"><span>About</span></a></li>
+  </ul></div>
+  <div id="searchDiv"></div>
+  </div>
+  </div>
+  <div id="mainDiv">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="20%" valign="top"><div id="sidebar">
+      <div id="sidebarSection">
+        <ul>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../software.html" title="Software"><span>Software</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../installation.html" title="Installation"><span>Installation</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../configuration_http.html" title="Parameters for HTTP"><span>HTTP Upload</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../configuration_ftp.html" title="Parameters for FTP"><span>FTP Upload</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../faq.html" title="FAQ"><span>FAQ</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../tutorials.html" title="Tutorials"><span>Tutorials</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../api.html" title="API &amp; Design"><span>API &amp; Design</span></a></li>
+        </ul>
+      </div>
+      <div id="sidebarNav"><br/><br/><a href="../tutorials.html" title="Back">&lt;&lt; Back</a></div>
+      </div>    </td>
+    <td width="80%" valign="top"><table width="98%" border="0" cellspacing="1" cellpadding="0" align="center">
+      <tr>
+        <td valign="top" class="justify"><p align="center" class="mainTitle"><b>- Troubleshooting -</b></p>
+          <br />
+          You're trying to setup JFileUpload but upload seems to fail. Here are some instructions you should follow to figure out what's wrong.<br />
+          <br />
+        <table width="100%" border="0" cellspacing="1" cellpadding="1">
+              <tr>
+                <td class="sectionTitle"><a name="forward" id="forward"></a>Level 1: Display Java Console</td>
+              </tr>
+              <tr>
+                <td class="justify"> <p>Java runtime comes with a Java console. It might be disabled on standard configuration. You or your customer can enable it to get more info about applet and upload. Under Windows:<br />
+                  Start -&gt; Settings -&gt; Control Panel -&gt; Java -&gt; Advanced Tab -&gt; Show console -&gt; Apply<br />
+                  Under MacOSX: Applications -&gt; Utilities -&gt; Java -&gt; Last tab -&gt; Show console -&gt; Save<br />
+                  <em>Notice: Do not enable any option in &quot;Debugging&quot; section.</em><br />
+                    </p>
+                  <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                    <tr>
+                      <td align="center"><img src="images/javaconsole.png" alt="Enable java console" width="440" height="273" /></td>
+                    </tr>
+                  </table>
+                  <p>To make sure the browser will load the latest version of applet you should clean both browser cache and Java cache: Start -&gt; Settings -&gt; Control Panel -&gt; Java -&gt; General tab -&gt; Temporary Internet Files -&gt; Settings -&gt; Delete files. Then close all browser windows and reload the applet. The Java console should pop-up starting with the JRE version:<br />
+                  </p>
+                  <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                    <tr>
+                      <td align="center"><img src="images/javaconsole1.png" alt="Java console running" width="450" height="60" /></td>
+                    </tr>
+                  </table>
+                  <br />
+                  Notice that Java settings are also available under MacOSX and Linux. Menu and tabs might not be exactly the same but you should find the same features about console and temporary files.<br />
+                  <br /></td>
+              </tr>
+              <tr>
+                <td class="sectionTitle"><a name="parameters" id="parameters"></a>Level 2: Enable debug mode</b></td>
+              </tr>
+              <tr>
+                <td class="justify">If traces in Java console (level 1 above) are not enough then you could ask the applet to dump more details. To do so, add the following parameter:<br />
+                  &lt;PARAM NAME=&quot;<strong>verbosemode</strong>&quot; VALUE=&quot;<strong>debug</strong>&quot;&gt;<br />
+Close all browser windows and reload the applet. When opening the Java console you will see more details about upload process. It should help to understand what's wrong especially for HTTP upload.<br />
+                  <br />
+                  <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                    <tr>
+                      <td align="center"><img src="images/debug1.png" alt="Debug" width="450" height="400" /></td>
+                    </tr>
+                  </table>
+                  <br />
+                  You can get more traces with:<br />
+                  &lt;PARAM NAME=&quot;verbosemode&quot; VALUE=&quot;trace&quot;&gt;<br />
+                  but it will really slow down the applet as it will dump upload content.
+                  <br />
+                  If you're still lost then contact support team with the traces from the Java console.<br />
+                  <br /></td>
+              </tr>
+              <tr>
+                <td class="sectionTitle"><a name="ftp" id="ftp"></a>FTP verbose mode</b></td>
+              </tr>
+              <tr>
+                <td class="justify">JFileUpload allows to display each FTP  command. It is not related to the Java console but it's another way to figure out issues with FTP upload. To enable FTP verbose mode, you have to setup &quot;resources&quot; parameter: &lt;PARAM NAME=&quot;resources&quot; VALUE=&quot;i18n&quot;&gt;
+                    and install  i18n.properties file (available in documentation/tutorials folder) in the same directory as JFileUpload HTML/JavaScript.  <br />
+                    <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                      <tr>
+                        <td width="50%" valign="top">Modify i18n.properties to uncomment (remove the starting # char) the following lines:
+                          #taskoutput.protocol=enabled<br />
+#taskoutput.protocol.request=&gt; {0}<br />
+#taskoutput.protocol.response=&lt; {0}<br />
+<br />
+Then close all browser windows and reload the applet. Try to upload a file and you will see FTP commands detail. Most FTP problems come from wrong username/password or permissions to write file or change directory when using account extra parameter.</td>
+                        <td width="50%" align="center"><img src="images/ftpverbose.png" alt="FTP verbose mode" width="252" height="252" /></td>
+                      </tr>
+                    </table>
+                    <br /></td>
+              </tr>
+              
+              <tr>
+                <td class="sectionTitle"><a name="http" id="http"></a>Unexpected HTTP requests</b></td>
+              </tr>
+              <tr>
+                <td class="justify"><div align="justify">JFileUpload sends HTTP request to load commons-logging.properties to support level 2 debug mode. This file is not available by default so you might notice some 404 errors in your web server log or error file:<br />
+&nbsp;&nbsp;HEAD /commons-logging.properties HTTP/1.1 <strong>404</strong> 0<br />
+&nbsp;&nbsp;GET /org/apache/commons/logging/impl/Log4JLogger.class HTTP/1.1 <strong>404</strong> 371<br />
+  If you want to avoid such 404, then you can install both commons-logging.properties and simplelog.properties into the same directory as JFileUpload HTML/JavaScript. And to not enable debug mode, just search/replace &quot;debug&quot; string by &quot;info&quot; in simplelog.properties. You can also simply create both files as empty files.<br />
+                    <br />
+                    Similar HTTP requests are sent to support internationalization when localeresources=true:<br />
+&nbsp;&nbsp;GET /jfileupload/transfer/client/util/resources.class HTTP/1.1 404 367<br />
+&nbsp;&nbsp;GET /jfileupload/transfer/client/util/resources_en.class HTTP/1.1 404 370<br />
+&nbsp;&nbsp;GET /jfileupload/transfer/client/util/resources_en.properties HTTP/1.1 404 375<br />
+&nbsp;&nbsp;GET /jfileupload/transfer/client/util/resources_en_US.class HTTP/1.1 404 373<br />
+&nbsp;&nbsp;GET /jfileupload/transfer/client/util/resources_en_US.properties HTTP/1.1 404 378<br />
+  Again if you want to avoid such 404 errors then you can create the directory structure above with one empty file for each. However, it could be pain because there are a lot of countries so a lot of files to create. Another workaround to avoid such requests is to disable internationalization based on locale (default behavior) by adding the following parameter:<br />
+                    &lt;PARAM NAME=&quot;localeresources&quot; VALUE=&quot;false&quot;&gt;<br />
+                </div></td>
+              </tr>
+              <tr>
+                <td class="justify">&nbsp;</td>
+              </tr>
+            </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  </table>
+  </div>
+  <div id="bottomDiv">
+    <p><a href="http://java.sun.com" target="_blank">Java</a> and all Java-based marks are trademarks or registered trademarks of Sun Microsystems, Inc. in the U.S. and other countries. <br />
+    All other company and/or product names are the property of their respective owners.</p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,406 @@
+/*--------------------------------------------------------------------- 
+File Name: responsive.css 
+---------------------------------------------------------------------*/
+
+@media (min-width: 1343px) and (max-width: 1500px) {
+   
+    #banner1 .carousel-control-prev {
+       right: 10%;
+    }
+   .backimage2 { height: 244vh;}
+
+}
+
+@media (min-width: 1200px) and (max-width: 1342px) {
+   
+     .covid19b {padding: 10px 0px;}
+     .latest .read_more {top: 19%;}
+     .full_bg { height: 94vh;}
+     .backimage2 {height: 285vh;}
+      nav ul li a {margin-right: 30px;}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .logo_midle::before {right: 9px;}
+    .full_bg {
+        height: 100%;
+    }
+    .photog h1 {padding-bottom: 35px;}
+   .site-navbar ul li { padding-right: 44px;}
+    .owl-next {right: 39%;}
+    .owl-prev {left: 39%;}
+    .titlepage h2 {font-size: 35px;}
+    ul.top_infomation li {font-size: 15px;}
+     .backimage2 { height: 307vh;}
+}
+
+@media (max-width: 1024px) {
+   .covid19b {padding: 10px 0px;}
+   .full_bg {height: 34vh;}
+   .backimage {height: 15vh;}
+   .backimage2 {
+    height: 129vh;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+   .left, .right {display: none;}
+   .site-navbar ul li {padding-right: 32px;}
+   .logo_midle::before {right: 2px;}
+    .full_bg {
+        height: 100%; 
+    }
+    .backimage {
+   height: 16vh;
+}
+    .understand {
+    padding: 15px 6px;
+}
+    .backimage2 {
+   height: 164vh;
+    }
+  
+    .photog h1 {
+        font-size: 50px;
+        line-height: 53px; padding-bottom: 40px;
+    }
+    
+ .about {margin: 0 10px; padding: 80px 20px;margin-top: -17px;}
+
+ .titlepage h2 {font-size: 33px; line-height: 40px;}
+.about_img {padding-right: 0; padding-left: 0;}
+.nostrud {
+    padding: 20px 0px 0 0px; }
+    .nostrud h3 {
+    font-size: 16px;
+    line-height: 20px; padding-top: 15px;
+  }
+  .owl-next {right: 37%;}
+    .owl-prev {left: 37%;}
+   .cases {padding: 0; padding-top: 70px; }
+   .latest {padding: 15px 15px 0px 15px;}
+ /*  .latest .read_more {top: 12%;}*/
+   #banner1 .carousel-control-prev, #banner1 .carousel-control-next {top: 96%;}
+    .di_no {
+        display: none !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+       .covid19b {padding: 00px 0px;}
+    .header-area {
+    padding: 27px 16px;}
+     .left, .right {display: none;}
+     .backimage2 {
+    height: 643vh;}
+     .logo_sm {
+    display: inherit;
+} 
+    .full_bg {
+        height: 100%;
+    }
+    .logo a {position:relative;}
+.logo a::before {
+    position: absolute;
+    content: "";
+    top: 20px;
+    background: url(../images/logo1.png);
+    width: 158px;
+    height: 122px;
+    z-index: 999;
+    left: -15px;
+}
+   .logo_midle {
+    display: none !important;
+}
+  #banner1 .carousel-control-prev, #banner1 .carousel-control-next {top: 95%;}
+    .photog h1 {
+        font-size: 50px;
+        line-height: 53px;
+        padding-bottom: 29px;
+padding-top: 42px;
+    }
+  .about {margin: 0 10px; padding: 80px 20px; margin-top: -90px;}
+    .about_img, .coronata_img {
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 30px;
+    }
+   .latest {
+    max-width: 425px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.owl-prev {
+    left: 31%;
+}
+.owl-next {
+    right: 32%;
+}
+.map-responsive {
+    margin-top: 30px;
+}
+
+    .grid {
+        display: grid;
+    }
+    .oder1 {
+        order: -1;
+    }
+    .titlepage h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+   .doctors {background: transparent;}
+    .d_none {
+        display: none;
+    }
+  
+    /* navbar css for mobile start */
+    .nav-toggler {
+        display: block;
+        position: absolute;
+        right: 15px;
+        z-index: 99999;
+    }
+    .site-navbar {
+        min-height: 39px;
+    }
+    .site-navbar ul {
+        position: absolute;
+        width: 100%;
+        left: -15px;
+        top: 60px;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ed242e;
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s;
+        z-index: 99999;
+        box-shadow: 0 0 10px rgb(192, 190, 182);
+    }
+    .site-navbar ul li {
+        width: 100%;
+        text-align: left;
+        padding-right: 0;
+    }
+    .site-navbar ul li a {
+        padding: 25px 25px 0px 25px;
+    }
+    .site-navbar ul.open {
+        max-height: 100vh;
+        padding-bottom: 25px;
+        overflow: visible;
+    }
+    .understand {
+    padding: 10px 10px;
+}
+    /* navbar css for mobile end */
+}
+
+@media (max-width: 575px) {
+     .covid19b {padding: 0px 0px;}
+     .header-area {
+    padding: 27px 16px;}
+     .left, .right {display: none;}
+     .logo_sm {
+    display: inherit;
+} 
+ .backimage2 {
+    height: 661vh;}
+    .understand {
+    padding: 10px 10px;
+}
+    .item{margin-bottom: 20px;}
+    .full_bg {
+        height: 100%;
+        background-size: contain;
+    }
+.logo a {position:relative;}
+.logo a::before {
+    position: absolute;
+    content: "";
+    top:10px;
+    background: url(../images/logo1.png);
+    width: 158px;
+    height: 122px;
+    z-index: 999;
+    left: -15px;
+}
+   .logo_midle {
+    display: none !important;
+}
+   /* .slider_main {
+        padding-top: 27%;
+    }
+  */
+    .photog .read_more {margin-bottom: 5px;}
+   
+
+    .photog h1 {
+       font-size: 44px;
+       line-height: 51px;
+    }
+  
+    .about_img, .coronata_img  {
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 30px;
+    }
+    .about {
+      padding: 26px 2px;
+      position: relative;
+      margin: 0px 6px;
+      margin-top: -44px;
+   }
+   .latest {
+      max-width: 425px;
+      margin: 0 auto;
+      margin-bottom: 60px;
+   }
+  .cases {
+      padding: 0; 
+      padding-top: 70px; 
+      
+  }
+.owl-prev {
+    left: 10%;
+}
+.owl-next {
+    right: 10%;
+}
+.map-responsive {
+    margin-top: 30px;
+}
+.nostrud h3 {font-size: 20px;
+line-height: 25px;}
+
+.doctors {
+    background: transparent;}
+    .grid {
+        display: grid;
+    }
+    .oder1 {
+        order: -1;
+    }
+.titlepage h2 {
+    font-size: 20px;
+    line-height: 28px;
+}
+   
+    .d_none {
+        display: none;
+    }
+
+
+
+     /* navbar css for mobile start */
+    .navbar-area {
+        margin-top: -16px;
+    }
+    .nav-toggler {
+        display: block;
+        position: absolute;
+        right: 15px;
+        z-index: 99999;
+    }
+    .site-navbar {
+        min-height: 58px;
+    }
+    .site-navbar ul {
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        top: 60px;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ed242e;
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s;
+        z-index: 99999;
+        box-shadow: 0 0 10px rgb(192, 190, 182);
+    }
+    .site-navbar ul li {
+        width: 100%;
+        text-align: left;
+        padding-right: 0;
+    }
+    .site-navbar ul li a {
+        padding: 25px 25px 0px 25px;
+    }
+    .site-navbar ul.open {
+        max-height: 100vh;
+        padding-bottom: 25px;
+        overflow: visible;
+       
+    }
+}
+
+
+@media (max-width: 414px) {
+    
+   
+    .covid19b {padding: 0px 30px;}
+  
+.h1cls {
+    font-size: 22px;
+    padding-top: 38px;
+}
+.backimage3 {
+    height: 23vh;
+}
+
+.backimage2 {
+    height: 452vh;
+}
+    
+}
+
+@media (max-width: 375px) {
+    .covid19b {padding: 0px 8px;}   
+    .backimage2 {height: 415vh;}
+    .h1cls {font-size: 25px;}
+    .backimage3 {height: 24vh;}
+    
+    
+}
+
+
+@media (max-width: 360px) {
+    .backimage2 {height: 479vh;}
+    .about .titlepage p {font-size: 15px;}
+    .h1cls {font-size: 21px;padding-top: 32px;}
+    .latest {padding: 15px 10px 0px 10px;}
+    .nostrud p {color: #535450;line-height: 25px;font-size: 15px;}
+    .protect_bg { padding:17px;}
+    .coronata ul {
+        margin: 32px 0px 0px 22px;
+        -moz-column-count: 2;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 20px;
+        column-count: 2;
+        column-gap: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .coronata ul {
+    margin: 32px 0px 0px 22px;
+    -moz-column-count: 1;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 1;
+    -webkit-column-gap: 20px;
+    column-count: 1;
+    column-gap: 20px;
+}
+.backimage2 {
+    height: 771vh;
+}
+.backimage {
+    height: 45vh;
+}
+    
+}

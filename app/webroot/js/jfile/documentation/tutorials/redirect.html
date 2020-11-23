@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JFileUpload Documentation - Tutorial: Redirect after upload</title>
+<link href="../styles/template.css" rel="stylesheet" type="text/css" />
+<link href="../styles/doc.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="containerDiv">
+  <div id="topDiv">
+  <div id="navDiv">
+  <div id="tabsDiv"><ul>
+  <li><a href="http://www.jfileupload.com/index.html" title="Home"><span>Home</span></a></li>
+  <li><a href="http://www.jfileupload.com/products/index.html" title="Products"><span>Products</span></a></li>
+  <li><a href="http://www.jfileupload.com/support/index.html" title="Support"><span>Support</span></a></li>
+  <li><a href="http://www.jfileupload.com/purchase/index.html" title="Purchase"><span>Purchase</span></a></li>
+  <li><a href="http://www.jfileupload.com/about/index.html" title="About"><span>About</span></a></li>
+  </ul></div>
+  <div id="searchDiv"></div>
+  </div>
+  </div>
+  <div id="mainDiv">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="20%" valign="top"><div id="sidebar">
+      <div id="sidebarSection">
+        <ul>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../software.html" title="Software"><span>Software</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../installation.html" title="Installation"><span>Installation</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../configuration_http.html" title="Parameters for HTTP"><span>HTTP Upload</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../configuration_ftp.html" title="Parameters for FTP"><span>FTP Upload</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../faq.html" title="FAQ"><span>FAQ</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../tutorials.html" title="Tutorials"><span>Tutorials</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../api.html" title="API &amp; Design"><span>API &amp; Design</span></a></li>
+        </ul>
+      </div>
+      <div id="sidebarNav"><br/><br/><a href="../tutorials.html" title="Back">&lt;&lt; Back</a></div>
+      </div>    </td>
+    <td width="80%" valign="top"><table width="98%" border="0" cellspacing="1" cellpadding="0" align="center">
+      <tr>
+        <td valign="top" class="justify"><p align="center" class="mainTitle"><b>- Redirect after upload -</b></p>
+          <br />
+          JFileUpload allows to redirect to any web page after successfull upload. It could be useful to notify after upload, display upload status, log filenames uploaded, store information in database and more.<br />
+          <br />
+        <table width="100%" border="0" cellspacing="1" cellpadding="1">
+              <tr>
+                <td class="sectionTitle"><a name="forward" id="forward"></a>Forward and post parameters</td>
+              </tr>
+              <tr>
+                <td class="justify"> <p>JFileUpload provides two parameters &quot;post&quot; and &quot;forward&quot; with similar behavior:</p>
+                  <ul>
+                    <li> <strong>&quot;forward&quot;</strong> is a real redirect to a web page. It drives the underlying browser to display the URL setup in this parameter:<br />
+                      &lt;PARAM NAME=&quot;forward&quot; VALUE=&quot;http://server.com/page.php&quot;&gt;<br />
+                      The URL must be absolute and not relative. If you need to pass your own parameters then just append them as any URL parameter:<br />
+                      &lt;PARAM NAME=&quot;forward&quot; VALUE=&quot;http://server.com/page.php?p1=abc&amp;p2=123&quot;&gt;<br />
+                      The page.php will receive an HTTP GET request and the generated HTML will be displayed in the browser. </li>
+                    <li><strong>&quot;post&quot;</strong> won't redirect to the specified URL. It only sends an HTTP POST request and discards the HTML response:<br />
+                      &lt;PARAM NAME=&quot;post&quot; VALUE=&quot;http://server.com/path/script.php?p1=abc&amp;p2=123&quot;&gt;<br />
+                      The URL must be absolute and not relative. &quot;post&quot; is mainly used to send  status silently about upload on server-side without any end-user interaction. &quot;forward&quot; is really to redirect web browser to another page.</li>
+                  </ul>
+                  <p>Note that both &quot;post&quot; and &quot;forward&quot; could be used together. &quot;post&quot; will execute first followed by &quot;forward&quot;. Two others parameters work with &quot;post&quot; and &quot;forward&quot;: <strong>&quot;postparameters&quot;</strong> and <strong>&quot;forwardparameters&quot;</strong>. They have exactly the same behavior. They allow to pass details about upload such as filename, filesize, folder structure and timestamp. Values could be:</p>
+                  <ul>
+                    <li><strong>true</strong>: It passes each filename uploaded as: filename1=file1.ext&amp;filename2=file2.ext...<br />
+                      <br />
+                    </li>
+                    <li><strong>short</strong>: It passes each filename uploaded as: filename=file1.ext;file2.ext<br />
+                        <br />
+                    </li>
+                    <li><strong>long</strong>: It passes each filename with absolute path selected by end-user as:<br />
+                    filename1=/home/user1/file1.ext&amp;filename2=/home/user1/file2.ext...<br />
+                      <br />
+                    </li>
+                    <li><strong>longer</strong>: It passes each filename with absolute path and filesize as:<br />
+                    filename1=/home/user1/file1.ext&amp;filesize1=1458757&amp;...<br />
+                        <br />
+                    </li>
+                    <li><strong>extra</strong>: It passes each filename with absolute path, filesize, last modified timestamp and extra parameters setup in applet through paramX/valueX. It could be useful when extra parameter are setup with JavaScript with end-user form interaction:<br />
+                    filename1=/home/file1.ext&amp;filesize1=1458757&amp;filedate1=199193...&amp;extraN=valueN.<br />
+                    filedate is milliseconds from epoch (January 1st, 1970). For instance, 1191938466593 means October 09th, 2007, 3:01:06 PM GMT+1<br />
+                      <br />
+                    </li>
+                    <li><strong>extrarelative</strong>: It passes each filename with relative path and extra parameters. It could be useful when you need to know the relative folder structure that has been uploaded:<br />
+                    filename1=user1/file1.ext&amp;filename2=user1/subfolder/file2.ext&amp;extraN=valueN&amp;...<br />
+                    To make it works you need to setup folderdepth, relativefilename and notifyrelativefilename  parameters as following:<br />
+                        &lt;PARAM NAME=&quot;folderdepth&quot; VALUE=&quot;-1&quot;&gt;<br />
+                          &lt;PARAM NAME=&quot;param3&quot; VALUE=&quot;relativefilename&quot;&gt;<br />
+&lt;PARAM NAME=&quot;value3&quot; VALUE=&quot;true&quot;&gt;<br />
+                    &lt;PARAM NAME=&quot;param4&quot; VALUE=&quot;notifyrelativefilename&quot;&gt;<br />
+                      &lt;PARAM NAME=&quot;value4&quot; VALUE=&quot;true&quot;&gt;<br />
+                    &lt;PARAM NAME=&quot;post&quot; VALUE=&quot;http://server.com/script.php&quot;&gt;<br />
+                    &lt;PARAM NAME=&quot;postparameters&quot; VALUE=&quot;extrarelative&quot;&gt;</li>
+                  </ul>                  
+                  <p>Each upload detail is then available on server-side as it was sent by a simple HTML form. It means that they can be read with standard API for HTTP GET or POST.<br />                  
+                    <br />                  
+                  </p></td>
+              </tr>
+              <tr>
+                <td class="sectionTitle"><a name="parameters" id="parameters"></a>What's wrong with forward parameter ?</b></td>
+              </tr>
+              <tr>
+                <td class="justify">Uploading hundred files with &quot;forward&quot; and &quot;forwardparameters&quot; enabled will generate very long URLs when redirecting. It could be a problem with some browsers that limit URL size. Some will cut some parameters and others won't redirect. That's the reason why &quot;post&quot;, &quot;postparameters&quot; and &quot;forward&quot; without &quot;forwardparameters&quot; is recommended. &quot;post&quot; and &quot;postparameters&quot; is safe to send upload details in HTTP POST request (which is not  limited by size) and then &quot;forward&quot; to redirect. You can pass an additional session identifier if you need to share data between &quot;post&quot; and &quot;forward&quot; scripts:<br />
+                  &lt;PARAM NAME=&quot;post&quot; VALUE=&quot;http://server.com/script.php?sessionid=ABC123&quot;&gt;<br />
+&lt;PARAM NAME=&quot;postparameters&quot; VALUE=&quot;true&quot;&gt;<br />
+&lt;PARAM NAME=&quot;forward&quot; VALUE=&quot;http://server.com/page.php?sessionid=ABC123&quot;&gt;<br />
+<br /></td>
+              </tr>
+              <tr>
+                <td class="sectionTitle"><a name="email" id="email"></a>Send email after upload</b></td>
+              </tr>
+              <tr>
+                <td class="justify">Here is a sample of &quot;post&quot; and &quot;forward&quot; usage to send an email after upload and redirect to a generic HTML page:<br />
+                  &lt;PARAM NAME=&quot;post&quot; VALUE=&quot;http://server.com/email.php&quot;&gt;<br />
+&lt;PARAM NAME=&quot;postparameters&quot; VALUE=&quot;true&quot;&gt;<br />
+&lt;PARAM NAME=&quot;forward&quot; VALUE=&quot;http://server.com/redirect.html&quot;&gt;<br />
+email.php is a PHP script allowing to send an email from server-side. It includes filenames uploaded in the email content.<br />
+                  &nbsp;</td>
+              </tr>
+              <tr>
+                <td class="justify">&nbsp;</td>
+              </tr>
+            </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  </table>
+  </div>
+  <div id="bottomDiv">
+    <p><a href="http://java.sun.com" target="_blank">Java</a> and all Java-based marks are trademarks or registered trademarks of Sun Microsystems, Inc. in the U.S. and other countries. <br />
+    All other company and/or product names are the property of their respective owners.</p>
+  </div>
+</div>
+</body>
+</html>

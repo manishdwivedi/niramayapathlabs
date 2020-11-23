@@ -1,0 +1,694 @@
+msgid "HOME"
+msgstr "ホーム"
+
+msgid "ABOUT_US"
+msgstr "問い合わせについて"
+
+msgid "CONTACT_US"
+msgstr "お問い合わせ"
+
+msgid "SHOP"
+msgstr "お買い物"
+
+msgid "ARTISTS"
+msgstr "アーティスト"
+
+msgid "LOGIN"
+msgstr "ログイン"
+
+msgid "SIGN_UP"
+msgstr "サインアップ"
+
+msgid "SEARCH_BY_ARTWORK_NAME"
+msgstr "検索キーワード"
+
+msgid "LOGOUT"
+msgstr "ログアウト"
+
+msgid "WELCOME"
+msgstr "歓迎"
+
+msgid "FAQ"
+msgstr "よくある質問"
+
+msgid "PRIVACY"
+msgstr "プライバシー"
+
+msgid "TERMS_AND_CONDITION"
+msgstr "諸条件"
+
+msgid "ADVANCE_SEARCH?"
+msgstr "検索を進める？"
+
+msgid "EVENTS"
+msgstr "イベント"
+
+msgid "ARTIST_ARTWORK"
+msgstr "アーティストのアートワーク"
+
+msgid "EDIT_ACCOUNT"
+msgstr "アカウントを編集する"
+
+msgid "CHANGE_PASSWORD"
+msgstr "パスワードを変更する"
+
+msgid "VIEW_GROUPS"
+msgstr "グループを表示"
+
+msgid "VIEW_GROUP_ARTWORKS"
+msgstr "グループの作品を表示"
+
+msgid "EDIT_GROUP"
+msgstr "編集グループ"
+
+msgid "ADD_GROUP"
+msgstr "グループを追加する"
+
+msgid "ADD_ARTWORK"
+msgstr "アートワークを追加"
+
+msgid "EDIT_ARTWORK"
+msgstr "アートワークを編集"
+
+msgid "ADD_EVENT"
+msgstr "イベントを追加"
+
+msgid "EDIT_EVENT"
+msgstr "イベントを編集する"
+
+msgid "MEMBER_PANEL"
+msgstr "メンバーのパネル"
+
+msgid "MY_ACCOUNT"
+msgstr "私のアカウント"
+
+msgid "ARTIST_BIOGRAPHY"
+msgstr "アーティストの伝記"
+
+msgid "C_V"
+msgstr "再開する"
+
+msgid "N_C_V"
+msgstr "再開しない"
+
+msgid "GROUP_PANEL"
+msgstr "グループパネル"
+
+msgid "VIEW_GROUP"
+msgstr "グループを表示"
+
+msgid "ADD_GROUP"
+msgstr "グループを追加する"
+
+msgid "ARTWORK_PANEL"
+msgstr "アートパネル"
+
+msgid "EVENT_PANEL"
+msgstr "イベントパネル"
+
+msgid "VIEW_ALL_WORKS"
+msgstr "すべての作品を表示"
+
+msgid "SELECT_LANGUAGE"
+msgstr "言語を選択する:"
+
+msgid "SUBMIT"
+msgstr "提出する"
+
+msgid "RESET"
+msgstr "リセット"
+
+msgid "VIEW_ARTS"
+msgstr "芸術を見る"
+
+msgid "DELETE"
+msgstr "削除する"
+
+msgid "GROUP_NAME"
+msgstr "グループ名"
+
+msgid "ACTION"
+msgstr "アクション"
+
+msgid "MEMBER_TYPE"
+msgstr "メンバー型"
+
+msgid "NAME"
+msgstr "名"
+
+msgid "EMAIL"
+msgstr "メール"
+
+msgid "MOBILE"
+msgstr "携帯電話"
+
+msgid "ADDRESS"
+msgstr "アドレス"
+
+msgid "MEMBER_IMAGE"
+msgstr "メンバー画像"
+
+msgid "IF_YOU_WANT_TO_UPLOAD_RESUME"
+msgstr "あなたは再開をアップロードする場合"
+
+msgid "IF_YOU_WANT_TO_UPLOAD_NEW_RESUME"
+msgstr "あなたは新しい履歴書をアップロードする場合"
+
+msgid "CLICK_HERE"
+msgstr "ここをクリック"
+
+msgid "UPLOAD_RESUME"
+msgstr "履歴書をアップロード"
+
+msgid "UPLOAD_NEW_RESUME"
+msgstr "新しいレジュメをアップロード"
+
+msgid "EDIT_IMAGE"
+msgstr "イメージを編集します。"
+
+msgid "UPLOAD_IMAGE"
+msgstr "画像をアップロードする"
+
+msgid "OLD_PASSWORD"
+msgstr "古いパスワード"
+
+msgid "NEW_PASSWORD"
+msgstr "新しいパスワード"
+
+msgid "CONFIRM_PASSWORD"
+msgstr "パスワードの確認"
+
+msgid "MEDIUM"
+msgstr "培地"
+
+msgid "GROUP"
+msgstr "培地"
+
+msgid "TITLE"
+msgstr "タイトル"
+
+msgid "MATERIAL"
+msgstr "材料"
+
+msgid "SIZE"
+msgstr "サイズ"
+
+msgid "YEAR"
+msgstr "年"
+
+msgid "COUNTRY"
+msgstr "国"
+
+msgid "CITY"
+msgstr "シティ"
+
+msgid "PRICE"
+msgstr "価格"
+
+msgid "ARTWORK_DESCRIPTION"
+msgstr "アートワークの説明"
+
+msgid "ARTWORK_IMAGE_TYPE"
+msgstr "アートワーク画像タイプ"
+
+msgid "YOUTUBE_SHARE_URL"
+msgstr "動画共有URL"
+
+msgid "EMBED_CODE_YOUTUBE"
+msgstr "埋め込みコード動画"
+
+msgid "VIMEO_URL"
+msgstr "VimeoのURL"
+
+msgid "EMBED_CODE_MYSPACE"
+msgstr "埋め込みコードのマイスペース"
+
+msgid "EDIT"
+msgstr "編集"
+
+msgid "IMAGE"
+msgstr "画像"
+
+msgid "SHARE_URL"
+msgstr "共有URL"
+
+msgid "EMBED_CODE"
+msgstr "埋め込みコード"
+
+msgid "ENTER_EMBED_CODE"
+msgstr "コードを埋め込む入力します。"
+
+msgid "CURRENT_URL"
+msgstr "現在のURL"
+
+msgid "ENTER_NEW_URL"
+msgstr "新しいURLを入力します。"
+
+msgid "BLOCKED_BY_ADMIN"
+msgstr "管理者によってブロックされ"
+
+msgid "APPROVED_BY_ADMIN"
+msgstr "管理者によって承認され"
+
+msgid "ADD_ARTIST"
+msgstr "アーティストを追加します。"
+
+msgid "LOCATION"
+msgstr "場所"
+
+msgid "DATE"
+msgstr "日付"
+
+msgid "DESCRIPTION"
+msgstr "説明"
+
+msgid "EVENT_IMAGE_TYPE"
+msgstr "イベント画像タイプ"
+
+msgid "ABOUT_ARTWORK"
+msgstr "アートワークについて"
+
+msgid "ABOUT_ARTIST"
+msgstr "アーティストについて"
+
+msgid "ARTWORKS"
+msgstr "作品"
+
+msgid "PLEASE_LOGIN/REGISTER_TO_SEND_ENQUIRY"
+msgstr "ログイン/お問い合わせを送信するように登録してください"
+
+msgid "SEND_ENQUIRY"
+msgstr "問い合わせを送る"
+
+msgid "BACK_TO_ARTIST"
+msgstr "アーティストに登録>>戻る<<"
+
+msgid "SEARCH_BY_MEDIUM"
+msgstr "ミディアムで検索"
+
+msgid "SEARCH"
+msgstr "検索"
+
+msgid "SEARCH_RESULT"
+msgstr "検索結果"
+
+msgid "VIEW_ARTWORK"
+msgstr "アートワークを表示する"
+
+msgid "ADVANCE_SEARCH"
+msgstr "アドバンス検索"
+
+msgid "ARTIST_NAME"
+msgstr "アーティスト名"
+
+msgid "ARTWORK_TITLE"
+msgstr "作品タイトル"
+
+msgid "EVENT_TITLE"
+msgstr "イベントのタイトル"
+
+msgid "MEMBER_REGISTRATION"
+msgstr "会員登録"
+
+msgid "PASSWORD"
+msgstr "パスワード"
+
+msgid "FORGOT_PASSWORD"
+msgstr "パスワードを忘れた場合"
+
+msgid "MEMBER_LOGIN"
+msgstr "メンバーログイン"
+
+msgid "KEEP_ME_LOGGED_IN_ON_THIS_COMPUTER"
+msgstr "私は、このコンピュータにログインしてください"
+
+msgid "FORGOT_YOUR_PASSWORD"
+msgstr "（パスワードをお忘れですか？）"
+
+msgid "VIEW_EVENT"
+msgstr "イベントを見る"
+
+msgid "VIEW_ARTIST"
+msgstr "アーティストを見る"
+
+msgid "CLOSE"
+msgstr "閉じる"
+
+msgid "REGISTER"
+msgstr "登録"
+
+msgid "VIEW_MORE"
+msgstr "もっと見る"
+
+msgid "DATE"
+msgstr "日付："
+
+msgid "LOCATION:"
+msgstr "場所："
+
+msgid "ARTISTS:"
+msgstr "アーティスト："
+
+msgid "ENQUIRY_MESSAGE"
+msgstr "お問い合わせメッセージ"
+
+msgid "SEND_MESSAGE"
+msgstr "メッセージを送信"
+
+msgid "SEND_ENQUIRY_MESSAGE"
+msgstr "問い合わせメッセージを送信"
+
+msgid "VIEW_ARTWORK"
+msgstr "アートワークを表示する"
+
+msgid "SORRY_THEIR_ARE_NO_ARTWORK_IN_THIS_GROUP"
+msgstr "申し訳ありませんが彼らのこのグループには作品はありません。"
+
+msgid "PLEASE_ADD_ARTWORK_TO_EDIT"
+msgstr "編集するアートワークを追加してください。"
+
+msgid "PLEASE_ADD_EVENT_TO_EDIT"
+msgstr "編集するイベントを追加してください。"
+
+msgid "NEW_PASSWORD_CONFIRM_PASSWORD_NOT_SAME"
+msgstr "新しいパスワードフィールドとパスワードフィールドを確認が一致しませんでした。"
+
+msgid "OLD_PASSWORD_NOT_MATCH"
+msgstr "古いパスワードのフィールドが一致しませんでした。"
+
+msgid "NEW_PASSWORD_SENT_ON_EMAIL"
+msgstr "あなたの新しいパスワードがメールで送信されています。"
+
+msgid "EMAIL_ID_INCORRECT"
+msgstr "あなたが入力したメールは正しくありません。"
+
+msgid "ADMIN_BLOCK_LOGIN"
+msgstr "管理者がログイン状態をブロックします。ログインアクセスのための管理者に連絡してください。"
+
+msgid "LOGIN_USING_LINK_ON_EMAIL"
+msgstr "メールで送信されたリンクを使用してログインしてください。"
+
+msgid "LOGIN_DETAIL_INCORRECT"
+msgstr "ログイン情報が正しくありません。正しい詳細でもう一度試してください。"
+
+msgid "NO_ARTIST_RELATED_THIS_CRITERIA"
+msgstr "彼らは、この基準に関連する一切のアーティストではありません。"
+
+msgid "NO_ARTWORK_RELATED_THIS_CRITERIA"
+msgstr "彼らは、この基準に関連する一切のアートではありません。"
+
+msgid "NO_EVENT_RELATED_THIS_CRITERIA"
+msgstr "彼らは、この基準に関連する一切のイベントはありません。"
+
+msgid "ART_INFO_EDIT_SUCCESS"
+msgstr "アート情報は正常に編集されています。"
+
+msgid "NO_ARTWORK_FOR_THIS_ARTIST"
+msgstr "このアーティストは作品を持っていません。"
+
+msgid "ARTWORK_BY_THIS_NAME_DOES_NOT_EXIST"
+msgstr "この名前のアートワークが存在しない他の名前を指定してください。"
+
+msgid "ENTER_ARTWORK_NAME_FOR_SEARCH"
+msgstr "検索用のキーワードを入力してください。"
+
+msgid "GROUP_ADD_SUCCESS"
+msgstr "あなたのグループ名が正常に追加されます。"
+
+msgid "GROUP_EDIT_SUCCESS"
+msgstr "あなたのグループ名が正常に編集されています。"
+
+msgid "SORRY_NO_ARTWORK_FOR_THIS_GROUP"
+msgstr "申し訳ありませんが、そのはこのグループには作品はありません。"
+
+msgid "ENTER_NUMBER_ONLY"
+msgstr "数字のみを入力してください。"
+
+msgid "SELECT_MEDIUM"
+msgstr "メディアを選択してください。"
+
+msgid "ENTER_GROUP"
+msgstr "グループを入力してください"
+
+msgid "ENTER_TITLE"
+msgstr "タイトルを入力してください"
+
+msgid "ENTER_MATERIAL"
+msgstr "材料を入力してください。"
+
+msgid "ENTER_SIZE"
+msgstr "CM /インチでサイズを入力してください。"
+
+msgid "ENTER_YEAR"
+msgstr "有効な年を入力してください"
+
+msgid "SELECT_COUNTRY"
+msgstr "国を選択してください"
+
+msgid "SELECT_CITY"
+msgstr "都市を選択してください。"
+
+msgid "ENTER_PRICE"
+msgstr "価格を入力してください。"
+
+msgid "ENTER_DESCRIPTION"
+msgstr "説明を入力してください"
+
+msgid "ENTER_EVENT_TITLE"
+msgstr "イベントタイトルを入力してください"
+
+msgid "ENTER_EVENT_LOCATION"
+msgstr "イベントの場所を入力してください。"
+
+msgid "SELECT_EVENT_DATE"
+msgstr "イベントの日付を選択してください。"
+
+msgid "EVENT_DESCRIPTION"
+msgstr "イベントの説明を入力してください。"
+
+msgid "VALID_IMAGE"
+msgstr "有効なイメージをアップロードしてください"
+
+msgid "ENTER_GROUP_NAME"
+msgstr "グループ名を入力してください。"
+
+msgid "ENTER_NUMERIC_DIGIT"
+msgstr "数値のみの桁を入力してください。"
+
+msgid "SELECT_MEMBER_TYPE"
+msgstr "タイプを選択してください。"
+
+msgid "ENTER_VALID_NAME"
+msgstr "有効な名前を入力してください。"
+
+msgid "ENTER_EMAIL"
+msgstr "メールアドレスを入力してください。"
+
+msgid "ENTER_VALID_EMAIL"
+msgstr "有効なメールアドレスを入力してください。"
+
+msgid "ENTER_PASSWORD_ALPHANUMERIC"
+msgstr "6月16日文字と英数字の間にパスワードを入力してください。"
+
+msgid "NEW_PASSWORD_AND_CONFIRM_PASSWORD_SAME"
+msgstr "新しいパスワードとパスワード·フィールドを確認するには、同じ値が含まれている必要があります"
+
+msgid "ENTER_MOBILE_NUMBER"
+msgstr "携帯電話番号を入力してください。"
+
+msgid "ENTER_VALID_ADDRESS"
+msgstr "アドレスを入力してください"
+
+msgid "ENTER_MOBILE_NUMBER_DIGIT"
+msgstr "10桁の携帯電話番号を入力してください"
+
+msgid "SELECT_IMAGE"
+msgstr "画像を選択してください入力してください。"
+
+msgid "GROUP_DELETE_SUCCESS"
+msgstr "グループが正常に削除されました。"
+
+msgid "PAINTING"
+msgstr "絵画"
+
+msgid "PHOTOGRAPHY"
+msgstr "写真撮影"
+
+msgid "SCULPTURE"
+msgstr "彫刻"
+
+msgid "VIDEO"
+msgstr "ビデオ"
+
+msgid "INSTALLATION"
+msgstr "インストール"
+
+msgid "SELECT_MEDIUM"
+msgstr "ミディアムを選択します。"
+
+msgid "ARTIST_USER"
+msgstr "アーティストユーザー（作品·イベントを追加する権限）"
+
+msgid "NORMAL_USER"
+msgstr "通常のユーザー（作品·イベントを追加する権限）"
+
+msgid "SELECT_TYPE"
+msgstr "タイプを選択します"
+
+msgid "ENTER_PASSWORD"
+msgstr "パスワードを入力してください"
+
+msgid "ADD_ARTWORK"
+msgstr "アートワークを追加します。"
+
+msgid "EDIT_TITLE_ARTWORK"
+msgstr "アートワークを編集します。"
+
+msgid "ART_TITLE_DETAIL"
+msgstr "アートの詳細"
+
+msgid "VIEW_ARTWORK_TITLE_DETAIL"
+msgstr "作品を見る"
+
+msgid "SEARCH_TITLE_RESULT"
+msgstr "検索結果"
+
+msgid "ADVANCE_SEARCH_TITLE_RESULT"
+msgstr "アドバンス検索"
+
+msgid "ADD_TITLE_EVENT"
+msgstr "イベントを追加します。"
+
+msgid "EDIT_TITLE_EVENTS"
+msgstr "イベントを編集する"
+
+msgid "EDIT_TITLE_EVENT"
+msgstr "イベントを編集します。"
+
+msgid "EDIT_TITLE_EVENTINFOLIST"
+msgstr "イベントリスト"
+
+msgid "VIEW_TITLE_EVENT"
+msgstr "イベントを見る"
+
+msgid "SLIDESHOW"
+msgstr "プレゼンテーション"
+
+msgid "VIEW_TITLE_GROUP"
+msgstr "グループの表示"
+
+msgid "ADD_TITLE_GROUP"
+msgstr "グループを追加する"
+
+msgid "EDIT_TITLE_GROUP"
+msgstr "グループ編集"
+
+msgid "VIEW_TITLE_GROUP_ARTWORKS"
+msgstr "グループの作品を表示"
+
+msgid "MEMBER_TITLE_REGISTRATION"
+msgstr "会員登録"
+
+msgid "MEMBER_TITLE_LOGIN"
+msgstr "メンバーログイン"
+
+msgid "MEMBER_TITLE_PROFILE"
+msgstr "メンバープロフィール"
+
+msgid "MEMBER_TITLE_CHANGE_PASSWORD"
+msgstr "パスワードを変更する"
+
+msgid "MEMBER_TITLE_EDIT_ACCOUNT"
+msgstr "アカウントの編集"
+
+msgid "MEMBER_TITLE_ARTIST"
+msgstr "アーティスト"
+
+msgid "MEMBER_TITLE_FORGOT_PASSWORD"
+msgstr "パスワードを忘れた場合"
+
+msgid "PAGE_TITLE_CONTACTUS"
+msgstr "お問い合わせ"
+
+msgid "PAGE_TITLE_FAQ"
+msgstr "よくある質問"
+
+msgid "PAGE_TITLE_PRIVACY"
+msgstr "プライバシー"
+
+msgid "PAGE_TITLE_TERMS"
+msgstr "諸条件"
+
+msgid "PAGE_TITLE_ABOUT"
+msgstr "お問い合わせ"
+
+msgid "PAGE_TITLE_VIDEO"
+msgstr "ビデオ"
+
+msgid "PAGE_TITLE_PRESENTATION"
+msgstr "プレゼンテーション"
+
+msgid "PAGE_TITLE_GALLERY"
+msgstr "ギャラリー"
+
+msgid "ARTIST"
+msgstr "アーティスト"
+
+msgid "ARTWORKSS"
+msgstr "作品"
+
+msgid "EVENTSS"
+msgstr "イベント"
+
+msgid "NO_ARTIST_RELATED_KEYWORD"
+msgstr "キーワードを検索に関連する一切のアーティストません"
+
+msgid "NO_ARTWORK_RELATED_KEYWORD"
+msgstr "キーワードを検索に関連する一切のアートワークなし"
+
+msgid "NO_EVENT_RELATED_KEYWORD"
+msgstr "キーワードを検索に関連する一切の事象ません"
+
+msgid "INVALID_OLD_PASSWORD"
+msgstr "無効な古いパスワード"
+
+msgid "ENTER_PASSWORD_INPUT_LONG"
+msgstr "6〜16文字の長さのパスワードを入力してください。"
+
+msgid "PASSWORD_ALPHANUMERIC"
+msgstr "パスワードは英数字の文字が含まれている必要があります"
+
+msgid "NEW_CONFIRM_MUST_SAME"
+msgstr "新しいパスワードと確認パスワードが同じではありません"
+
+msgid "CLICK_INPUT_FOR_DATE"
+msgstr "日付を挿入する入力ボックスをクリックしてください"
+
+msgid "IMAGE"
+msgstr "画像"
+
+msgid "YOUTUBE"
+msgstr "ユーチューブ"
+
+msgid "VIMEO"
+msgstr "Vimeoの"
+
+msgid "MYSPACE"
+msgstr "マイスペース"
+
+msgid "SELECT_EVENT_TYPE"
+msgstr "タイプを選択します"
+
+msgid "ENTER_MESSAGE"
+msgstr "メッセージを入力してください"
+
+msgid "REGISTRATION_MESSAGE"
+msgstr "アクティベーションリンクがあなたのメールに送られてきました。管理者は、登録を承認するためのメールを送ったまでお待ちください"
+
+msgid "DUPLICATE_EMAIL"
+msgstr "メールアドレスは、弊社のデータベースに既に存在に入った。別のメールアドレスを入力してみてください"
+
+
+
+
+

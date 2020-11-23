@@ -1,0 +1,79 @@
+/* crousal gallery */
+
+.product_gallery{ width:1031px; float:left; padding:0; margin:0;}
+
+.graphic, #prevBtn2, #nextBtn2 {
+            margin:0;
+            padding:0;
+            display:block;
+            overflow:hidden;
+            text-indent:-8000px;
+            }
+			
+	#container_slider{	
+		position:relative;
+		width:1031px;
+		background:#fff;		
+		}	
+	#content{
+		position:relative;
+		top:0;
+		}	
+		
+		
+		
+		
+		/* Easy Slider */
+
+	#slider2 ul, #slider2 li
+	{
+		margin:0;
+		padding:0;
+		list-style:none;
+		}
+	#slider2 li{ 
+		/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		width:1002px;
+		overflow:hidden;
+		position:relative;
+		left:0px;
+		height:276px;
+		*height:280px!important;
+	
+		}
+		
+		#slider2{ position:relative; left:10px;}
+		
+		
+		
+		.div_slider_devi{ float:left; padding:0px;}
+			#prevBtn2, #nextBtn2,
+	#slider2next, #slider2prev{ 
+		display:block;
+		width:32px;
+		height:68px;
+		position:absolute;
+		left:-22px;
+		top:100px;
+		z-index:10000;
+		}	
+	#nextBtn2, #slider2next{ 
+		left:1012px;
+		top:100px;
+		outline:none; border:none;
+		}														
+	#prevBtn2 a, #nextBtn2 a,
+	#slider2next a, #slider2prev a{  
+		display:block;
+		position:relative;
+		width:32px;
+		height:68px;
+		background:url(../img/slider_left_btn.png) no-repeat 0 0;	
+		}	
+	#nextBtn2 a, #slider2next a{ 
+		background:url(../img/slider_right_btn.png) no-repeat 0 0;	
+		}
+		

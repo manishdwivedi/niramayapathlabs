@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JFileUpload Documentation - Tutorial: Integration</title>
+<link href="../styles/template.css" rel="stylesheet" type="text/css" />
+<link href="../styles/doc.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="containerDiv">
+  <div id="topDiv">
+  <div id="navDiv">
+  <div id="tabsDiv"><ul>
+  <li><a href="http://www.jfileupload.com/index.html" title="Home"><span>Home</span></a></li>
+  <li><a href="http://www.jfileupload.com/products/index.html" title="Products"><span>Products</span></a></li>
+  <li><a href="http://www.jfileupload.com/support/index.html" title="Support"><span>Support</span></a></li>
+  <li><a href="http://www.jfileupload.com/purchase/index.html" title="Purchase"><span>Purchase</span></a></li>
+  <li><a href="http://www.jfileupload.com/about/index.html" title="About"><span>About</span></a></li>
+  </ul></div>
+  <div id="searchDiv"></div>
+  </div>
+  </div>
+  <div id="mainDiv">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="20%" valign="top"><div id="sidebar">
+      <div id="sidebarSection">
+        <ul>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../software.html" title="Software"><span>Software</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../installation.html" title="Installation"><span>Installation</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../configuration_http.html" title="Parameters for HTTP"><span>HTTP Upload</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../configuration_ftp.html" title="Parameters for FTP"><span>FTP Upload</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../faq.html" title="FAQ"><span>FAQ</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../tutorials.html" title="Tutorials"><span>Tutorials</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../api.html" title="API &amp; Design"><span>API &amp; Design</span></a></li>
+        </ul>
+      </div>
+      <div id="sidebarNav"><br/><br/><a href="../tutorials.html" title="Back">&lt;&lt; Back</a></div>
+      </div>    </td>
+    <td width="80%" valign="top"><table width="98%" border="0" cellspacing="1" cellpadding="0" align="center">
+      <tr>
+        <td valign="top" class="justify"><p align="center" class="mainTitle"><b>- Integration into secure application -</b></p>
+          <br />
+          Most web applications start with login/password form. Once end-user is logged in, a unique identifier is associated to user's session, and he can browse the application including  JFileUpload. However, JFileUpload doesn't own this session identifier and it will send  anonymous requests that should fail if upload is securised.<br />
+          <br />
+        <table width="100%" border="0" cellspacing="1" cellpadding="1">
+              <tr>
+                <td class="sectionTitle"><a name="session" id="session"></a>Maintain user's session</td>
+              </tr>
+              <tr>
+                <td class="justify"> <p>Usually, session identifier is passed by browser either in URL or as cookie. JFileUpload support both. You have to choose one depending how your application works.</p>
+                  <ul>
+                    <li><strong>Session identifier in URLs</strong>: You have to append the identifier in all JFileUpload URLs you've setup such as &quot;url&quot;, &quot;post&quot; and &quot;forward&quot;. For instance, for JSP:<br />
+                    &lt;PARAM NAME=&quot;url&quot; VALUE=&quot;http://server.com/script.jsp;jsessionid=ABC123&quot;&gt;<br />
+                    &lt;PARAM NAME=&quot;forward&quot; VALUE=&quot;http://server.com/page.jsp;jsessionid=ABC123&quot;&gt;<br />
+                      Notice that &quot;;&quot; separator is specific to JSP, it could be &quot;?&quot; or &quot;&amp;&quot; for others server-side technologies.<br />
+                        <br />
+                    </li>
+                    <li><strong>Session identifier as cookie</strong>: You can setup JFileUpload to pass one or more cookies. For instance to pass a JSESSIONID=ABC123:<br />
+                    &lt;PARAM NAME=&quot;param6&quot; VALUE=&quot;cookiename&quot;&gt;<br />
+                      &lt;PARAM NAME=&quot;value6&quot; VALUE=&quot;JSESSIONID&quot;&gt;<br />
+                        &lt;PARAM NAME=&quot;param7&quot; VALUE=&quot;cookievalue&quot;&gt;<br />
+&lt;PARAM NAME=&quot;value7&quot; VALUE=&quot;ABC123&quot;&gt;<br />
+                    JFileUpload will pass the cookie within each upload request. If server-side sets a new cookie then it will be taken into account and sent within each further upload request. Some secure applications require to update the cookie value periodically, JFileUpload supports this behavior but you have to specify the cookie path (if any) to allow cookie value overwrite. For instance:<br />
+                    &lt;PARAM NAME=&quot;param8&quot; VALUE=&quot;cookiepath&quot;&gt;<br />
+&lt;PARAM NAME=&quot;value8&quot; VALUE=&quot;/webapp&quot;&gt;<br />
+<em>You can pass more cookies with cookiename1/cookievalue1, cookiename2/cookitvalue2 and so on.</em><br /><br /></li>
+				<li><strong>Share cookies from browser</strong>: If you have session cookie(s) already loaded in browser then you can enable cookies sharing with applet by adding:<br />
+				  &lt;PARAM NAME=&quot;param9&quot; VALUE=&quot;cookiesource&quot;&gt;<br />
+				  &lt;PARAM NAME=&quot;value9&quot; VALUE=&quot;jse&quot;&gt;<br />
+				  When using this parameter you should not use any cookiename/cookievalue as above.<br />
+				  <br />
+                </li>
+				<li><strong>Cookies compatibility</strong>: If you have troubles to get multiple cookies on server-side then you can force the applet to pass all cookies in one <i>"Cookie:"</i> HTTP header by adding:<br />
+				&lt;PARAM NAME=&quot;param10&quot; VALUE=&quot;cookieheader&quot;&gt;<br />
+				&lt;PARAM NAME=&quot;value10&quot; VALUE=&quot;singleline&quot;&gt;</li>
+                    </ul>
+                  <p>Sometimes, session identifier is not enough. Some portal software require to pass a few additional HTTP parameters to maintain web flow. You can pass such parameter with:<br />
+                    &lt;PARAM NAME=&quot;param9&quot; VALUE=&quot;ORACLE_ADF&quot;&gt;<br />
+&lt;PARAM NAME=&quot;value9&quot; VALUE=&quot;123&quot;&gt;<br />
+<br />
+                  </p></td>
+              </tr>
+              <tr>
+                <td class="sectionTitle"><a name="http" id="http"></a>HTTP Basic authentication</td>
+              </tr>
+              <tr>
+                <td width="50%" class="justify"><table width="100%" border="0" cellspacing="1" cellpadding="1">
+                      <tr>
+                        <td width="40%" valign="top">Some web application are securised with HTTP Basic authentication instead of form. Browser displays  an authentication pop-up window and credentials are passed into HTTP headers.</td>
+                        <td width="60%" align="center"><img src="images/basicauthentication.png" alt="Basic authentication from browser" width="389" height="218" /></td>
+                      </tr>
+                    </table>
+                      <p>JFileUpload support HTTP Basic authentication too. You can either pass login/password as parameter or ask JFileUpload to prompt an authentication pop-up.</p>
+                      <ul>
+                        <li><strong>Pass login and password</strong>: You can setup username and password parameter. JFileUpload will send credentials in each upload request:<br />
+                        &nbsp;&nbsp;&lt;PARAM NAME=&quot;username&quot; VALUE=&quot;yourlogin&quot;&gt;<br />
+&nbsp;&nbsp;&lt;PARAM NAME=&quot;password&quot; VALUE=&quot;yourpassword&quot;&gt;<br />
+Notice both username and password could be base64 encoded. To do so you have then enclose base64 value with []:<br />
+&nbsp;&nbsp;&lt;PARAM NAME=&quot;username&quot; VALUE=&quot;[yourbase64login]&quot;&gt;<br />
+&nbsp;&nbsp;&lt;PARAM NAME=&quot;password&quot; VALUE=&quot;[yourbase64password]&quot;&gt;<br />
+username and password could be encrypted too. To do so you have to enclosed encrypted value with {}. The encryption service is available upon request to support email.
+<br />
+Also, they could also be moved in i18n.properties with following properties:<br />
+&nbsp;&nbsp;username=yourlogin<br />
+&nbsp;&nbsp;password=yourpassword<br />
+                        <br />
+                        </li>
+                        <li><strong>Authentication pop-up</strong>: You have to setup authentication=auto parameter. It will display a pop-up when required. <br />
+                        &lt;PARAM NAME=&quot;authentication&quot; VALUE=&quot;auto&quot;&gt;<br />
+                            <table width="100%" border="0" cellspacing="2" cellpadding="2">
+                              <tr>
+                                <td width="50%" valign="top">Three attempts are allowed. You can mix authentication=auto with username parameter if you want to fill in login field.</td>
+                                <td><img src="images/authenticationhttp.png" alt="HTTP authentication" width="268" height="211" /></td>
+                              </tr>
+                            </table>
+                        </li>
+                      </ul>
+                    </td>
+              </tr>
+              <tr>
+                <td class="sectionTitle"><a name="ftp" id="ftp"></a>FTP authentication</b></td>
+              </tr>
+              <tr>
+                <td class="justify">FTP authentication works as explained above. You can setup username/password or enable authentication pop-up. <br /></td>
+              </tr>
+              <tr>
+                <td class="justify">&nbsp;</td>
+              </tr>
+            </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  </table>
+  </div>
+  <div id="bottomDiv">
+    <p><a href="http://java.sun.com" target="_blank">Java</a> and all Java-based marks are trademarks or registered trademarks of Sun Microsystems, Inc. in the U.S. and other countries. <br />
+    All other company and/or product names are the property of their respective owners.</p>
+  </div>
+</div>
+</body>
+</html>

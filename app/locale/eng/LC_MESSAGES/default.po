@@ -1,0 +1,709 @@
+msgid "HOME"
+msgstr "Home"
+
+msgid "ABOUT_US"
+msgstr "About Us"
+
+msgid "CONTACT_US"
+msgstr "Contact Us"
+
+msgid "SHOP"
+msgstr "Shop"
+
+msgid "ARTISTS"
+msgstr "Artists"
+
+msgid "LOGIN"
+msgstr "Login"
+
+msgid "SIGN_UP"
+msgstr "Sign Up"
+
+msgid "SEARCH_BY_ARTWORK_NAME"
+msgstr "Search Keyword"
+
+msgid "LOGOUT"
+msgstr "Logout"
+
+msgid "WELCOME"
+msgstr "Welcome"
+
+msgid "FAQ"
+msgstr "FAQ"
+
+msgid "PRIVACY"
+msgstr "Privacy"
+
+msgid "TERMS_AND_CONDITION"
+msgstr "Terms and Conditions"
+
+msgid "ADVANCE_SEARCH?"
+msgstr "Advance Search?"
+
+msgid "EVENTS"
+msgstr "Events"
+
+msgid "ARTIST_ARTWORK"
+msgstr "Artist Artwork"
+
+msgid "EDIT_ACCOUNT"
+msgstr "Edit Account"
+
+msgid "CHANGE_PASSWORD"
+msgstr "Change Password"
+
+msgid "VIEW_GROUPS"
+msgstr "View Groups"
+
+msgid "VIEW_GROUP_ARTWORKS"
+msgstr "View Group Artworks"
+
+msgid "EDIT_GROUP"
+msgstr "Edit Group"
+
+msgid "ADD_GROUP"
+msgstr "Add Group"
+
+msgid "ADD_ARTWORK"
+msgstr "Add Artwork"
+
+msgid "EDIT_ARTWORK"
+msgstr "Edit Artwork"
+
+msgid "ADD_EVENT"
+msgstr "Add Event"
+
+msgid "EDIT_EVENT"
+msgstr "Edit Event"
+
+msgid "MEMBER_PANEL"
+msgstr "Member Panel"
+
+msgid "MY_ACCOUNT"
+msgstr "My Account"
+
+msgid "ARTIST_BIOGRAPHY"
+msgstr "Artist Biography"
+
+msgid "C_V"
+msgstr "Resume"
+
+msgid "N_C_V"
+msgstr "No Resume"
+
+msgid "GROUP_PANEL"
+msgstr "Group Panel"
+
+msgid "VIEW_GROUP"
+msgstr "View Group"
+
+msgid "ADD_GROUP"
+msgstr "Add Group"
+
+msgid "ARTWORK_PANEL"
+msgstr "Artwork Panel"
+
+msgid "EVENT_PANEL"
+msgstr "Event Panel"
+
+msgid "VIEW_ALL_WORKS"
+msgstr "View all works"
+
+msgid "SELECT_LANGUAGE"
+msgstr "Select Language:"
+
+msgid "SUBMIT"
+msgstr "Submit"
+
+msgid "RESET"
+msgstr "Reset"
+
+msgid "VIEW_ARTS"
+msgstr "View Arts"
+
+msgid "DELETE"
+msgstr "Delete"
+
+msgid "GROUP_NAME"
+msgstr "Group Name"
+
+msgid "ACTION"
+msgstr "Action"
+
+msgid "MEMBER_TYPE"
+msgstr "Member Type"
+
+msgid "NAME"
+msgstr "Name"
+
+msgid "EMAIL"
+msgstr "Email"
+
+msgid "MOBILE"
+msgstr "Mobile"
+
+msgid "ADDRESS"
+msgstr "Address"
+
+msgid "MEMBER_IMAGE"
+msgstr "Member Image"
+
+msgid "IF_YOU_WANT_TO_UPLOAD_RESUME"
+msgstr "If You Want To Upload Resume"
+
+msgid "IF_YOU_WANT_TO_UPLOAD_NEW_RESUME"
+msgstr "If You Want To Upload New Resume"
+
+msgid "CLICK_HERE"
+msgstr "Click here"
+
+msgid "UPLOAD_RESUME"
+msgstr "Upload Resume"
+
+msgid "UPLOAD_NEW_RESUME"
+msgstr "Upload New Resume"
+
+msgid "EDIT_IMAGE"
+msgstr "Edit Image"
+
+msgid "UPLOAD_IMAGE"
+msgstr "Upload Image"
+
+msgid "OLD_PASSWORD"
+msgstr "Old Password"
+
+msgid "NEW_PASSWORD"
+msgstr "New Password"
+
+msgid "CONFIRM_PASSWORD"
+msgstr "Confirm Password"
+
+msgid "MEDIUM"
+msgstr "Medium"
+
+msgid "GROUP"
+msgstr "Group"
+
+msgid "TITLE"
+msgstr "Title"
+
+msgid "MATERIAL"
+msgstr "Material"
+
+msgid "SIZE"
+msgstr "Size"
+
+msgid "YEAR"
+msgstr "Year"
+
+msgid "COUNTRY"
+msgstr "Country"
+
+msgid "CITY"
+msgstr "City"
+
+msgid "PRICE"
+msgstr "Price"
+
+msgid "ARTWORK_DESCRIPTION"
+msgstr "Artwork Description"
+
+msgid "ARTWORK_IMAGE_TYPE"
+msgstr "Artwork Image Type"
+
+msgid "YOUTUBE_SHARE_URL"
+msgstr "Youtube Share URL"
+
+msgid "EMBED_CODE_YOUTUBE"
+msgstr "Embed Code Youtube"
+
+msgid "VIMEO_URL"
+msgstr "Vimeo URL"
+
+msgid "EMBED_CODE_MYSPACE"
+msgstr "Embed Code Myspace"
+
+msgid "EDIT"
+msgstr "Edit"
+
+msgid "IMAGE"
+msgstr "Image"
+
+msgid "SHARE_URL"
+msgstr "Share URL"
+
+msgid "EMBED_CODE"
+msgstr "Embed Code"
+
+msgid "ENTER_EMBED_CODE"
+msgstr "Enter Embed Code"
+
+msgid "CURRENT_URL"
+msgstr "Current URL"
+
+msgid "ENTER_NEW_URL"
+msgstr "Enter New URL"
+
+msgid "BLOCKED_BY_ADMIN"
+msgstr "Blocked By Admin"
+
+msgid "APPROVED_BY_ADMIN"
+msgstr "Approved By Admin"
+
+msgid "ADD_ARTIST"
+msgstr "Add Artist"
+
+msgid "LOCATION"
+msgstr "Location"
+
+msgid "DATE"
+msgstr "Date"
+
+msgid "DESCRIPTION"
+msgstr "Description"
+
+msgid "EVENT_IMAGE_TYPE"
+msgstr "Event Image Type"
+
+msgid "ABOUT_ARTWORK"
+msgstr "About Artwork"
+
+msgid "ABOUT_ARTIST"
+msgstr "About Artist"
+
+msgid "ARTWORKS"
+msgstr "Artworks"
+
+msgid "PLEASE_LOGIN/REGISTER_TO_SEND_ENQUIRY"
+msgstr "Please Login/Register to Send Enquiry"
+
+msgid "SEND_ENQUIRY"
+msgstr "Send Enquiry"
+
+msgid "BACK_TO_ARTIST"
+msgstr "<< Back To Artist >>"
+
+msgid "SEARCH_BY_MEDIUM"
+msgstr "Search by Medium"
+
+msgid "SEARCH"
+msgstr "Search"
+
+msgid "SEARCH_RESULT"
+msgstr "Search Result"
+
+msgid "VIEW_ARTWORK"
+msgstr "View Artwork"
+
+msgid "ADVANCE_SEARCH"
+msgstr "Advance Search"
+
+msgid "ARTIST_NAME"
+msgstr "Artist Name"
+
+msgid "ARTWORK_TITLE"
+msgstr "Artwork Title"
+
+msgid "EVENT_TITLE"
+msgstr "Event Title"
+
+msgid "MEMBER_REGISTRATION"
+msgstr "Member Registration"
+
+msgid "PASSWORD"
+msgstr "Password"
+
+msgid "FORGOT_PASSWORD"
+msgstr "Forgot Password"
+
+msgid "MEMBER_LOGIN"
+msgstr "Member Login"
+
+msgid "KEEP_ME_LOGGED_IN_ON_THIS_COMPUTER"
+msgstr "Keep me logged in on this computer"
+
+msgid "FORGOT_YOUR_PASSWORD"
+msgstr "(Forgot Your Password?)"
+
+msgid "VIEW_EVENT"
+msgstr "View Event"
+
+msgid "VIEW_ARTIST"
+msgstr "View Artist"
+
+msgid "CLOSE"
+msgstr "Close"
+
+msgid "REGISTER"
+msgstr "Register"
+
+msgid "VIEW_MORE"
+msgstr "View More"
+
+msgid "DATE"
+msgstr "Date:"
+
+msgid "LOCATION:"
+msgstr "Location:"
+
+msgid "ARTISTS:"
+msgstr "Artists:"
+
+msgid "ENQUIRY_MESSAGE"
+msgstr "Enquiry Message"
+
+msgid "SEND_MESSAGE"
+msgstr "Send Message"
+
+msgid "SEND_ENQUIRY_MESSAGE"
+msgstr "Send Enquiry Message"
+
+msgid "VIEW_ARTWORK"
+msgstr "View Artwork"
+
+msgid "SORRY_THEIR_ARE_NO_ARTWORK_IN_THIS_GROUP"
+msgstr "Sorry their are no artworks in this group."
+
+msgid "PLEASE_ADD_ARTWORK_TO_EDIT"
+msgstr "Please Add Artwork To Edit."
+
+msgid "PLEASE_ADD_EVENT_TO_EDIT"
+msgstr "Please Add Event To Edit."
+
+msgid "NEW_PASSWORD_CONFIRM_PASSWORD_NOT_SAME"
+msgstr "Your new password field and confirm password field did not match."
+
+msgid "OLD_PASSWORD_NOT_MATCH"
+msgstr "Your old password field did not match."
+
+msgid "NEW_PASSWORD_SENT_ON_EMAIL"
+msgstr "Your new password has been sent on your email."
+
+msgid "EMAIL_ID_INCORRECT"
+msgstr "The emailid you entered is incorrect."
+
+msgid "ADMIN_BLOCK_LOGIN"
+msgstr "Administrator blocks your login status. Please contact administrator for login access."
+
+msgid "LOGIN_USING_LINK_ON_EMAIL"
+msgstr "Please login using link sent on your email."
+
+msgid "LOGIN_DETAIL_INCORRECT"
+msgstr "Your login details are incorrect. Please try again with correct details."
+
+msgid "NO_ARTIST_RELATED_THIS_CRITERIA"
+msgstr "Their is no Artist related to this criteria."
+
+msgid "NO_ARTWORK_RELATED_THIS_CRITERIA"
+msgstr "Their is no Artworks related to this criteria."
+
+msgid "NO_EVENT_RELATED_THIS_CRITERIA"
+msgstr "Their is no Events related to this criteria."
+
+msgid "ART_INFO_EDIT_SUCCESS"
+msgstr "Art information is edited successfully."
+
+msgid "NO_ARTWORK_FOR_THIS_ARTIST"
+msgstr "This artist have no artworks."
+
+msgid "ARTWORK_BY_THIS_NAME_DOES_NOT_EXIST"
+msgstr "Artwork by this name does not exist Please try another name."
+
+msgid "ENTER_ARTWORK_NAME_FOR_SEARCH"
+msgstr "Please enter keyword for search."
+
+msgid "GROUP_ADD_SUCCESS"
+msgstr "Your group name is added succesfully."
+
+msgid "GROUP_EDIT_SUCCESS"
+msgstr "Your group name is edited succesfully."
+
+msgid "SORRY_NO_ARTWORK_FOR_THIS_GROUP"
+msgstr "Sorry their are no artworks in this Group."
+
+msgid "ENTER_NUMBER_ONLY"
+msgstr "Please enter only numbers"
+
+msgid "SELECT_MEDIUM"
+msgstr "Please select medium"
+
+msgid "ENTER_GROUP"
+msgstr "Please enter group"
+
+msgid "ENTER_TITLE"
+msgstr "Please enter title"
+
+msgid "ENTER_MATERIAL"
+msgstr "Please enter material"
+
+msgid "ENTER_SIZE"
+msgstr "Please enter size in cm/inch"
+
+msgid "ENTER_YEAR"
+msgstr "Please enter valid year"
+
+msgid "SELECT_COUNTRY"
+msgstr "Please select country"
+
+msgid "SELECT_CITY"
+msgstr "Please select city"
+
+msgid "ENTER_PRICE"
+msgstr "Please enter price"
+
+msgid "ENTER_DESCRIPTION"
+msgstr "Please enter description"
+
+msgid "ENTER_EVENT_TITLE"
+msgstr "Please enter event title"
+
+msgid "ENTER_EVENT_LOCATION"
+msgstr "Please enter event location"
+
+msgid "SELECT_EVENT_DATE"
+msgstr "Please select event date"
+
+msgid "EVENT_DESCRIPTION"
+msgstr "Please enter event description"
+
+msgid "VALID_IMAGE"
+msgstr "Please upload a valid image"
+
+msgid "ENTER_GROUP_NAME"
+msgstr "Please enter group name"
+
+msgid "ENTER_NUMERIC_DIGIT"
+msgstr "Please enter only numeric digit."
+
+msgid "SELECT_MEMBER_TYPE"
+msgstr "Please select Type"
+
+msgid "ENTER_VALID_NAME"
+msgstr "Please enter valid name"
+
+msgid "ENTER_EMAIL"
+msgstr "Please enter email"
+
+msgid "ENTER_VALID_EMAIL"
+msgstr "Please enter valid email address"
+
+msgid "ENTER_PASSWORD_ALPHANUMERIC"
+msgstr "Please enter password between 6-16 characters long and alphanumeric"
+
+msgid "NEW_PASSWORD_AND_CONFIRM_PASSWORD_SAME"
+msgstr "New password and confirm password field must contain same values"
+
+msgid "ENTER_MOBILE_NUMBER"
+msgstr "Please enter Mobile Number"
+
+msgid "ENTER_VALID_ADDRESS"
+msgstr "Please enter Address"
+
+msgid "ENTER_MOBILE_NUMBER_DIGIT"
+msgstr "Please enter 10 digit Mobile Number"
+
+msgid "SELECT_IMAGE"
+msgstr "Please Select Image"
+
+msgid "GROUP_DELETE_SUCCESS"
+msgstr "Group deleted successfully."
+
+msgid "PAINTING"
+msgstr "Painting"
+
+msgid "PHOTOGRAPHY"
+msgstr "Photography"
+
+msgid "SCULPTURE"
+msgstr "Sculpture"
+
+msgid "VIDEO"
+msgstr "Video"
+
+msgid "INSTALLATION"
+msgstr "Installation"
+
+msgid "SELECT_MEDIUM"
+msgstr "Select Medium"
+
+msgid "ARTIST_USER"
+msgstr "Artist User (Authority to add Artworks & Events)"
+
+msgid "NORMAL_USER"
+msgstr "Normal User (No Authority to add Artworks & Events)"
+
+msgid "SELECT_TYPE"
+msgstr "Select Type"
+
+msgid "ENTER_PASSWORD"
+msgstr "Please enter password"
+
+msgid "ADD_ARTWORK"
+msgstr "Add Artwork"
+
+msgid "EDIT_TITLE_ARTWORK"
+msgstr "Edit Artwork"
+
+msgid "ART_TITLE_DETAIL"
+msgstr "Art Details"
+
+msgid "VIEW_ARTWORK_TITLE_DETAIL"
+msgstr "View Artworks"
+
+msgid "SEARCH_TITLE_RESULT"
+msgstr "Search Result"
+
+msgid "ADVANCE_SEARCH_TITLE_RESULT"
+msgstr "Advance Search"
+
+msgid "ADD_TITLE_EVENT"
+msgstr "Add Event"
+
+msgid "EDIT_TITLE_EVENTS"
+msgstr "Edit Events"
+
+msgid "EDIT_TITLE_EVENT"
+msgstr "Edit Event"
+
+msgid "EDIT_TITLE_EVENTINFOLIST"
+msgstr "Event List"
+
+msgid "VIEW_TITLE_EVENT"
+msgstr "View Event"
+
+msgid "SLIDESHOW"
+msgstr "Presentation"
+
+msgid "VIEW_TITLE_GROUP"
+msgstr "View Groups"
+
+msgid "ADD_TITLE_GROUP"
+msgstr "Add Group"
+
+msgid "EDIT_TITLE_GROUP"
+msgstr "Edit Group"
+
+msgid "VIEW_TITLE_GROUP_ARTWORKS"
+msgstr "View Group Artworks"
+
+msgid "MEMBER_TITLE_REGISTRATION"
+msgstr "Member Registration"
+
+msgid "MEMBER_TITLE_LOGIN"
+msgstr "Member Login"
+
+msgid "MEMBER_TITLE_PROFILE"
+msgstr "Member Profile"
+
+msgid "MEMBER_TITLE_CHANGE_PASSWORD"
+msgstr "Change Password"
+
+msgid "MEMBER_TITLE_EDIT_ACCOUNT"
+msgstr "Edit Account"
+
+msgid "MEMBER_TITLE_ARTIST"
+msgstr "Artists"
+
+msgid "MEMBER_TITLE_FORGOT_PASSWORD"
+msgstr "Forgot Password"
+
+msgid "PAGE_TITLE_CONTACTUS"
+msgstr "Contact Us"
+
+msgid "PAGE_TITLE_FAQ"
+msgstr "Faq"
+
+msgid "PAGE_TITLE_PRIVACY"
+msgstr "Privacy"
+
+msgid "PAGE_TITLE_TERMS"
+msgstr "Terms and Conditions"
+
+msgid "PAGE_TITLE_ABOUT"
+msgstr "About Us"
+
+msgid "PAGE_TITLE_VIDEO"
+msgstr "Video"
+
+msgid "PAGE_TITLE_PRESENTATION"
+msgstr "Presentation"
+
+msgid "PAGE_TITLE_GALLERY"
+msgstr "Gallery"
+
+msgid "ARTIST"
+msgstr "Artists"
+
+msgid "ARTWORKSS"
+msgstr "Artworks"
+
+msgid "EVENTSS"
+msgstr "Events"
+
+msgid "NO_ARTIST_RELATED_KEYWORD"
+msgstr "No artist related to search keyword"
+
+msgid "NO_ARTWORK_RELATED_KEYWORD"
+msgstr "No artwork related to search keyword"
+
+msgid "NO_EVENT_RELATED_KEYWORD"
+msgstr "No event related to search keyword"
+
+msgid "INVALID_OLD_PASSWORD"
+msgstr "Invalid old password"
+
+msgid "ENTER_PASSWORD_INPUT_LONG"
+msgstr "Please enter password between 6-16 characters long"
+
+msgid "PASSWORD_ALPHANUMERIC"
+msgstr "Password should contains alphanumeric characters"
+
+msgid "NEW_CONFIRM_MUST_SAME"
+msgstr "New Password and confirm password are not same"
+
+msgid "CLICK_INPUT_FOR_DATE"
+msgstr "Click on input box to insert date"
+
+msgid "IMAGE"
+msgstr "Image"
+
+msgid "YOUTUBE"
+msgstr "Youtube"
+
+msgid "VIMEO"
+msgstr "Vimeo"
+
+msgid "MYSPACE"
+msgstr "Myspace"
+
+msgid "SELECT_EVENT_TYPE"
+msgstr "Select Type"
+
+msgid "ENTER_MESSAGE"
+msgstr "Please enter message"
+
+msgid "REGISTRATION_MESSAGE"
+msgstr "Your activation link has been sent on your Email. Please wait till admin sent a email for approving your registration"
+
+msgid "DUPLICATE_EMAIL"
+msgstr "Email address entered already exists in our database. Try enter different email address"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

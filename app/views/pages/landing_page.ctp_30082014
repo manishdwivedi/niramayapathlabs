@@ -1,0 +1,58 @@
+<div id="bodyPart">
+    <div class="bodyInnerDiv">
+    
+    	<div id="doctorPanel">
+       	  <div class="actDiv">
+       	    <div class="boxDiv">
+                	<div class="docPanel"><?php echo $this->Html->image('change_index/niramya-panel-doctors.png',array('alt'=>'Niramaya Panel Doctor','class'=>'left'))?><a href="<?php echo SITE_URL;?>pages/login_doctor"><?php echo $this->Html->image('change_index/login-here.jpg',array('alt'=>'Login Here','class'=>'loginBtn'))?></a></div>
+                	<div class="docPanelRight"><?php echo $this->Html->image('change_index/want-doctor.jpg',array('alt'=>'Want to Join the Niramaya Doctors Panel','class'=>'left'))?> <a href="<?php echo SITE_URL;?>pages/become_doctor"><?php echo $this->Html->image('change_index/click-her.jpg',array('alt'=>'Click Here','class'=>'loginBtn'))?></a></div>
+              </div>
+            </div>
+            <h1>All the Features you need to <span class="green">Manage a Busy Practice</span></h1>
+            <dl>
+           	  <dt class="marLeftNone"><div class="box">
+              <?php echo $this->Html->image('change_index/icon-1.png',array('alt'=>'Img'))?>
+              <h1>Advertise Clinic & Search</h1>
+        <p>Find more patients through<br /> advertising clinic.</p>
+              
+              </div></dt>
+           	  <dt><div class="box"><?php echo $this->Html->image('change_index/icon-2.png',array('alt'=>'Img'))?>
+              <h1>Manage Appointments</h1>
+              <p>Click for booking & managing<br/>
+appointments.</p></div></dt>
+              <dt><div class="box"><?php echo $this->Html->image('change_index/icon-3.png',array('alt'=>'Img'))?>
+              <h1>Become Featured Doctor</h1>
+              <p>Enlisted doctors on Doctor<br/>
+          Connect can reach out & serve <br/>
+          more patients.</p></div></dt>
+              <dt><div class="box"><?php echo $this->Html->image('change_index/icon-4.png',array('alt'=>'Img'))?>
+              <h1>Doctor Visibility</h1>
+              <p>Enhance Doctor visibility &amp;<br/>
+          promote your practice.</p></div></dt>
+            
+            </dl>
+       	  <h1>Specialities <span class="green">We Manage</span></h1>
+            <div class="specialities">
+            <?php echo $this->Html->image('change_index/doc-img.jpg',array('alt'=>'Doc','class'=>'left'))?>
+            <ol>
+            <li>Ayurveda</li><li>Cardiology</li><li>Dentistry</li><li>Dermatology</li><li class="borderNone">Diabetology</li>
+
+            </ol>
+            <ol>
+            <li>Embryology  Services</li><li>Endocrinology</li><li>Endodontist</li><li>Epidemiology</li><li class="borderNone">Geneticis</li>
+
+            </ol>
+            <ol>
+            <li>Hematology</li><li>Homeopathy</li><li>Nephrology</li><li>Neurology</li><li class="borderNone">Radiology</li>
+
+            </ol>
+            
+            </div>
+            
+      </div>
+    
+   
+ <div class="bottomShadow"></div>    
+
+    </div>
+  </div>

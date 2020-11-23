@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JFileUpload Documentation - API and design</title>
+<link href="styles/template.css" rel="stylesheet" type="text/css" />
+<link href="styles/doc.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="containerDiv">
+  <div id="topDiv">
+  <div id="navDiv">
+  <div id="tabsDiv"><ul>
+  <li><a href="http://www.jfileupload.com/index.html" title="Home"><span>Home</span></a></li>
+  <li><a href="http://www.jfileupload.com/products/index.html" title="Products"><span>Products</span></a></li>
+  <li><a href="http://www.jfileupload.com/support/index.html" title="Support"><span>Support</span></a></li>
+  <li><a href="http://www.jfileupload.com/purchase/index.html" title="Purchase"><span>Purchase</span></a></li>
+  <li><a href="http://www.jfileupload.com/about/index.html" title="About"><span>About</span></a></li>
+  </ul></div>
+  <div id="searchDiv"></div>
+  </div>
+  </div>
+  <div id="mainDiv">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="20%" valign="top"><div id="sidebar">
+      <div id="sidebarSection">
+        <ul>
+          <li><img src="styles/bullet.gif" width="7" height="13" border="0" /><a href="software.html" title="Software"><span>Software</span></a></li>
+          <li><img src="styles/bullet.gif" width="7" height="13" border="0" /><a href="installation.html" title="Installation"><span>Installation</span></a></li>
+          <li><img src="styles/bullet.gif" width="7" height="13" border="0" /><a href="configuration_http.html" title="Parameters for HTTP"><span>HTTP Upload</span></a></li>
+          <li><img src="styles/bullet.gif" width="7" height="13" border="0" /><a href="configuration_ftp.html" title="Parameters for FTP"><span>FTP Upload</span></a></li>
+          <li><img src="styles/bullet.gif" width="7" height="13" border="0" /><a href="faq.html" title="FAQ"><span>FAQ</span></a></li>
+<li><img src="styles/bullet.gif" width="7" height="13" border="0" /><a href="tutorials.html" title="Tutorials"><span>Tutorials</span></a></li>
+          <li><img src="styles/bullet.gif" width="7" height="13" border="0" /><a href="api.html" title="API &amp; Design"><span>API &amp; Design</span></a></li>
+        </ul>
+      </div>
+      <div id="sidebarNav"><br/><br/><a href="index.html" title="Back">&lt;&lt; Back</a></div>
+      </div>    </td>
+    <td width="80%" valign="top"><table width="98%" border="0" cellspacing="1" cellpadding="0" align="center">
+      <tr>
+        <td valign="top" class="justify"><p align="center" class="mainTitle"><b>- API and Design-</b></p>
+            <p><strong>This section only applies to JFileUpload Enterprise and Premium packages</strong> (API is not available for JFileUpload Pro release). It targets Java developers or designers. It requires Java, HTTP, FTP and Swing UI skills. It allows to understand how JFileUpload products work and interact. It's a good starting point to extend  JFileUpload features or modify its behavior.<br />
+            </p>
+            <table width="100%" border="0" cellspacing="1" cellpadding="1">
+              <tr>
+                <td class="sectionTitle"><a name="design" id="design"></a>Design </b></td>
+              </tr>
+              <tr>
+                <td class="justify"> <p>JFileUpload is designed to support  any transport implementation, any upload preprocessing and any front-end: </p>
+                  <ul>
+                    <li>Transport implementation such as HTTP and FTP extend <span class="italic">AbstractTransferController</span> class. <span class="italic">init()</span>, <span class="italic">begin()</span> and <span class="italic">cancel()</span> methods have to be implemented and handle threading. Transport implementation is loaded at runtime through &quot;mode&quot; parameter. </li>
+                    <li>Processing before upload is available with <span class="italic">TransferFilter</span> interface. It comes with three methods <span class="italic">init(...)</span>, <span class="italic">execute(...)</span> and <span class="italic">clean()</span>. <span class="italic">init(controller)</span> is called on applet loading with transfer controller instance matching to transport. <span class="italic">execute(object)</span> is called just before transfer with reference to file to upload. <span class="italic">clean()</span> is called just after upload.</li>
+                    <li>Front-end is loaded at runtime with fully qualified classname defined in &quot;transferui&quot; parameter. This class must implement <span class="italic">TransferUI</span> interface which includes three methods: <span class="italic">init(...)</span>, <span class="italic">start()</span> and <span class="italic">stop()</span>. <span class="italic">init(parent, conf, controller)</span> is called on applet loading with parent container reference, access to JFileUpload configuration, I18N resources and transfer controller instance matching to transport. <span class="italic">start()</span> is called just before displaying and <span class="italic">stop()</span> just before UI finalization. Calling <span class="italic">controller.begin()</span> will trigger upload. Transfer events such as upload started, completed, cancelled, failed and more are available by implementing <span class="italic">TransferListener</span> interface. </li>
+                    </ul>
+                  <p>It means that you don't need full source code to extend JFileUpload until you plan  to create (from scratch) new UI, new preprocessing filter or transport implementation only. However, if you need to modify behavior inside JFileUpload (or its add-ons) then you need full source code (Premium package).<br />
+                    <br />                
+                  </p></td>
+              </tr>
+                            <tr>
+                <td class="sectionTitle"><a name="api" id="api"></a>API</td>
+              </tr>
+              <tr>
+                <td class="justify"><p>upload.client includes MApplication and MApplet. MApplication extends JFrame for standalone or WebStart usage. MApplet extends JApplet for applet in browser usage. transfer.client package includes core, http, ftp, util and mdesign packages. core package includes all interfaces and abstract classes of JFileUpload API. http package is the HTTP upload implementation. ftp package is the FTP upload implementation. mdesign package includes basic front-end component (progress bar, cancel button, menu and textarea). util package includes Conf class allowing to load parameters/resources and instanciates transfer implementation, transferui. and uihelper.</p>
+                  <p align="center">[<a href="api/index.html">Browse JFileUpload Javadoc</a>]<br />
+                    <br />
+                  </p></td>
+              </tr>
+              <tr>
+                <td class="sectionTitle"><a name="build" id="build"></a>Build from sources (Premium package only)</td>
+              </tr>
+              <tr>
+                <td class="justify"><p>JFileUpload   Premium package comes with an ANT (1.7 or higher) build script. <a href="http://ant.apache.org" target="_blank">ANT</a> is a free  tool allowing to build any Java application without IDE. The build script includes tasks to compile sources, build JAR files, generate Javadoc and sign JAR files. To run the build script, you have to:</p>
+                  <ol>
+                    <li>Edit setenv.bat to update JAVA_HOME and ANT_HOME variables.</li>
+                    <li>Copy your keystore* in the same directory as setenv.bat</li>
+                    <li>Edit build.xml to update your keystore filename, alias and password.</li>
+                    <li>Open a command line window or terminal.</li>
+                    <li>Execute &quot;setenv.bat&quot;.</li>
+                    <li>Execute &quot;ant all&quot;. It will compile sources, build JARs and generate Javadoc.</li>
+                    <li>Execute &quot;ant sign&quot;. It will sign the generated JARs with key/certificate in keystore.</li>
+                    <li>Ready-to-use binaries (JARs) are under dist/ directory.</li>
+                    </ol>
+                  <p>* A keystore includes private keys + certificates. It is required to sign Java binaries. Premium package doesn't include such keystore because it is related to your company. If you don't have one then you can generate it with a self-signed certificate thanks to Java keytool available in JDK. If you already have a trusted certificate (from Verisign or Thawte) then keytool allows to import it in the keystore too. Note that many developers are not familiar with code signing certificate and process to get one. Such help is included in Premium package support so feel free to contact support team for any question.<br />
+                    <br />
+                  </p></td>
+              </tr>
+            </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  </table>
+  </div>
+  <div id="bottomDiv">
+    <p><a href="http://java.sun.com" target="_blank">Java</a> and all Java-based marks are trademarks or registered trademarks of Sun Microsystems, Inc. in the U.S. and other countries. <br />
+    All other company and/or product names are the property of their respective owners.</p>
+  </div>
+</div>
+</body>
+</html>

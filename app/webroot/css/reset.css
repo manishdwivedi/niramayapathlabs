@@ -1,0 +1,16 @@
+/****reset css starts****/
+
+h1, h2, h3, h4, h5, h6, ul, ol, li, form, p, filedset, img{margin:0; padding:0; border:0; font-weight:normal;}
+form, fieldset{margin:0; padding:0;	border:none;}
+a:focus{outline:none;}
+input:focus{outline:none;}
+input{outline:none !important;}
+img{border:0;}
+body,html{margin:0;	padding:0;}
+body{font:normal 12px/14px arial;}
+a{outline:none; cursor:pointer; text-decoration:none;}
+.clear{clear:both;}
+.left{float:left !important;}
+.right{float:right !important;}
+.bgNone{ background:none !important;}
+.borderNone{ border:none !important;}

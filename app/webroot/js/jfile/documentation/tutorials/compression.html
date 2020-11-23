@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JFileUpload Documentation - Tutorial: Compression</title>
+<meta name="description" content="zip files and folders before upload" />
+<meta name="keywords" content="zip file upload,archive compression,free zip upload,compress files,java zip,upload zip files,applet,java" />
+<link href="../styles/template.css" rel="stylesheet" type="text/css" />
+<link href="../styles/doc.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.paramapplet {font-size: 11px}
+-->
+</style>
+</head>
+<body>
+<div id="containerDiv">
+  <div id="topDiv">
+  <div id="navDiv">
+  <div id="tabsDiv"><ul>
+  <li><a href="http://www.jfileupload.com/index.html" title="Home"><span>Home</span></a></li>
+  <li><a href="http://www.jfileupload.com/products/index.html" title="Products"><span>Products</span></a></li>
+  <li><a href="http://www.jfileupload.com/support/index.html" title="Support"><span>Support</span></a></li>
+  <li><a href="http://www.jfileupload.com/purchase/index.html" title="Purchase"><span>Purchase</span></a></li>
+  <li><a href="http://www.jfileupload.com/about/index.html" title="About"><span>About</span></a></li>
+  </ul></div>
+  <div id="searchDiv"></div>
+  </div>
+  </div>
+  <div id="mainDiv">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="20%" valign="top"><div id="sidebar">
+      <div id="sidebarSection">
+        <ul>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../software.html" title="Software"><span>Software</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../installation.html" title="Installation"><span>Installation</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../configuration_http.html" title="Parameters for HTTP"><span>HTTP Upload</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../configuration_ftp.html" title="Parameters for FTP"><span>FTP Upload</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../faq.html" title="FAQ"><span>FAQ</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../tutorials.html" title="Tutorials"><span>Tutorials</span></a></li>
+          <li><img src="../styles/bullet.gif" width="7" height="13" border="0" /><a href="../api.html" title="API &amp; Design"><span>API &amp; Design</span></a></li>
+        </ul>
+      </div>
+      <div id="sidebarNav"><br/><br/><a href="../tutorials.html" title="Back">&lt;&lt; Back</a></div>
+      </div>    </td>
+    <td width="80%" valign="top"><table width="98%" border="0" cellspacing="1" cellpadding="0" align="center">
+      <tr>
+        <td valign="top" class="justify"><p align="center" class="mainTitle"><b>- Compression features -</b></p>
+          <br />
+          JFileUpload allows compressing files before upload. It can compress each file  as ZIP or GZIP before upload. It can also compress all files in one archive and then upload the overall ZIP archive.<br />
+          <br />
+        <table width="100%" border="0" cellspacing="1" cellpadding="1">
+              <tr>
+                <td class="sectionTitle"><a name="unit" id="unit"></a>Unit compression </td>
+              </tr>
+              <tr>
+                <td class="justify"> <p>Each file could be compressed before upload. Compression formats available are ZIP and GZIP. &quot;.zip&quot; or &quot;.gz&quot; extension will be appended to uploaded filename.</p>
+                  <ul>
+                    <li>To enable <strong>ZIP</strong> compression: <br />
+&nbsp;&nbsp;&lt;PARAM NAME=&quot;ziponfly&quot; VALUE=&quot;true&quot;&gt;<br />
+                    </li>
+                    <li>To enable <strong>GZIP</strong> compression: <br />
+&nbsp;&nbsp;&lt;PARAM NAME=&quot;ziponfly&quot; VALUE=&quot;gzip&quot;&gt;</li>
+                  </ul>                  
+                  <p>Compressing files such as MP3, JPEG, GIF  is not efficient because these formats are already compressed. JFileUpload allows skipping compression for these thanks to zipignorelist parameter. For instance: &lt;PARAM NAME=&quot;zipignorelist&quot; VALUE=&quot;*.zip,*gif,*.mp3,*.wmv&quot;&gt;</p>
+                  <p>Front-end could display some information about compression on each file. You can modify, comment/uncomment the following properties in i18n.properties:</p>
+                  <ul>
+                    <li>In main panel: <br />
+                        &nbsp;&nbsp;taskoutput.compress.started=Zipping : {0} ...<br />
+                        &nbsp;&nbsp;taskoutput.compress.completed=Ratio={0}%<br />
+                        &nbsp;&nbsp;taskoutput.compress.failed=failed : {0}<br />
+                        &nbsp;&nbsp;taskoutput.upload.info=Uploading : {0}<br />
+                        <br />
+                    </li>
+                    <li>In progress bar:<br />
+    &nbsp;&nbsp;progress.bar.upload.compress.started=Compressing : {0} ...<br />
+    &nbsp;&nbsp;progress.bar.upload.compress.completed=Compression completed<br />
+    &nbsp;&nbsp;progress.bar.upload.compress.failed=Compression failed : {0}</li>
+                  </ul>                  <p>                        <br />
+                  </p></td>
+              </tr>
+              <tr>
+                <td class="sectionTitle"><a name="overall" id="overall"></a>Overall compression </td>
+              </tr>
+              <tr>
+                <td width="50%" class="justify"><p>Instead of compressing each file one by one, JFileUpload allows compressing <strong>all files</strong> <strong>and folders (recursively) in one ZIP archive</strong> and then upload this full overall archive. It could be more efficient than unit compression because it saves round-trips with server. The overall archive is created in user's temporary directory and deleted once uploaded. Archive filename is built from first filename (found in the upload list) with &quot;.archive.zip&quot; appended. For instance, if you upload test1.txt, test2.pdf and test3/ folder then the archive uploaded will be named test1.txt.archive.zip. </p>
+                  <p>Add the following parameters to enable overall compression: <br />
+                    &nbsp;&nbsp;&lt;PARAM NAME=&quot;preprocessingfilter&quot; VALUE=&quot;archiver&quot;&gt;<br />
+                    &nbsp;&nbsp;&lt;PARAM NAME=&quot;folderdepth&quot; VALUE=&quot;-1&quot;&gt; <br />
+                    <br />
+                    Seven additional optional parameters are available:</p>
+                  <ul>
+                    <li>&quot;<strong>compressionlevel</strong>&quot;: Value from 0 to 9. 0 means no compression, 9 means best compression. For instance:<br />
+                      <span class="paramapplet">&nbsp;&nbsp;&lt;PARAM NAME=&quot;preprocessingfilterparam1&quot; VALUE=&quot;compressionlevel&quot;&gt;<br />
+&nbsp;&nbsp;&lt;PARAM NAME=&quot;preprocessingfiltervalue1&quot; VALUE=&quot;0&quot;&gt;</span><br />
+                      <br />
+                    </li>
+                    <li>&quot;<strong>compressioncomment</strong>&quot;: Insert a comment in the ZIP archive. For instance:<br />
+                      <span class="paramapplet">&nbsp;&nbsp;&lt;PARAM NAME=&quot;preprocessingfilterparam2&quot; VALUE=&quot;compressioncomment&quot;&gt;<br />
+&nbsp;&nbsp;&lt;PARAM NAME=&quot;preprocessingfiltervalue2&quot; VALUE=&quot;Compressed by JFileUpload&quot;&gt;</span><br />
+<br />
+                    </li>
+                    <li>&quot;<strong>archiveextension</strong>&quot;: Default extension appended is .archive.zip. You can modify with this parameter. For instance:<br />
+                      <span class="paramapplet">&nbsp;&nbsp;&lt;PARAM NAME=&quot;preprocessingfilterparam3&quot; VALUE=&quot;archiveextension&quot;&gt;<br />
+&nbsp;&nbsp;&lt;PARAM NAME=&quot;preprocessingfiltervalue3&quot; VALUE=&quot;.upload.zip&quot;&gt;</span><br />
+<br />
+                    </li>
+                    <li>&quot;<strong>archivefullname</strong>&quot;: Archive filename is the name of the first file found with archive extension (see above) appended. You can setup your own archive name with this parameter. For instance:<br />
+                      <span class="paramapplet">&nbsp;&nbsp;&lt;PARAM NAME=&quot;preprocessingfilterparam4&quot; VALUE=&quot;archivefullname&quot;&gt;<br />
+&nbsp;&nbsp;&lt;PARAM NAME=&quot;preprocessingfiltervalue4&quot; VALUE=&quot;myarchive.zip&quot;&gt;</span><br />
+<br />
+                    </li>
+                  <li>&quot;<strong>entrytemplate</strong>&quot;: A renaming template can be applied to each entry in the ZIP archive. &quot;entrytemplate&quot; provide similar behavior as regular &quot;template&quot; parameter. For instance, if you want to replace all non ASCII characters by &quot;_&quot; then use:<br />
+                    <span class="paramapplet">&nbsp;&nbsp;&lt;PARAM NAME=&quot;preprocessingfilterparam5&quot; VALUE=&quot;entrytemplate&quot;&gt;<br />
+&nbsp;&nbsp;&lt;PARAM NAME=&quot;preprocessingfiltervalue5&quot; VALUE=&quot;:regex=[^a-zA-Z0-9_/\\\\\\-\\.]:_:&quot;&gt;                      </span><br />
+Notice that this regular expression allows / and \ too for folders and subfolders in ZIP entries.<br />
+<br />
+                  </li>
+                  <li>&quot;<strong>countrenamed</strong>&quot;: This parameter allows to enable counting of entries renamed by the entrytemplate above:<br />
+                      <span class="paramapplet">&nbsp;&nbsp;&lt;PARAM NAME=&quot;preprocessingfilterparam6&quot; VALUE=&quot;countrenamed&quot;&gt;<br />
+&nbsp;&nbsp;&lt;PARAM NAME=&quot;preprocessingfiltervalue6&quot; VALUE=&quot;true&quot;&gt; </span><br />
+Amount of files renamed are available in &quot;entriesrenamed&quot; extra parameter. Remember that extra parameters are sent to server. They're are also available in JavaScript through getExtraParameter(&quot;entriesrenamed&quot;) function.<br />
+<br />
+                  </li>
+                  <li>&quot;<strong>archivemaxsize</strong>&quot;: Maximum size for the ZIP archive. For instance, to setup 10MB as maximum size:<br />
+                    <span class="paramapplet">&nbsp;&nbsp;&lt;PARAM NAME=&quot;preprocessingfilterparam7&quot; VALUE=&quot;archivemaxsize&quot;&gt;<br />
+&nbsp;&nbsp;&lt;PARAM NAME=&quot;preprocessingfiltervalue7&quot; VALUE=&quot;10485760&quot;&gt;</span></li>
+                  </ul>                  
+                  <p>Notice that &quot;zipignorelist&quot; doesn't apply for overall archive.</p>
+                  <p>Front-end could display some information about compression on each file. You can modify, comment/uncomment the following properties in i18n.properties:</p>
+                  <ul>
+                    <li>In main panel: <br />
+&nbsp;&nbsp;taskoutput.preprocessingfilter.starting=Archiving {0} file(s) ... <br />
+&nbsp;&nbsp;taskoutput.preprocessingfilter.completed=Completed<br />
+&nbsp;&nbsp;taskoutput.preprocessingfilter.failed=Failed {0}<br />
+<br />
+                    </li>
+                    <li>In progress bar:<br />
+&nbsp;&nbsp;progress.bar.upload.preprocessingfilter.starting=Archiving {0} file(s)<br />
+&nbsp;&nbsp;progress.bar.upload.preprocessingfilter.started=Archiving in progress, adding file &nbsp;&nbsp;{0}/{1}<br />
+&nbsp;&nbsp;progress.bar.upload.preprocessingfilter.completed=Archiving completed<br />
+&nbsp;&nbsp;progress.bar.upload.preprocessingfilter.failed=Archiving failed {0}<br />
+                    </li>
+                  </ul>
+                  </td>
+              </tr>
+              <tr>
+                <td class="sectionTitle"><a name="unit" id="unit"></a>Compression limitation</td>
+              </tr>
+              <tr>
+                <td class="justify">
+                  <p>Non-ASCII characters such as ÄÜäöüùéàè... are ZIP tools dependent. Java SUN ZIP implementation stores non-ASCII characters as UTF-8. JAVA_HOME/bin/jar.exe tool is able to unzip them. WinZip can't. This known issue is referenced in <a href="http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4244499" target="_blank">Java bug database</a>.</p>
+                  <p>Overall progress bar (in i18n.properties) cannot be used with overall compression because all selected files become one ZIP file. <br />
+                    </p></td>
+              </tr>
+              <tr>
+                <td class="justify">&nbsp;</td>
+              </tr>
+            </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  </table>
+  </div>
+  <div id="bottomDiv">
+    <p><a href="http://java.sun.com" target="_blank">Java</a> and all Java-based marks are trademarks or registered trademarks of Sun Microsystems, Inc. in the U.S. and other countries. <br />
+    All other company and/or product names are the property of their respective owners.</p>
+  </div>
+</div>
+</body>
+</html>

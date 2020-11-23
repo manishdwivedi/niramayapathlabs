@@ -1,0 +1,87 @@
+<html>
+<style type="text/css">
+<!--
+.temp {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.style1 {color: #666666}
+-->
+</style>
+<body>
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" class="temp">
+  <tr>
+    <td align="center"><strong><br>
+      - JFileUpload Applet (HTTP upload sample) - JavaScript API Tests<br>
+      </strong></td>
+  </tr>
+  <tr>
+    <td align="center"><p><br>
+        <!-- JFileUpload Applet : Begin copy/paste -->
+        <script src="applet_http.js"></script>
+        <!-- JFileUpload Applet : End copy/paste -->
+        <br>
+        <br>
+        <span class="style1">current url=http://localhost:8080/upload/process.jsp<br>
+        (Modify <u>url</u> parameters in this HTML source code to fit your server-side)</span></p>
+      <p><br>
+      </p></td>
+  </tr>
+  <tr>
+    <td align="center"><form name="formtest" method="post" action="">
+        <table border="1" cellspacing="1" cellpadding="1" class="temp">
+          <tr align="center" bgcolor="#EEEEEE">
+            <td width="30%"><strong>Returned value</strong></td>
+            <td width="50%"><strong>Functions and parameters</strong></td>
+            <td width="20%"><strong>Execute</strong></td>
+          </tr>
+          <tr align="center">
+            <td width="30%">&nbsp;</td>
+            <td width="50%">setParameter(
+              <input name="field1a" type="text" size="12">
+              , <input name="field1b" type="text" size="12">
+              )</td>
+            <td width="20%">
+              <input type="button" name="Button1" value="Test" onclick="document.fileupload.setParameter(this.form.field1a.value,this.form.field1b.value)"></td>
+          </tr>
+          <tr align="center">
+            <td width="30%">&nbsp;</td>
+            <td width="50%">setProperty (
+              <input name="field2a" type="text" size="12">
+              ,
+              <input name="field2b" type="text" size="12">
+              )</td>
+            <td width="20%">
+              <input type="button" name="Button2" value="Test" onclick="document.fileupload.setProperty(this.form.field2a.value,this.form.field2b.value)"></td>
+          </tr>
+          <tr align="center">
+            <td width="30%">
+              <input name="field3a" type="text" size="20"></td>
+            <td width="50%"> getFilenames()</td>
+            <td width="20%">
+              <input type="button" name="Button3" value="Test" onclick="this.form.field3a.value=document.fileupload.getFilenames()"></td>
+          </tr>
+          <tr align="center">
+            <td width="30%">
+              <input name="field4b" type="text" size="20"></td>
+            <td width="50%">getState(
+              <input name="field4a" type="text" size="12">
+              )</td>
+            <td width="20%">
+              <input type="button" name="Button4" value="Test" onclick="this.form.field4b.value=document.fileupload.getState(this.form.field4a.value)"></td>
+          </tr>
+        </table>
+      </form></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <p>&nbsp;</p>
+      <p> Homepage: <a href="http://www.jfileupload.com/products/jfileupload/index.html" target="_blank">http://www.jfileupload.com</a>
+        <br>
+      </p>
+      <p>This product requires <a href="http://www.java.com" target="_blank">Java</a>&#8482;
+        technology. </p></td>
+  </tr>
+</table>
+</body>
+</html>

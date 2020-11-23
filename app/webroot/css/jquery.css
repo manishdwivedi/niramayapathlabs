@@ -1,0 +1,119 @@
+/* basic examples */.jgd-dropdown dd, .jgd-dropdown dt, .jgd-dropdown ul {
+	margin: 0;
+	padding: 0;
+}
+.jgd-dropdown dd {
+	position: relative;
+}
+.jgd-dropdown a, .jgd-dropdown a:visited {
+	color: #fff;
+	text-decoration: none;
+	outline: none;
+}
+.jgd-dropdown a:hover {
+	color: #696969;
+}
+.jgd-dropdown dt a:hover {
+	color: #fff;
+}
+.jgd-dropdown dt {
+	background:url(../images/browse_select_bg.png) no-repeat left top;
+	width:191px;
+}
+.jgd-dropdown dt a {
+	display: block;
+	/*border: 1px solid #a9a9a9;*/
+	width:184px;
+	padding:0 0 0 7px;
+	line-height:30px;
+	font-size:11px;
+	text-shadow: 0px 1px 0px #000;
+	font-family:"Helvetica Neue",Helvetica,sans-serif;
+}
+.jgd-dropdown dt a span {
+	cursor: pointer;
+	display: block;
+}
+.jgd-dropdown dd ul {
+	background-color: #383737;
+	/*border: 1px solid #a9a9a9;*/
+	color: #696969;
+	display: none;
+	z-index: 1000;
+	left: 0;
+	padding: 0;
+	position: absolute;
+	top: -2px;
+	width:188px;
+	list-style: none;
+	font-size:11px;
+	font-family:"Helvetica Neue",Helvetica,sans-serif;
+}
+.jgd-dropdown span.value {
+	display: none;
+}
+.jgd-dropdown dd ul li a {
+	padding: 5px;
+	display: block;
+}
+.jgd-dropdown dd ul li.hide_selected {
+	display: none;
+}
+.jgd-dropdown dd ul li.item-odd a {
+	background-color: #383737;
+}
+.jgd-dropdown dd ul li.item-even a {
+	background-color: #383737;
+}
+.jgd-dropdown dd ul li a:hover {
+	text-decoration: underline;
+	color: #fff;
+}/* countries expansion */
+.jgd-dropdown.jgd-countries dt {
+	width: 135px;
+	height:15px;
+	padding:2px 0 0 0;
+}
+.jgd-dropdown.jgd-countries dt a {
+	padding: 4px 4px 4px 32px;
+	font-weight:bold;
+}
+.jgd-dropdown.jgd-countries dd ul {
+	width:135px;
+}
+.jgd-dropdown.jgd-countries .flag a {
+	padding: 0 0 0 22px;
+	background-image:url(../images/countries_2.png);
+	background-repeat: no-repeat;
+	background-position: -12px 0px;
+	font-size:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:10px;
+	text-align:left!important;
+	color:#b6b6b6;
+	margin:0 0 0 10px;
+}
+.jgd-dropdown.jgd-countries .flag.BR a {
+	background-position: 0 0;
+}
+.jgd-dropdown.jgd-countries .flag.FR a {
+	background-position: 0px -12px;
+}
+.jgd-dropdown.jgd-countries .flag.DE a {
+	background-position: 0px -24px;
+}
+.jgd-dropdown.jgd-countries .flag.IN a {
+	background-position: 0px -36px;
+}
+.jgd-dropdown.jgd-countries .flag.JP a {
+	background-position: 0px -48px;
+}
+.jgd-dropdown.jgd-countries .flag.RS a {
+	background-position: 0px -60px;
+}
+.jgd-dropdown.jgd-countries .flag.UK a {
+	background-position: 0px -72px;
+}
+.jgd-dropdown.jgd-countries .flag.US a {
+	background-position: 0px -84px;
+}

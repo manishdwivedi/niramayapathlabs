@@ -1,0 +1,570 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JFileUpload - HTTP upload parameters</title>
+<meta name="description" content="Parameters for HTTP upload" />
+<meta name="keywords" content="http,applet,upload,https,secure,ssl,resume,account,whitelist,size,gb,proxy,php,jsp,asp,java,jre" />
+<link href="styles/template.css" rel="stylesheet" type="text/css" />
+<link href="styles/doc.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="containerDiv">
+  <div id="topDiv">
+  <div id="navDiv">
+  <div id="tabsDiv"><ul>
+  <li><a href="http://www.jfileupload.com/index.html" title="Home"><span>Home</span></a></li>
+  <li><a href="http://www.jfileupload.com/products/index.html" title="Products"><span>Products</span></a></li>
+  <li><a href="http://www.jfileupload.com/support/index.html" title="Support"><span>Support</span></a></li>
+  <li><a href="http://www.jfileupload.com/purchase/index.html" title="Purchase"><span>Purchase</span></a></li>
+  <li><a href="http://www.jfileupload.com/about/index.html" title="About"><span>About</span></a></li>
+  </ul></div>
+  <div id="searchDiv"></div>
+  </div>
+  </div>
+  <div id="mainDiv">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="20%" valign="top"><div id="sidebar">
+      <div id="sidebarSection">
+        <ul>
+          <li><img src="styles/bullet.gif" width="7" height="13" border="0" /><a href="software.html" title="Software"><span>Software</span></a></li>
+          <li><img src="styles/bullet.gif" width="7" height="13" border="0" /><a href="installation.html" title="Installation"><span>Installation</span></a></li>
+          <li><img src="styles/bullet.gif" width="7" height="13" border="0" /><a href="configuration_http.html" title="Parameters for HTTP"><span>HTTP Upload</span></a></li>
+          <li><img src="styles/bullet.gif" width="7" height="13" border="0" /><a href="configuration_ftp.html" title="Parameters for FTP"><span>FTP Upload</span></a></li>
+          <li><img src="styles/bullet.gif" width="7" height="13" border="0" /><a href="faq.html" title="FAQ"><span>FAQ</span></a></li>
+          <li><img src="styles/bullet.gif" width="7" height="13" border="0" /><a href="tutorials.html" title="Tutorials"><span>Tutorials</span></a></li>
+          <li><img src="styles/bullet.gif" width="7" height="13" border="0" /><a href="api.html" title="API &amp; Design"><span>API &amp; Design</span></a></li>
+        </ul>
+      </div>
+      <div id="sidebarNav"><br/><br/><a href="index.html" title="Back">&lt;&lt; Back</a></div>
+      </div>    </td>
+    <td width="80%" valign="top"><table width="98%" border="0" cellspacing="1" cellpadding="0" align="center">
+      <tr>
+        <td valign="top"><p align="center" class="mainTitle"><b>- Parameters for HTTP upload -</b></p>
+            <p class="justify"><strong>H</strong>ere is the list and the meaning of all JFileUpload parameters for <strong>HTTP upload</strong>. You will also find <a href="#html">HTML/JavaScript</a> sample  for Applet definition. Notice that there are two types of parameter: <a href="#regular">regular</a> and <a href="#extra">extra</a>.
+              &quot;dummy=test&quot; regular parameter is setup through &lt;PARAM NAME=&quot;dummy&quot; VALUE=&quot;test&quot;&gt;.  dummy=test  extra parameter number five is setup through &lt;PARAM NAME&quot;param5&quot; VALUE=&quot;dummy&quot;&gt; and &lt;PARAM NAME&quot;value5&quot; VALUE=&quot;test&quot;&gt;.</p>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td valign="top" class="sectionTitle"><a name="regular" id="regular"></a>JFileUpload regular parameters</td>
+              </tr>
+            </table>
+          <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#CCCCCC"><table width="100%"  border="0" cellpadding="1" cellspacing="1" class="fnt">
+                    <tr bgcolor="#EEEEFF">
+                      <td align="center"><strong>Parameters</strong></td>
+                      <td align="center"><strong>Description and sample </strong></td>
+                      <td><strong>Mandatory</strong></td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center">url</td>
+                      <td>Web server URL that will process the upload. It
+                        could be the URL of JSP, PHP, CGI, CFM, ASP, ASP.NET...
+                        server-side script.
+                        For instance, http://www.mycompany.com/upload.jsp</td>
+                      <td align="center"><span class="red">yes</span></td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center">mode</td>
+                      <td>This parameter allows to select transport protocol.
+                        For HTTP upload it must be &quot;http&quot;.</td>
+                      <td align="center"><span class="red">yes</span></td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center">paramfile</td>
+                      <td>This parameter matches to input file HTML form
+                        field needed for upload. Default is &quot;uploadfile&quot;.
+                        Check out server-side script to know if you need
+                        to modify this parameter. </td>
+                      <td align="center"><span class="red">yes</span></td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center">maxsize</td>
+                      <td>This parameter allows to limit upload size (in
+                        bytes). For instance, to avoid end-user to send
+                        more than 1MB file, use maxsize=1048576. Default
+                        maxsize is -1. It means unlimited upload size. Note
+                        that 1MB=1024*1024=1048576 bytes.</td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center">maxfiles</td>
+                      <td>This parameter allows to limit number of files
+                        to upload. Default maxfiles is -1. It means unlimited
+                        files.<br /></td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center">whitelist</td>
+                      <td>This parameter allows to filter filenames to upload
+                        (*.doc, *.exe, *.gif, *.pdf ...). For instance,
+                        to allow end-user to upload microsoft excel files
+                        only, use whitelist=&quot;*.xls&quot;. For both gif and jpeg use whitelist=&quot;*.gif,*.jpg,*.jpeg&quot;.<br />                      </td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center">blacklist</td>
+                      <td>This parameter allows to forbid filenames to upload (*.exe, *.zip,*.mp3 ...). For instance, to disallow end-user to upload microsoft executable files, use blacklist=&quot;*.exe&quot;. Note that if you use blacklist then you cannot use whitelist parameter.<br />                      </td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center">policy</td>
+                      <td>This parameter allows to modify jfileupload
+                        behavior when a file to upload does not match to
+                        whitelist or maxsize. Default value is &quot;abort&quot;,
+                        it means that upload won't proceed. &quot;ignore&quot;
+                        value means upload will proceed and unmatching files
+                        will be ignored. <br />                      </td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center">folderdepth</td>
+                      <td>This parameter allows to set a max depth for directories
+                        and subdirectories uploads. Default is 0, it means
+                        to not recurse subdirectories, -1 means unlimited.<br /></td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center">resume</td>
+                      <td>This parameter allows to resume broken uploads. Values could be &quot;false&quot;, &quot;true&quot;, &quot;crc&quot;, &quot;md5&quot;. Default is false. An upload is considered broken if remote file already exists and remote file size &lt; local file size. Additional control could be added : <br />
+                        &quot;crc&quot; : Check if remote file CRC checksum equals local file CRC.<br />
+                        &quot;md5&quot; : Check if remote file MD5 hash equals local file MD5.<br />
+                        See <a href="faq.html#45">FAQ</a> to learn how it works.<br />                      </td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center">overwrite</td>
+                      <td>This parameter allows to define overwrite policy for duplicate file on remote server. Values could be :<br />
+                        &quot;true&quot;: Allow overwrite.<br />
+                        &quot;false&quot;: Return an error message for duplicate uploads.<br />
+                        &quot;indexrename&quot;: Rename duplicate upload such as file_1.zip.<br />
+                        &quot;timerename&quot;: Rename duplicate upload such as file_mstime.zip<br />
+                        Default value is true. See <a href="faq.html#46">FAQ</a> to learn how it works.<br />                      </td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center">hiddenfile</td>
+                      <td>This parameter allows to &quot;accept&quot; or
+                        &quot;deny&quot; hidden files for upload. Default
+                        value is &quot;accept&quot;.<br /></td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center">template</td>
+                      <td>This parameter allows to rename files to upload with a given template. Value could be any combination of :<br />
+                        &nbsp;&nbsp;&quot;:filename:&quot; =&gt; Selected filename.<br />
+                        &nbsp;&nbsp;&quot;:name:&quot; =&gt; Selected name.<br />
+                        &nbsp;&nbsp;&quot;:shortname:&quot; =&gt; Selected short name. <br />
+                        &nbsp;&nbsp;&quot;:extension:&quot; =&gt; Selected extension.<br />
+                        &nbsp;&nbsp;&quot;:timestamp:&quot; =&gt; Unix-like (epoch) timestamp. <br />
+                        &nbsp;&nbsp;&quot;:identifier:&quot; =&gt; Auto increment integer starting at zero<br />
+&nbsp;&nbsp;or value defined by identifierinit parameter. <br />
+&nbsp;&nbsp;For instance,&nbsp;<br />
+&nbsp; template=&quot;test_:timestamp:_:name::extension:&quot;<br />
+                        Value could be a regular expression followed by a string that will replace characters matching to the regular expression:<br />
+                        &nbsp;&nbsp;&quot;:regex=<a href="http://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html" target="_blank">YourRegExpHere</a>:ReplaceString:&quot;<br />
+                        &nbsp;&nbsp;For instance, if you want to replace all non ASCII characters &nbsp;&nbsp;and punctuation by &quot;_&quot; then value of template will be:<br />
+&nbsp;&nbsp;&quot;:regex=[^a-zA-Z0-9_\\-\\.]:_:&quot;<br />If you need to apply template to folders in addition to files then add templatescope=&quot;path&quot; parameter.</td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center">ziponfly</td>
+                      <td>This parameter allows to zip file on-fly before
+                        uploading. It reduces bandwidth usage but it could
+                        affect client performance because of compression
+                        process. <br />
+                        Values could be :<br />
+                        &quot;true&quot; or &quot;zip&quot; =&gt; ZIP compression<br />
+                        &quot;gzip&quot; =&gt; GZIP compression. <br />
+                        &quot;.zip&quot; or &quot;.gz&quot; extension will be appended
+                        to uploaded filename. Default value is &quot;false&quot;.
+                        Learn more in <a href="faq.html#42">FAQ</a>.<br />
+                        For overall (one ZIP archive) compression, see <a href="tutorials/compression.html">tutorial</a>.<br /></td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center">zipignorelist</td>
+                      <td>When ziponfly is enabled, this parameter allows to setup filenames to not zip. For instance, zipgnorelist=&quot;*.zip,*gif&quot;.</td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center">zipmaxsize</td>
+                      <td>This parameter allows to limit upload size (in bytes) of compressed file. For instance, to avoid end-user to send more than 1MB file, use zipmaxsize=1048576. Default zipmaxsize is -1. It means unlimited.</td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center">startdir</td>
+                      <td>This parameter allows to setup a local directory, instead of user's home, when using file browser (e.g. startdir=&quot;c:/tmp&quot;)<br /></td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center">authentication</td>
+                      <td>When authentication=&quot;auto&quot;, end-user will be prompted for credentials if needed. Default value is &quot;disabled&quot;. <br /></td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center">username</td>
+                      <td>This parameter allows to pass www-authenticate username.<br /></td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center">password</td>
+                      <td>This parameter allows to pass www-authenticate password.</td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center">chunksize</td>
+                      <td>This parameter allows to split file in chunks before uploading. It is required for more than 2GB uploads. Default is -1, it means to not split file to upload. Server-side script that processes upload need to recompose file from chunks. We recommend <a href="http://www.jfileupload.com/products/tools/index.html" target="_blank">JSPUpload</a> with process.jsp script that provides this feature. <br /></td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center">chunkmode</td>
+                      <td>This parameter works with &quot;chunksize&quot; parameter above. If chunksize=&quot;onfly&quot; then temporary chunks are not created on disk but in memory before uploading. chunkmode=&quot;onfly&quot; isn't allowed when resume support is enabled. To support resume use chunkmode=&quot;onflyrange&quot; (each chunk will be sent with Content-Range header).<br />                      </td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center">encoding</td>
+                      <td>This parameter allows to modify request encoding.
+                        Default is ISO-8859-1.</td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center">forward</td>
+                      <td>This parameter allows to redirect to another URL
+                        once upload is completed. You could select the target
+                        frame through forwardtarget parameter (see below).<br />
+                        For instance, forward=&quot;http://yourserver.com/redirect.php&quot; <br /></td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center">forwardtarget</td>
+                      <td>When forward parameter is enabled, this parameter
+                        allows to redirect URL to a given browser frame.
+                        Use _blank for new window.<br /></td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center">forwardparameters</td>
+                      <td>When this parameter is set to true, jfileupload
+                        appends uploaded filenames to redirect URL. For
+                        instance, &quot;?filename1=foo1.txt&amp;filename2=foo2.zip
+                        ...&quot;<br /></td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center">post</td>
+                      <td>This parameter allows to send HTTP POST request
+                        once upload is completed. See <a href="faq.html#13">FAQ</a> to learn how it works.<br />
+                        For instance, post=&quot;http://yourserver.com/process.php&quot;</td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center">postparameters</td>
+                      <td>This parameter allows to pass filenames uploaded
+                        in POST request above. <br />
+                        &quot;true&quot; means &quot;filename1=foo1.txt&amp;filename2=foo2.zip...&quot;<br />
+                        &quot;long&quot; means &quot;filename1=/home/usr1/foo1.txt&amp;filename2=...&quot;<br />
+                        &quot;extra&quot; is same as long with filesize, last modified timestamp and extra parameters. See <a href="tutorials/redirect.html">tutorial</a> to learn more.</td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center">checksum</td>
+                      <td>This parameter allows to compute a file checksum before uploading  and send it into an HTTP &quot;checksum&quot; header.<br />
+                        Values could be:<br />
+                        &quot;md5&quot; =&gt; MD5 hash computation.<br />
+                        &quot;crc&quot; =&gt; CRC32 computation.</td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center">retry</td>
+                      <td>This parameter allows to retry current upload when underlying socket fails (bad networks, connection timeout). For instance, to enable 3 retry attempts =&gt; retry=&quot;3&quot;</td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center">retrydelay</td>
+                      <td>This parameter allows to setup delay in seconds between each retry attempts. Default is 2 seconds. </td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center">preferences</td>
+                      <td>Use preferences=&quot;true&quot; to enable persistent preferences such as last directory opened. </td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center">timeout</td>
+                      <td>This advanced parameter allows to modify underlying
+                        socket timeout in milliseconds.</td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center">socksproxyhost</td>
+                      <td>This advanced parameter allows to setup SOCKS
+                        proxy host. <br />                      </td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center">socksproxyport</td>
+                      <td>This advanced parameter allows to setup SOCKS
+                        proxy port.</td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center">resources</td>
+                      <td>This advanced parameter allows to select a custom
+                        properties file including all resources (messages,
+                        errors, menu, items, colors) to be displayed. See
+                        internationalization section in <a href="faq.html#19" target="_top">FAQ</a> to learn more.</td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center">localeresources</td>
+                      <td>This advanced parameter allows to load resources based end-user locale/country code. Default is true. </td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center">verbosemode</td>
+                      <td>This advanced parameter allows enabling applet traces for debugging purposes:<br />                        
+                        &quot;debug&quot; =&gt; Debug traces are displayed in Java console.<br /></td>
+                      <td align="center">no</td>
+                    </tr>
+                </table></td>
+              </tr>
+            </table>
+          <br />
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td valign="top" class="sectionTitle"><a name="extra" id="extra"></a>JFileUpload extra parameters</td>
+            </tr>
+          </table>
+          <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#CCCCCC"><table width="100%"  border="0" cellpadding="1" cellspacing="1" class="fnt">
+                    <tr bgcolor="#EEEEFF">
+                      <td align="center"><strong>Extra<br />
+                        parameters</strong></td>
+                      <td align="center"><strong>Description and sample </strong></td>
+                      <td><strong>Mandatory</strong></td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center" bgcolor="#FFFFFF">paramX and valueX
+                        pair</td>
+                      <td>While
+                        uploading, up to 16 additional HTTP parameters could
+                        be passed to server-side through paramX, valueX
+                        (with X in [1,16]). For instance if you want to
+                        pass username=johndoe parameter with on each HTTP
+                        upload then you have to setup param1=username and
+                        value1=johndoe. <br />
+                        Note that extra parameters below are reserved.</td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center">relativefilename</td>
+                      <td>When this parameter is set to true, JFileUpload
+                        sends relative pathname of file to upload. For instance,
+                        when you upload all files and subfolders from c:\tmp\
+                        then the file foo.txt under c:\tmp\sub1\sub2\foo.txt
+                        will be uploaded with and additional relativefilename
+                        HTTP parameter whose value is sub1\sub2. This parameter
+                        is useful to allow server-side script to create
+                        folders and subfolders structure when uploading
+                        directories and subdirectories. Default value is
+                        &quot;false&quot;. Learn more in <a href="faq.html#10">FAQ</a>.</td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center" class="even">filetimestamp</td>
+                      <td class="even">When this parameter is set to true, JFileUpload sends file last modified timestamp since epoch (January 1st, 1970).</td>
+                      <td align="center" class="even">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center" class="odd">cookiename</td>
+                      <td class="odd">This parameter allows to pass a cookie to server-side.
+                        For instance paramX=&quot;cookiename&quot; and valueX=&quot;JSESSIONID&quot;.</td>
+                      <td align="center" class="odd">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center" class="even">cookievalue</td>
+                      <td class="even">This parameter allows to pass a cookie to server-side.
+                        For instance paramY=&quot;cookievalue&quot; valueY=&quot;21554AED616984&quot;. </td>
+                      <td align="center" class="even">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center" class="odd">cookiepath</td>
+                      <td class="odd">This advanced parameter allows to pass a cookie
+                        to server-side. Default cookiepath is &quot;/&quot;.
+                        Do not modify it if you don't know what is a path
+                        for a cookie.</td>
+                      <td align="center" class="odd">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center" class="even">cookiesource</td>
+                      <td class="even">This  parameter allows to share all cookies loaded in browser with applet. Use paramX=&quot;cookiesource&quot; valueX=&quot;jse&quot; to enable it. It is recommended to not use cookiename/cookievalue above with this parameter.</td>
+                      <td align="center" class="even">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center" class="odd">resumeheader</td>
+                      <td class="odd">This advanced parameters allows to override the default HTTP header (i.e. &quot;size&quot;) used for resume support. For instance,  paramX=&quot;resumeheader&quot; and valueX=&quot;Content-Length&quot;.</td>
+                      <td align="center" class="odd">&nbsp;</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center" class="even">mimetypes</td>
+                      <td class="even">This advanced parameter allows to add/overwrite
+                        content-types. For instance : paramX=&quot;mimetypes&quot;
+                        and valueX= &quot;application/msword:.doc;application/vnd.ms-excel:.xls&quot;</td>
+                      <td align="center" class="even">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center" class="odd">errorheader</td>
+                      <td class="odd">This parameter allows to pass custom error message from upload script to applet frond-end. See <a href="faq.html#31">FAQ</a> to learn more. <br />                      </td>
+                      <td align="center" class="odd">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center" class="even">httpmethod</td>
+                      <td class="even">This parameter enables HTTP PUT  instead of HTTP POST multipart request through paramX=&quot;httpmethod&quot; and valueX=&quot;put&quot;. Note that a &quot;filename&quot; HTTP header is included. If you plan to use &quot;chunksize&quot; parameter for HTTP PUT then you should use &quot;chunkmode=onflyrange&quot; too.<br />                      </td>
+                      <td align="center" class="even">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center" class="odd">httpproxyhost</td>
+                      <td class="odd">This parameter allows to setup HTTP proxy host. <br /></td>
+                      <td align="center" class="odd">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center" class="even">httpproxyport</td>
+                      <td class="even">This parameter allows to setup HTTP proxy port.</td>
+                      <td align="center" bgcolor="#EEEEEE" class="even">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center" class="odd">httpproxyusername</td>
+                      <td class="odd">This parameter allows to setup HTTP proxy username. <br /></td>
+                      <td align="center" class="odd">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center" class="even">httpproxypassword</td>
+                      <td class="even">This parameter allows to setup HTTP proxy password.</td>
+                      <td align="center" class="even">no</td>
+                    </tr>
+                    <tr class="odd">
+                      <td align="center">httpproxyntlmdomain</td>
+                      <td>This parameter allows to setup windows domain name for NTLM proxy authentication. <br /></td>
+                      <td align="center">no</td>
+                    </tr>
+                    <tr class="even">
+                      <td align="center">httpntlmdomain</td>
+                      <td>This parameter allows to setup windows domain name for NTLM server authentication. <br /></td>
+                      <td align="center">no</td>
+                    </tr>
+                </table></td>
+              </tr>
+            </table>
+            <br />
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td valign="top" class="sectionTitle"><a name="html" id="html"></a>JFileUpload HTML and JavaScript declaration sample</td>
+              </tr>
+            </table>
+           <strong>B</strong>elow the  code you need to copy/paste in your HTML source to use jfileupload applet: <br />
+            <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#EEEEEE" class="sfnt"><span class="darkgreen">&lt;!-- jfileupload Applet: Begin copy/paste --&gt;</span><br />
+                    <span class="darkblue">&lt;script src=&quot;applet_http.js&quot;&gt;&lt;/script&gt;</span><br />
+                    <span class="darkgreen">&lt;!-- jfileupload Applet : End copy/paste --&gt;</span></td>
+              </tr>
+            </table>
+          <br />
+            <strong>C</strong>opy <strong>applet_http.js</strong> javascript file in the same folder as your HTML file. Setup parameters (according to table above) in blue. Notice that all parameters need to be setup twice (it allows cross-browsers support).<br />
+            <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#EEEEEE" class="sfnt"><span class="darkgreen">&lt;!--</span><br />
+                  var _info = navigator.userAgent;<br />
+                  var _ns = false;<br />
+                  var _ns6 = false;<br />
+                  var _ie = (_info.indexOf(&quot;MSIE&quot;) &gt; 0 &amp;&amp;
+                  _info.indexOf(&quot;Win&quot;) &gt; 0 &amp;&amp; _info.indexOf(&quot;Windows
+                  3.1&quot;) &lt; 0);<br />
+                  if (_info.indexOf(&quot;Opera&quot;) &gt; 0) _ie = false;<br />
+                  var _ns = (navigator.appName.indexOf(&quot;Netscape&quot;)
+                  &gt;= 0 &amp;&amp; ((_info.indexOf(&quot;Win&quot;) &gt;
+                  0 &amp;&amp; _info.indexOf(&quot;Win16&quot;) &lt; 0)
+                  || (_info.indexOf(&quot;Sun&quot;) &gt; 0) || (_info.indexOf(&quot;Linux&quot;)
+                  &gt; 0) || (_info.indexOf(&quot;AIX&quot;) &gt; 0) ||
+                  (_info.indexOf(&quot;OS/2&quot;) &gt; 0) || (_info.indexOf(&quot;IRIX&quot;)
+                  &gt; 0)));<br />
+                  var _ns6 = ((_ns == true) &amp;&amp; (_info.indexOf(&quot;Mozilla/5&quot;)
+                  &gt;= 0));<br />
+                  if (_ie == true) {<br />
+                  document.writeln('&lt;OBJECT classid=&quot;clsid:8AD9C840-044E-11D1-B3E9-00805F499D93&quot; <font color="#000099">WIDTH=&quot;250&quot; HEIGHT=&quot;250&quot;</font> NAME=&quot;fileupload&quot; codebase=&quot;http://java.sun.com/update/1.4.2/jinstall-1_4-windows-i586.cab#Version=1,4,0,0&quot;&gt;');<br />
+                  }<br />
+                  else if (_ns == true &amp;&amp; _ns6 == false) { <br />
+                  <font color="#006600">// BEGIN: Update parameters below
+                    for NETSCAPE 3.x and 4.x support.</font><br />
+                  document.write('&lt;EMBED ');<br />
+                  document.write('type=&quot;application/x-java-applet;version=1.4&quot;
+                  ');<br />
+                  document.write('CODE=&quot;jfileupload.upload.client.MApplet.class&quot;
+                  ');<br />
+                  document.write('JAVA_CODEBASE=&quot;./&quot; ');<br />
+                  document.write('ARCHIVE=&quot;lib/jfileupload.jar,lib/httpimpl.jar,lib/chttpclient.jar,lib/clogging.jar&quot;
+                  ');<br />
+                  document.write('NAME=&quot;fileupload&quot; ');<br />
+                  document.write('<font color="#000099">WIDTH=&quot;250&quot;</font> ');<br />
+                  document.write('<font color="#000099">HEIGHT=&quot;250&quot;</font> ');<br />
+                  document.write('<font color="#000099">url=&quot;http://localhost:8080/upload/process.jsp&quot;</font> ');<br />
+                  document.write('<font color="#000099">paramfile=&quot;uploadfile&quot;</font> ');<br />
+                  document.write('<font color="#000099">param1=&quot;todo&quot;</font> ');<br />
+                  document.write('<font color="#000099">value1=&quot;upload&quot;</font> ');<br />
+                  document.write('<font color="#000099">mode=&quot;http&quot;</font> ');<br />
+                  document.write('scriptable=true ');<br />
+                  document.writeln('pluginspage=&quot;http://java.sun.com/products/plugin/index.html#download&quot;&gt;&lt;NOEMBED&gt;');<br />
+                  <font color="#006600">// END</font><br />
+                  }<br />
+                  else {<br />
+                  document.writeln('&lt;APPLET CODE=&quot;jfileupload.upload.client.MApplet.class&quot;
+                  JAVA_CODEBASE=&quot;./&quot; ARCHIVE=&quot;lib/jfileupload.jar,lib/httpimpl.jar,lib/chttpclient.jar,lib/clogging.jar&quot; <font color="#000099">WIDTH=&quot;250&quot; HEIGHT=&quot;250&quot;</font> NAME=&quot;fileupload&quot;&gt;');<br />
+                  }<br />
+                  <font color="#006600">// BEGIN: Update parameters below
+                    for INTERNET EXPLORER, FIREFOX, SAFARI, OPERA, MOZILLA,
+                    NETSCAPE 6+ support.</font><br />
+                  document.writeln('&lt;PARAM NAME=CODE VALUE=&quot;jfileupload.upload.client.MApplet.class&quot;&gt;');<br />
+                  document.writeln('&lt;PARAM NAME=CODEBASE VALUE=&quot;./&quot;&gt;');<br />
+                  document.writeln('&lt;PARAM NAME=ARCHIVE VALUE=&quot;lib/jfileupload.jar,lib/httpimpl.jar,lib/chttpclient.jar,lib/clogging.jar&quot;&gt;');<br />
+                  document.writeln('&lt;PARAM NAME=NAME VALUE=&quot;fileupload&quot;&gt;');<br />
+                  document.writeln('&lt;PARAM NAME=&quot;type&quot; VALUE=&quot;application/x-java-applet;version=1.4&quot;&gt;');<br />
+                  document.writeln('&lt;PARAM NAME=&quot;scriptable&quot;
+                  VALUE=&quot;true&quot;&gt;');<br />
+                  document.writeln('<font color="#000099">&lt;PARAM NAME=&quot;url&quot;
+                    VALUE=&quot;http://localhost:8080/upload/process.jsp&quot;&gt;</font>');<br />
+                  document.writeln('<font color="#000099">&lt;PARAM NAME=&quot;paramfile&quot;
+                    VALUE=&quot;uploadfile&quot;&gt;</font>');<br />
+                  document.writeln('<font color="#000099">&lt;PARAM NAME=&quot;param1&quot;
+                    VALUE=&quot;todo&quot;&gt;</font>');<br />
+                  document.writeln('<font color="#000099">&lt;PARAM NAME=&quot;value1&quot;
+                    VALUE=&quot;upload&quot;&gt;</font>');<br />
+                  document.writeln('<font color="#000099">&lt;PARAM NAME=&quot;mode&quot;
+                    VALUE=&quot;http&quot;&gt;</font>');<br />
+                                    <font color="#006600">// END</font><br />
+                  if (_ie == true) {<br />
+                  document.writeln('&lt;/OBJECT&gt;');<br />
+                  }<br />
+                  else if (_ns == true &amp;&amp; _ns6 == false) {<br />
+                  document.writeln('&lt;/NOEMBED&gt;&lt;/EMBED&gt;');<br />
+                  }<br />
+                  else {<br />
+                  document.writeln('&lt;/APPLET&gt;');<br />
+                  }<br />
+                  <span class="darkgreen">//--&gt;</span></td>
+              </tr>
+            </table>            </td>
+      </tr>
+    </table></td>
+  </tr>
+  </table>
+  </div>
+  <div id="bottomDiv">
+    <p><a href="http://java.sun.com" target="_blank">Java</a> and all Java-based marks are trademarks or registered trademarks of Sun Microsystems, Inc. in the U.S. and other countries. <br />
+    All other company and/or product names are the property of their respective owners.</p>
+  </div>
+</div>
+</body>
+</html>
